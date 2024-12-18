@@ -1,0 +1,39 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="~/css/Login.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Left: Background image -->
+        <div class="image-section"></div>
+
+        <!-- Right: Login form -->
+        <div class="form-section">
+            <!-- Profile image -->
+            <div class="profile-image"></div>
+
+            <!-- Login form -->
+            <form method="post" action="/Account/Login">
+                <h2>Login</h2>
+                <input type="email" class="form-control" name="Email" placeholder="Enter your email" required />
+                <input type="password" class="form-control" name="Password" placeholder="Enter your password" required />
+                <button type="submit" class="btn">Login</button>
+
+                <!-- Centered Forgot Password link -->
+                <div class="forgot-password">
+                    <a href="/Account/ForgotPassword">Forgot password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
