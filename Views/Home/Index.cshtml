@@ -1,6 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "POS System";
-    var products = ViewBag.Products as List<Product>;
+    Layout = null;
 }
 
 <!DOCTYPE html>
@@ -8,56 +7,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POS System</title>
-    <link rel="stylesheet" href="~/css/style.css">
+    <title>POS Interface</title>
+    <link rel="stylesheet" href="~/css/POS.css" />
 </head>
 <body>
     <div class="pos-container">
-        <!-- Search Box -->
-        <div class="search-bar">
-            <input type="text" placeholder="Search product..." />
-        </div>
+        
+        <!-- LEFT SECTION -->
+        <div class="left-panel">
+            <!-- Search Bar -->
+            <input type="text" class="search-bar" placeholder="Search product..." />
 
-        <!-- Product List -->
-        <table class="product-table">
-            <thead>
-                <tr>
-                    <th>Product Name</th>
-                    <th>Amount</th>
-                    <th>Select</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var product in products)
-                {
-                    <tr>
-                        <td>@product.Name</td>
-                        <td>@product.Amount.ToString("C")</td>
-                        <td>
-                            <button class="select-btn">Select</button>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
 
-        <!-- POS Section -->
-        <div class="pos-section">
-            <h2>POS</h2>
-            <table>
+            <!-- Table for Cart Items -->
+            <table class="product-list">
                 <thead>
                     <tr>
-                        <th>#</th>
-                        <th>Product</th>
-                        <th>Qty</th>
+                        <th>Product name</th>
                         <th>Amount</th>
+                        <td><button class="btn-select">Select</button></td>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Selected products will appear here dynamically -->
+                    <!-- Dynamic cart rows can be injected here -->
                 </tbody>
             </table>
-            <button class="checkout-btn">Checkout</button>
+        </div>
+
+        <!-- RIGHT SECTION -->
+        <div class="right-panel">
+            <!-- POS Title -->
+            <h1 class="pos-title">POS</h1>
+
+            <!-- Table for Cart Items -->
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>PRODUCT</th>
+                        <th>QTY</th>
+                        <th>AMOUNT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic cart rows can be injected here -->
+                </tbody>
+            </table>
+
+            <!-- Checkout Button -->
+            <button class="btn-checkout">CHECKOUT</button>
         </div>
     </div>
 </body>
