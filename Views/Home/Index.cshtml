@@ -29,10 +29,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <td></td>
-                    <td></td>
-                    <td><button class="btn-select">Select</button></td>
-                    <!-- Dynamic cart rows can be injected here -->
+                    @foreach (var product in ViewBag.Products)
+                    {
+                        <tr>
+                            <td>@product.Name</td>
+                            <td>@product.Amount.ToString("C")</td>
+                            <td>
+                                <button class="btn-select" onclick="addToCart(@product.Id, '@product.Name', @product.Amount)">Select</button>
+                            </td>
+                        </tr>
+                    }
                 </tbody>
             </table>
         </div>
@@ -61,5 +67,8 @@
             <button class="btn-checkout">CHECKOUT</button>
         </div>
     </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="~/js/cart.js"></script>
 </body>
 </html>
