@@ -49,6 +49,12 @@
     font-size: 14px;
   }
 
+  .product-list th:nth-child(3) {
+    width: 150px; /* Specify the width */
+    min-width: 150px; /* Ensures the width doesn't shrink below the specified value */
+    max-width: 150px; /* Ensures the width doesn't exceed the specified value */
+}
+
   .product-list th,
   .product-list td {
     padding: 10px;
@@ -82,7 +88,7 @@
     background-color: #ffffff;
     color: #333;
     border: 1px solid #ccc; /* Added border for consistency */
-    padding: 8px 12px;
+    padding: 8px 50px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
