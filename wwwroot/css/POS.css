@@ -132,6 +132,16 @@ body {
   color: white;
 }
 
+.total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  padding: 10px;
+  text-align: left; /* Align the text to the left */
+  z-index: 10; /* Ensure it's always on top of other elements */
+}
+
 .btn-checkout {
   background-color: #ffffff;
   color: #333;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YgyTau2yd0Oji+ioZH9fYqTLoyBnIvdFmHfGgd/qnzE=",
+  "Hash": "SgMlGiazQUGu72t+6uEmjkkZvucoOjBMlN9I4gt2VRo=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-64v5ey3ihd.gz",
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
       "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/pos_system",
-      "RelativePath": "css/POS#[.{fingerprint=64v5ey3ihd}]?.css.gz",
+      "RelativePath": "css/POS#[.{fingerprint=clmaoh77e6}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "mn90n3ec9k",
-      "Integrity": "4nNUJtYKeY0G66kJRTuE6n/gAqKniW6O7XN5ldaQZio=",
+      "Fingerprint": "y02yo02pzo",
+      "Integrity": "wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css"
@@ -962,12 +962,12 @@
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-pvzm232kvr.gz",
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-20g2ot5and.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
       "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/pos_system",
-      "RelativePath": "js/cart#[.{fingerprint=pvzm232kvr}]?.js.gz",
+      "RelativePath": "js/cart#[.{fingerprint=20g2ot5and}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -976,8 +976,8 @@
       "RelatedAsset": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\cart.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "131l2yqshr",
-      "Integrity": "vaIfjhsyUhJZ5F8QWktWlDLjxgF3FoOCE6ae1IoGlzU=",
+      "Fingerprint": "msxjhg4vyu",
+      "Integrity": "1iLcJTkyKjNt8Xer18+adfn+0tkOb8VlU6J+5rkSOb0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\cart.js"
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "64v5ey3ihd",
-      "Integrity": "Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw=",
+      "Fingerprint": "clmaoh77e6",
+      "Integrity": "4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\POS.css"
@@ -1522,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pvzm232kvr",
-      "Integrity": "21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ=",
+      "Fingerprint": "20g2ot5and",
+      "Integrity": "fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\cart.js"
@@ -2812,13 +2812,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/POS.64v5ey3ihd.css",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-64v5ey3ihd.gz",
+      "Route": "css/POS.clmaoh77e6.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000943396226"
+          "Quality": "0.000881057269"
         }
       ],
       "ResponseHeaders": [
@@ -2828,15 +2828,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1059"
+          "Value": "1134"
         },
         {
           "Name": "ETag",
-          "Value": "\"4nNUJtYKeY0G66kJRTuE6n/gAqKniW6O7XN5ldaQZio=\""
+          "Value": "\"wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:43:17 GMT"
+          "Value": "Wed, 18 Dec 2024 12:39:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2856,13 +2856,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw=\""
+          "Value": "W/\"4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "64v5ey3ihd"
+          "Value": "clmaoh77e6"
         },
         {
           "Name": "label",
@@ -2870,12 +2870,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw="
+          "Value": "sha256-4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs="
         }
       ]
     },
     {
-      "Route": "css/POS.64v5ey3ihd.css",
+      "Route": "css/POS.clmaoh77e6.css",
       "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2885,7 +2885,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3443"
+          "Value": "3686"
         },
         {
           "Name": "Content-Type",
@@ -2893,11 +2893,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw=\""
+          "Value": "\"4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:43:17 GMT"
+          "Value": "Wed, 18 Dec 2024 12:39:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2907,7 +2907,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "64v5ey3ihd"
+          "Value": "clmaoh77e6"
         },
         {
           "Name": "label",
@@ -2915,13 +2915,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw="
+          "Value": "sha256-4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs="
         }
       ]
     },
     {
-      "Route": "css/POS.64v5ey3ihd.css.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-64v5ey3ihd.gz",
+      "Route": "css/POS.clmaoh77e6.css.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2930,7 +2930,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1059"
+          "Value": "1134"
         },
         {
           "Name": "Content-Type",
@@ -2938,11 +2938,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4nNUJtYKeY0G66kJRTuE6n/gAqKniW6O7XN5ldaQZio=\""
+          "Value": "\"wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:43:17 GMT"
+          "Value": "Wed, 18 Dec 2024 12:39:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2960,7 +2960,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "64v5ey3ihd"
+          "Value": "clmaoh77e6"
         },
         {
           "Name": "label",
@@ -2968,18 +2968,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4nNUJtYKeY0G66kJRTuE6n/gAqKniW6O7XN5ldaQZio="
+          "Value": "sha256-wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU="
         }
       ]
     },
     {
       "Route": "css/POS.css",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-64v5ey3ihd.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000943396226"
+          "Quality": "0.000881057269"
         }
       ],
       "ResponseHeaders": [
@@ -2989,15 +2989,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1059"
+          "Value": "1134"
         },
         {
           "Name": "ETag",
-          "Value": "\"4nNUJtYKeY0G66kJRTuE6n/gAqKniW6O7XN5ldaQZio=\""
+          "Value": "\"wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:43:17 GMT"
+          "Value": "Wed, 18 Dec 2024 12:39:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3017,13 +3017,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw=\""
+          "Value": "W/\"4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw="
+          "Value": "sha256-4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs="
         }
       ]
     },
@@ -3038,7 +3038,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3443"
+          "Value": "3686"
         },
         {
           "Name": "Content-Type",
@@ -3046,11 +3046,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw=\""
+          "Value": "\"4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:43:17 GMT"
+          "Value": "Wed, 18 Dec 2024 12:39:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3060,13 +3060,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Oo2IAgBQ04vm6V1U7DcvYm2Sh5Q1hCrI3/bH8VzuBfw="
+          "Value": "sha256-4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs="
         }
       ]
     },
     {
       "Route": "css/POS.css.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-64v5ey3ihd.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3075,7 +3075,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1059"
+          "Value": "1134"
         },
         {
           "Name": "Content-Type",
@@ -3083,11 +3083,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4nNUJtYKeY0G66kJRTuE6n/gAqKniW6O7XN5ldaQZio=\""
+          "Value": "\"wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:43:17 GMT"
+          "Value": "Wed, 18 Dec 2024 12:39:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3105,7 +3105,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4nNUJtYKeY0G66kJRTuE6n/gAqKniW6O7XN5ldaQZio="
+          "Value": "sha256-wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU="
         }
       ]
     },
@@ -3706,8 +3706,8 @@
       ]
     },
     {
-      "Route": "js/cart.js",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-pvzm232kvr.gz",
+      "Route": "js/cart.20g2ot5and.js",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-20g2ot5and.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3726,15 +3726,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vaIfjhsyUhJZ5F8QWktWlDLjxgF3FoOCE6ae1IoGlzU=\""
+          "Value": "\"1iLcJTkyKjNt8Xer18+adfn+0tkOb8VlU6J+5rkSOb0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:33:58 GMT"
+          "Value": "Wed, 18 Dec 2024 12:48:51 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -3750,18 +3750,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ=\""
+          "Value": "W/\"fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "20g2ot5and"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cart.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ="
+          "Value": "sha256-fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8="
         }
       ]
     },
     {
-      "Route": "js/cart.js",
+      "Route": "js/cart.20g2ot5and.js",
       "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\cart.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3771,7 +3779,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1735"
+          "Value": "1734"
         },
         {
           "Name": "Content-Type",
@@ -3779,121 +3787,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ=\""
+          "Value": "\"fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.js.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-pvzm232kvr.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "691"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vaIfjhsyUhJZ5F8QWktWlDLjxgF3FoOCE6ae1IoGlzU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vaIfjhsyUhJZ5F8QWktWlDLjxgF3FoOCE6ae1IoGlzU="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.pvzm232kvr.js",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-pvzm232kvr.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001445086705"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "691"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vaIfjhsyUhJZ5F8QWktWlDLjxgF3FoOCE6ae1IoGlzU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:33:58 GMT"
+          "Value": "Wed, 18 Dec 2024 12:48:51 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pvzm232kvr"
+          "Value": "20g2ot5and"
         },
         {
           "Name": "label",
@@ -3901,58 +3809,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ="
+          "Value": "sha256-fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8="
         }
       ]
     },
     {
-      "Route": "js/cart.pvzm232kvr.js",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\cart.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1735"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pvzm232kvr"
-        },
-        {
-          "Name": "label",
-          "Value": "js/cart.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-21KWW/Llk4ybZu+2D5Tc41pNuZ6I2apeAFKUknkQ5OQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.pvzm232kvr.js.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-pvzm232kvr.gz",
+      "Route": "js/cart.20g2ot5and.js.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-20g2ot5and.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3969,11 +3832,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vaIfjhsyUhJZ5F8QWktWlDLjxgF3FoOCE6ae1IoGlzU=\""
+          "Value": "\"1iLcJTkyKjNt8Xer18+adfn+0tkOb8VlU6J+5rkSOb0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 11:33:58 GMT"
+          "Value": "Wed, 18 Dec 2024 12:48:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3991,7 +3854,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pvzm232kvr"
+          "Value": "20g2ot5and"
         },
         {
           "Name": "label",
@@ -3999,7 +3862,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-vaIfjhsyUhJZ5F8QWktWlDLjxgF3FoOCE6ae1IoGlzU="
+          "Value": "sha256-1iLcJTkyKjNt8Xer18+adfn+0tkOb8VlU6J+5rkSOb0="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-20g2ot5and.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001445086705"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "691"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1iLcJTkyKjNt8Xer18+adfn+0tkOb8VlU6J+5rkSOb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 12:48:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\cart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1734"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 12:48:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fsZd1xGG2rTndrfdJcCkDjq5PvC1gt+mdiho+qyVho8="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-20g2ot5and.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "691"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1iLcJTkyKjNt8Xer18+adfn+0tkOb8VlU6J+5rkSOb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 12:48:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1iLcJTkyKjNt8Xer18+adfn+0tkOb8VlU6J+5rkSOb0="
         }
       ]
     },
