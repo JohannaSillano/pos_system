@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\JOHANNA MAE\\.nuget\\packages\\": {}
+    "C:\\Users\\emaca\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JOHANNA MAE\\Downloads\\pos_system\\pos_system.csproj",
+      "projectUniqueName": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\pos_system.csproj",
       "projectName": "pos_system",
-      "projectPath": "C:\\Users\\JOHANNA MAE\\Downloads\\pos_system\\pos_system.csproj",
-      "packagesPath": "C:\\Users\\JOHANNA MAE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JOHANNA MAE\\Downloads\\pos_system\\obj\\",
+      "projectPath": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\pos_system.csproj",
+      "packagesPath": "C:\\Users\\emaca\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\JOHANNA MAE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\emaca\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
