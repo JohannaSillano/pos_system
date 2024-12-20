@@ -20,6 +20,9 @@ function addToCart(id, name, amount) {
     // Append the new row to the cart table body
     cartTableBody.appendChild(newRow);
     cartItemId++;
+
+    // Update the total amount after adding an item
+    updateTotalAmount();
 }
 
 // Function to update the total amount for a specific product
@@ -28,6 +31,9 @@ function updateAmount(input, price) {
     const row = input.closest('tr');
     const amountCell = row.querySelector('.item-amount');
     amountCell.textContent = (input.value * price).toFixed(2);
+
+    // Update the total amount after changing quantity
+    updateTotalAmount();
 }
 
 // Function to remove a specific cart item
@@ -36,8 +42,9 @@ function removeCartItem(button) {
     const row = button.closest('tr');
     cartTableBody.removeChild(row);
 
-    // Update the cart item IDs
+    // Update the cart item IDs and total amount
     updateCartItemIds();
+    updateTotalAmount();
 }
 
 // Function to update the cart item IDs after removal
@@ -50,4 +57,20 @@ function updateCartItemIds() {
         idCell.textContent = cartItemId;
         cartItemId++;
     });
+}
+
+// Function to calculate and update the total amount
+function updateTotalAmount() {
+    let totalAmount = 0;
+
+    // Loop through each row in the cart
+    const rows = cartTableBody.querySelectorAll('tr');
+    rows.forEach(row => {
+        const amountCell = row.querySelector('.item-amount');
+        totalAmount += parseFloat(amountCell.textContent);
+    });
+
+    // Update the total amount in the DOM
+    const totalAmountElement = document.getElementById('total-amount');
+    totalAmountElement.textContent = `Total Amount: ₱${totalAmount.toFixed(2)}`;
 }

@@ -33,7 +33,7 @@
                     {
                         <tr>
                             <td>@product.Name</td>
-                            <td>@product.Amount.ToString("C")</td>
+                            <td>₱@product.Amount.ToString("N2")</td>
                             <td>
                                 <button class="btn-select" onclick="addToCart(@product.Id, '@product.Name', @product.Amount)">Select</button>
                             </td>
@@ -66,8 +66,9 @@
 
             <!-- Total Amount -->
             <div id="total-amount" class="total-amount">
-                Total Amount: 
+                Total Amount:
             </div>
+
             <!-- Checkout Button -->
             <button class="btn-checkout">CHECKOUT</button>
         </div>
