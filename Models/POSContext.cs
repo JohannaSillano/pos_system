@@ -4,9 +4,9 @@ namespace pos_system.Models
 {
     public class POSContext : DbContext
     {
-        public DbSet<Transaction> Transactions { get; set; }
-        public DbSet<TransactionDetails> TransactionDetails { get; set; }
-        public DbSet<Employee> Employees{ get; set; }
+        public required DbSet<Transaction> Transactions { get; set; }
+        public required DbSet<TransactionDetails> TransactionDetails { get; set; }
+        public required DbSet<User> Users{ get; set; }
 
         public POSContext(DbContextOptions<POSContext> options) : base(options) {}
 
