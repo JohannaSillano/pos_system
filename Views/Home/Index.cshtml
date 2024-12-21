@@ -1,8 +1,89 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS Interface</title>
+    <link rel="stylesheet" href="~/css/POS.css" />
+</head>
+<body>
+    <div class="pos-container">
+        
+        <!-- LEFT SECTION -->
+        <div class="left-panel">
+            <!-- Search Bar -->
+            <input type="text" class="search-bar" placeholder="Search product..." />
+
+
+            <!-- Table for Cart Items -->
+            <table class="product-list">
+                <thead>
+                    <tr>
+                        <th>PRODUCT NAME</th>
+                        <th>AMOUNT</th>
+                        <th>SELECT PRODUCT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (ViewBag.Products != null)
+                    {
+                        foreach (var product in ViewBag.Products)
+                        {
+                            <tr>
+                                <td>@product.Name</td>
+                                <td>₱@product.Price.ToString("N2")</td>
+                                <td>
+                                    <button class="btn-select" onclick="addToCart(@product.Id, '@product.Name', @product.Price)">Select</button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="3">@ViewBag.Error ?? "No products available."</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- RIGHT SECTION -->
+        <div class="right-panel">
+            <!-- POS Title -->
+            <h1 class="pos-title">POS</h1>
+
+            <!-- Table for Cart Items -->
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>PRODUCT</th>
+                        <th>QTY</th>
+                        <th>AMOUNT</th>
+                        <th>REMOVE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic cart rows can be injected here -->
+                </tbody>
+            </table>
+
+            <!-- Total Amount -->
+            <div id="total-amount" class="total-amount">
+                Total Amount:
+            </div>
+
+            <!-- Checkout Button -->
+            <button class="btn-checkout">CHECKOUT</button>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="~/js/cart.js"></script>
+</body>
+</html>
