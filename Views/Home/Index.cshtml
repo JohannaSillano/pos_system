@@ -29,14 +29,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var product in ViewBag.Products)
+                    @if (ViewBag.Products != null)
+                    {
+                        foreach (var product in ViewBag.Products)
+                        {
+                            <tr>
+                                <td>@product.Name</td>
+                                <td>₱@product.Price.ToString("N2")</td>
+                                <td>
+                                    <button class="btn-select" onclick="addToCart(@product.Id, '@product.Name', @product.Price)">Select</button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
                     {
                         <tr>
-                            <td>@product.Name</td>
-                            <td>₱@product.Amount.ToString("N2")</td>
-                            <td>
-                                <button class="btn-select" onclick="addToCart(@product.Id, '@product.Name', @product.Amount)">Select</button>
-                            </td>
+                            <td colspan="3">@ViewBag.Error ?? "No products available."</td>
                         </tr>
                     }
                 </tbody>

@@ -1,4 +1,3 @@
-C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\lr1qnwdeac-ausgxo2sd3.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\appsettings.json
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\pos_system.staticwebassets.runtime.json
@@ -11,6 +10,7 @@ C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Azure.Identity.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Humanizer.dll
+C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\System.Net.Http.Formatting.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Microsoft.Build.Locator.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Microsoft.CodeAnalysis.dll
@@ -37,6 +37,8 @@ C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\Newtonsoft.Json.Bson.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\System.CodeDom.dll
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\System.Composition.AttributedModel.dll
@@ -151,6 +153,7 @@ C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\59d5xne34f-sejl45xvog.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\3c5ftff3j4-aexeepp0ev.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\zh22t6vgzd-xvp3kq03qx.gz
+C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\lr1qnwdeac-ausgxo2sd3.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\y7i3g8xt42-22vffe00uq.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\cul67pczxy-cosvhxvwiu.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\rf0ri62zsq-qesaa3a1fm.gz

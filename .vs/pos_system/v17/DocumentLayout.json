@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE4B8DE3-C809-447D-93FE-A72249AD6A26}|pos_system.csproj|c:\\users\\pc\\coding na liwat\\case study_system_integration_architecture_a.y 2024-2025\\pos_system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE4B8DE3-C809-447D-93FE-A72249AD6A26}|pos_system.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE4B8DE3-C809-447D-93FE-A72249AD6A26}|pos_system.csproj|c:\\users\\pc\\coding na liwat\\case study_system_integration_architecture_a.y 2024-2025\\pos_system\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AE4B8DE3-C809-447D-93FE-A72249AD6A26}|pos_system.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE4B8DE3-C809-447D-93FE-A72249AD6A26}|pos_system.csproj|c:\\users\\pc\\coding na liwat\\case study_system_integration_architecture_a.y 2024-2025\\pos_system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE4B8DE3-C809-447D-93FE-A72249AD6A26}|pos_system.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,6 +75,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T08:07:00.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T08:05:59.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABAAAAAAAAAAAAAqwB8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-21T08:04:25.642Z",
+              "EditorCaption": ""
             }
           ]
         }

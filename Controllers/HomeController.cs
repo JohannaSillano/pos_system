@@ -1,21 +1,53 @@
 using Microsoft.AspNetCore.Mvc;
 using pos_system.Models;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace pos_system.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
-            // Sample Product List
-            List<Product> products = new List<Product>
-            {
-                new Product { Id = 1, Name = "Apple", Amount = 100 },
-                new Product { Id = 2, Name = "Banana", Amount = 50 },
-                new Product { Id = 3, Name = "Orange", Amount = 80 }
-            };
+        private readonly HttpClient _httpClient;
 
-            ViewBag.Products = products;
+        public HomeController(HttpClient httpClient)
+        {
+            _httpClient = httpClient;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            try
+            {
+                // Call the Inventory System API
+                var response = await _httpClient.GetAsync("http://localhost:5263/api/productsapi/getallproducts");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // Deserialize the response JSON into a list of Product models
+                    var responseContent = await response.Content.ReadAsStringAsync();
+                    var products = JsonSerializer.Deserialize<List<Product>>(responseContent, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true // Handle case-insensitive property matching
+                    });
+
+                    // Pass the products to the view
+                    ViewBag.Products = products;
+                }
+                else
+                {
+                    // Handle failure (e.g., log the error or return an error message)
+                    ViewBag.Products = null;
+                    ViewBag.Error = "Failed to fetch products from the Inventory API.";
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions (e.g., network issues)
+                ViewBag.Products = null;
+                ViewBag.Error = $"An error occurred: {ex.Message}";
+            }
+
             return View();
         }
     }
