@@ -15,15 +15,27 @@ builder.Services.AddDbContext<POSContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Add session services
+builder.Services.AddDistributedMemoryCache(); // For in-memory session storage
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Set session timeout
+    options.Cookie.HttpOnly = true; // Secure the cookie
+    options.Cookie.IsEssential = true; // Ensure it's essential for GDPR compliance
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
+    app.UseExceptionHandler("/Login/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+// Use session middleware
+app.UseSession();
 
 //app.UseHttpsRedirection();
 app.UseRouting();
@@ -34,7 +46,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Login}/{action=Login}/{id?}")
     .WithStaticAssets();
 
 
