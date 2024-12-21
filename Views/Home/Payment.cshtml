@@ -1,0 +1,97 @@
+<!--Payment Page-->
+@{
+    ViewData["Title"] = "Payment";
+}
+
+<div class="container mt-5">
+    <h1 class="text">@ViewData["Title"]</h1>
+    <p class="text-muted">Finish Transaction.</p>
+    <hr />
+
+    <!-- Transaction Information -->
+    <div class="store-info mb-4">
+        <p><strong>Cashier:</strong> Alice Guo</p>
+        <p><strong>Date:</strong> @DateTime.Now.ToString("MMMM dd, yyyy")</p>
+        <p><strong>Invoice No:</strong> INV-@Guid.NewGuid().ToString().Substring(0, 8)</p>
+    </div>
+
+    <!-- Table for Purchased Items -->
+    <table class="table table-bordered">
+        <thead class="table-light">
+            <tr>
+                <th>#</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price (₱)</th>
+                <th>Total (₱)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample Data -->
+            <tr>
+                <td>1</td>
+                <td>Soft Drink</td>
+                <td>2</td>
+                <td>25.00</td>
+                <td>50.00</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chips</td>
+                <td>1</td>
+                <td>15.00</td>
+                <td>15.00</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Candy</td>
+                <td>5</td>
+                <td>2.00</td>
+                <td>10.00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Sample Total Calculation -->
+    <div class="text-end">
+        <p><strong>Subtotal:</strong> ₱75.00</p>
+        <p><strong>Tax (12%):</strong> ₱9.00</p>
+        <p><strong>Total:</strong> ₱84.00</p>
+    </div>
+
+    <!-- Payment Section -->
+    <div class="mt-4">
+        <h4>Payment Details</h4>
+        <div class="mb-3">
+            <label for="payment-amount" class="form-label">Payment Amount (₱):</label>
+            <input type="number" id="payment-amount" class="form-control" placeholder="Enter payment amount" />
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-success w-100" onclick="calculateChange()">Calculate Change</button>
+        </div>
+        <p><strong>Change:</strong> <span id="change-display">₱0.00</span></p>
+    </div>
+</div>
+
+<!-- Add transaction then navigate to Invoice) -->
+    <div class="text-center mt-4">
+        <a href="/Home/Transactions" class="btn btn-primary">Done</a>
+    </div>
+
+<script>
+    // Calculate change
+    function calculateChange() {
+        const paymentAmount = parseFloat(document.getElementById("payment-amount").value) || 0;
+        const totalAmount = 84.00; // Replace with dynamic total if needed
+        const change = paymentAmount - totalAmount;
+
+        const changeDisplay = document.getElementById("change-display");
+        if (change < 0) {
+            changeDisplay.textContent = "Insufficient payment";
+            changeDisplay.style.color = "red";
+        } else {
+            changeDisplay.textContent = `₱${change.toFixed(2)}`;
+            changeDisplay.style.color = "black";
+        }
+    }
+</script>
