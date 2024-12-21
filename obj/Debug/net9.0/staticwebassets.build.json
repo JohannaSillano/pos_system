@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DtBWJoyK4uNf8eScTCe0GO7/W8R7HVrh+6JTxHMH6v8=",
+  "Hash": "9fpvPdwVq1Hhj8HkTblsJlPXHgOl2z9GiEhxnmiky2A=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css"
+    },
+    {
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
+      "SourceId": "pos_system",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/pos_system",
+      "RelativePath": "css/Login#[.{fingerprint=0eiwjn99ne}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\Login.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "z1gjxxxy3v",
+      "Integrity": "+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\Login.css"
     },
     {
       "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\1c11o9tqls-h1s4sie4z3.gz",
@@ -1445,6 +1466,48 @@
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\pos_system.bundle.scp.css"
     },
     {
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\Login.css",
+      "SourceId": "pos_system",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\",
+      "BasePath": "_content/pos_system",
+      "RelativePath": "css/Login#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0eiwjn99ne",
+      "Integrity": "6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Login.css"
+    },
+    {
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\MiniMart.jpg",
+      "SourceId": "pos_system",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\",
+      "BasePath": "_content/pos_system",
+      "RelativePath": "css/MiniMart#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vw5alk99va",
+      "Integrity": "ke4qNIOI60fnYzjEsrnnuatBAWPR6zZtP5hBMmg98/g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MiniMart.jpg"
+    },
+    {
       "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
@@ -2812,6 +2875,386 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/Login.0eiwjn99ne.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000840336134"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1189"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 09:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0eiwjn99ne"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.0eiwjn99ne.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\Login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 09:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0eiwjn99ne"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.0eiwjn99ne.css.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 09:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0eiwjn99ne"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Login.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000840336134"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1189"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 09:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\Login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 09:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.css.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 09:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio="
+        }
+      ]
+    },
+    {
+      "Route": "css/MiniMart.jpg",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\MiniMart.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "150352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ke4qNIOI60fnYzjEsrnnuatBAWPR6zZtP5hBMmg98/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 09:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ke4qNIOI60fnYzjEsrnnuatBAWPR6zZtP5hBMmg98/g="
+        }
+      ]
+    },
+    {
+      "Route": "css/MiniMart.vw5alk99va.jpg",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\MiniMart.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "150352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ke4qNIOI60fnYzjEsrnnuatBAWPR6zZtP5hBMmg98/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 21 Dec 2024 09:07:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vw5alk99va"
+        },
+        {
+          "Name": "label",
+          "Value": "css/MiniMart.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ke4qNIOI60fnYzjEsrnnuatBAWPR6zZtP5hBMmg98/g="
+        }
+      ]
+    },
+    {
       "Route": "css/POS.clmaoh77e6.css",
       "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
       "Selectors": [
@@ -2836,7 +3279,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2897,7 +3340,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2942,7 +3385,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2997,7 +3440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3050,7 +3493,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3087,7 +3530,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3730,7 +4173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3791,7 +4234,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3836,7 +4279,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3891,7 +4334,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3944,7 +4387,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3981,7 +4424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -21990,7 +22433,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22043,7 +22486,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22080,7 +22523,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22127,7 +22570,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22188,7 +22631,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22233,7 +22676,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22288,7 +22731,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22349,7 +22792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22394,7 +22837,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22449,7 +22892,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22502,7 +22945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22539,7 +22982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:45:57 GMT"
+          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
         },
         {
           "Name": "Cache-Control",

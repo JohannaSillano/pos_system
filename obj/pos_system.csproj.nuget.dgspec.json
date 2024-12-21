@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj": {}
+    "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj": {
+    "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj",
+        "projectUniqueName": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj",
         "projectName": "pos_system",
-        "projectPath": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj",
+        "projectPath": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\",
+        "outputPath": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
