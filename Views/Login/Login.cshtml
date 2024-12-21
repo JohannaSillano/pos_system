@@ -22,8 +22,14 @@
             <div class="profile-image"></div>
 
             <!-- Login form -->
-            <form method="post" action="/Account/Login">
+            <form asp-action="Login" method="post">
                 <h2>Login</h2>
+
+                @if (ViewBag.ErrorMessage != null)
+                {
+                    <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+                }
+                
                 <input type="email" class="form-control" name="Email" placeholder="Enter your email" required />
                 <input type="password" class="form-control" name="Password" placeholder="Enter your password" required />
                 <button type="submit" class="btn">Login</button>
