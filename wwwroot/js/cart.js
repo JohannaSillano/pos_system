@@ -61,16 +61,51 @@ function updateCartItemIds() {
 
 // Function to calculate and update the total amount
 function updateTotalAmount() {
-    let totalAmount = 0;
+    let subtotalAmount = 0;
 
     // Loop through each row in the cart
     const rows = cartTableBody.querySelectorAll('tr');
     rows.forEach(row => {
         const amountCell = row.querySelector('.item-amount');
-        totalAmount += parseFloat(amountCell.textContent);
+        subtotalAmount += parseFloat(amountCell.textContent);
     });
 
-    // Update the total amount in the DOM
+    // Calculate tax (12%)
+    const taxAmount = subtotalAmount * 0.12;
+
+    // Calculate final total (Subtotal + Tax)
+    const totalAmount = subtotalAmount + taxAmount;
+
+    // Update the subtotal, tax, and total amount in the DOM
     const totalAmountElement = document.getElementById('total-amount');
-    totalAmountElement.textContent = `Total Amount: ₱${totalAmount.toFixed(2)}`;
+    totalAmountElement.innerHTML = `
+        Subtotal Amount: ₱${subtotalAmount.toFixed(2)}<br>
+        Tax(12%): ₱${taxAmount.toFixed(2)}<br>
+        Total Amount: ₱${totalAmount.toFixed(2)}
+    `;
+}
+
+// Function to calculate change
+function calculateChange() {
+    // Retrieve the total amount from the DOM
+    const totalAmountElement = document.getElementById("total-amount").textContent;
+    const totalAmountMatch = totalAmountElement.match(/Total Amount:\s*₱(\d+(\.\d+)?)/);
+
+    const totalAmount = totalAmountMatch ? parseFloat(totalAmountMatch[1]) : 0;
+
+    // Retrieve the payment amount from the input
+    const paymentAmount = parseFloat(document.getElementById("payment-amount").value) || 0;
+
+    // Calculate change
+    const change = paymentAmount - totalAmount;
+
+    // Display the change
+    const changeDisplay = document.getElementById("change-display");
+    if (change < 0) {
+        changeDisplay.textContent = "Insufficient payment";
+        changeDisplay.style.color = "red";
+    } else {
+        changeDisplay.textContent = `₱${change.toFixed(2)}`;
+        changeDisplay.style.color = "black";
+    }
 }
