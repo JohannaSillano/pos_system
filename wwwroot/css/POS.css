@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.pos-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap; /* Ensures layout responsiveness */
+}
+
+/* LEFT PANEL */
+.left-panel {
+  width: 70%;
+  background-color: #aa1414;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Prevent overflow */
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.product-list {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.product-list th:nth-child(3) {
+  width: 150px; /* Specify the width */
+  min-width: 150px; /* Ensures the width doesn't shrink below the specified value */
+  max-width: 150px; /* Ensures the width doesn't exceed the specified value */
+}
+
+.product-list th,
+.product-list td {
+  padding: 10px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 12px 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+.column-name,
+.column-amount {
+  flex: 1;
+  font-weight: bold;
+}
+
+.btn-select {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc; /* Added border for consistency */
+  padding: 8px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.btn-select:hover {
+  background-color: #757575;
+  color: #ffff; /* Text color change on hover for contrast */
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  width: 30%;
+  background-color: #2B60B4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  overflow-y: auto; /* Prevent overflow */
+}
+
+.pos-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cart-table {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Target the Quantity column by position (nth-child) */
+.cart-table td:nth-child(3), /* Applies to the 3rd column in rows */
+.cart-table th:nth-child(3) { /* Applies to the 3rd column in the header */
+    width: 100px; /* Set a fixed width for the Quantity column */
+    text-align: center; /* Align text and inputs to the center */
+}
+
+/* Ensure the input field inside the Qty column fits well */
+.cart-table td:nth-child(3) input[type="number"] {
+    width: 60px; /* Adjust input width as needed */
+    padding: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.cart-table th {
+  background-color: #2B60B4;
+  color: white;
+}
+
+.total-amount {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  padding: 10px;
+  text-align: left; /* Align the text to the left */
+  z-index: 10; /* Ensure it's always on top of other elements */
+}
+
+.total-amount .subtotal,
+.total-amount .tax {
+  font-size: 16px; /* Smaller font size */
+  font-weight: normal; /* Remove bold styling */
+  color: lightgray; /* Optional: lighter color to differentiate */
+}
+
+.total-amount .final-total {
+  font-size: 24px; /* Same size as the .total-amount */
+  font-weight: bold; /* Keep the bold styling for emphasis */
+}
+
+.btn-checkout {
+  background-color: #ffffff;
+  color: #333;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: auto; /* Pushes the button to the bottom */
+  transition: background-color 0.2s;
+}
+
+.btn-checkout:hover {
+  background-color: #757575;
+  color: white; /* Ensures visibility of text on hover */
+}
+
+/* Custom Style for Remove button */
+.remove-btn { /* ADDED: New style class for Remove button */
+  background-color: #f44336; /* Red color for remove button */
+  color: white;
+  font-size: 14px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.remove-btn:hover { /* ADDED: Hover effect */
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+.remove-btn:active { /* ADDED: Active effect */
+  background-color: #b71c1c; /* Even darker red when clicked */
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  width: 30%;
+  background-color: #2B60B4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto; /* Prevent overflow */
+}
+
+/* Payment Details Section */
+.payment-section {
+  text-align: left;  /* Align text to the left */
+  margin-top: 20px; /* Optional: Add spacing above the payment section */
+}
+
+.payment-section h4 {
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.payment-section .form-label {
+  margin-bottom: 5px; /* Add space below the label */
+}
+
+.payment-section .form-control {
+  width: 100%; /* Ensure the input field takes up the full width */
+  padding: 10px; /* Add padding for better spacing */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.payment-section .btn-success {
+  width: 100%; /* Make the button span full width */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Adjust if necessary */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.payment-section .btn-success:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.payment-section p {
+  font-size: 18px; /* Adjust font size for the change text */
+  margin-top: 10px;
+  color: white;
+}
