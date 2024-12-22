@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "we9rv/tdoLjlGoEJzJsSoeRbEo60B4ZaoueMIuduK3I=",
+  "Hash": "5AY/CiIPIYZo4rb6A4ScCkQQBNCSMD+wzlaOPhhTI34=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-sy0sfv31zr.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
       "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/pos_system",
-      "RelativePath": "css/POS#[.{fingerprint=clmaoh77e6}]?.css.gz",
+      "RelativePath": "css/POS#[.{fingerprint=sy0sfv31zr}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "y02yo02pzo",
-      "Integrity": "wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=",
+      "Fingerprint": "jwbsmt3hzy",
+      "Integrity": "vfqYYqTQ1U3FgmQURil7w73CLu9bL8VfLyEXdtAakuI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css"
@@ -1522,8 +1522,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "clmaoh77e6",
-      "Integrity": "4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=",
+      "Fingerprint": "sy0sfv31zr",
+      "Integrity": "HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\POS.css"
@@ -3255,13 +3255,13 @@
       ]
     },
     {
-      "Route": "css/POS.clmaoh77e6.css",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
+      "Route": "css/POS.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-sy0sfv31zr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000881057269"
+          "Quality": "0.000755857899"
         }
       ],
       "ResponseHeaders": [
@@ -3271,19 +3271,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1134"
+          "Value": "1322"
         },
         {
           "Name": "ETag",
-          "Value": "\"wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=\""
+          "Value": "\"vfqYYqTQ1U3FgmQURil7w73CLu9bL8VfLyEXdtAakuI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
+          "Value": "Sun, 22 Dec 2024 04:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3299,26 +3299,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=\""
+          "Value": "W/\"HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "clmaoh77e6"
-        },
-        {
-          "Name": "label",
-          "Value": "css/POS.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs="
+          "Value": "sha256-HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas="
         }
       ]
     },
     {
-      "Route": "css/POS.clmaoh77e6.css",
+      "Route": "css/POS.css",
       "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3328,7 +3320,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3686"
+          "Value": "4270"
         },
         {
           "Name": "Content-Type",
@@ -3336,11 +3328,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=\""
+          "Value": "\"HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
+          "Value": "Sun, 22 Dec 2024 04:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas="
+        }
+      ]
+    },
+    {
+      "Route": "css/POS.css.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-sy0sfv31zr.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1322"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfqYYqTQ1U3FgmQURil7w73CLu9bL8VfLyEXdtAakuI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 04:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vfqYYqTQ1U3FgmQURil7w73CLu9bL8VfLyEXdtAakuI="
+        }
+      ]
+    },
+    {
+      "Route": "css/POS.sy0sfv31zr.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-sy0sfv31zr.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000755857899"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1322"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vfqYYqTQ1U3FgmQURil7w73CLu9bL8VfLyEXdtAakuI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 04:35:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sy0sfv31zr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/POS.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas="
+        }
+      ]
+    },
+    {
+      "Route": "css/POS.sy0sfv31zr.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 22 Dec 2024 04:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3350,7 +3487,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "clmaoh77e6"
+          "Value": "sy0sfv31zr"
         },
         {
           "Name": "label",
@@ -3358,13 +3495,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs="
+          "Value": "sha256-HFFX81cF4dL2uKE27lw8Khmv6k7JeZlHJ2voEsMcUas="
         }
       ]
     },
     {
-      "Route": "css/POS.clmaoh77e6.css.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
+      "Route": "css/POS.sy0sfv31zr.css.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-sy0sfv31zr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3373,7 +3510,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1134"
+          "Value": "1322"
         },
         {
           "Name": "Content-Type",
@@ -3381,11 +3518,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=\""
+          "Value": "\"vfqYYqTQ1U3FgmQURil7w73CLu9bL8VfLyEXdtAakuI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
+          "Value": "Sun, 22 Dec 2024 04:35:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3403,7 +3540,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "clmaoh77e6"
+          "Value": "sy0sfv31zr"
         },
         {
           "Name": "label",
@@ -3411,144 +3548,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU="
-        }
-      ]
-    },
-    {
-      "Route": "css/POS.css",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000881057269"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1134"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs="
-        }
-      ]
-    },
-    {
-      "Route": "css/POS.css",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3686"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4LwGjcxFRnBg0URHDaie32wZywkCRQ0euzYKPhKDOIs="
-        }
-      ]
-    },
-    {
-      "Route": "css/POS.css.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-clmaoh77e6.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1134"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 09:12:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-wrbk9J2W7st/eY4ALrouCdavCFWI5Y5P84c9E+JZOBU="
+          "Value": "sha256-vfqYYqTQ1U3FgmQURil7w73CLu9bL8VfLyEXdtAakuI="
         }
       ]
     },

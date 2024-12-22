@@ -144,7 +144,6 @@ C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\scopedcss\bundle\pos_system.styles.css
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\scopedcss\projectbundle\pos_system.bundle.scp.css
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\14w4kqlx0l-0eiwjn99ne.gz
-C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\0pvgy2uvd1-clmaoh77e6.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\dmassrd1lm-b9sayid5wm.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\810iclln22-61n19gt1b8.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\r5g4g7rang-2i4xvegoz7.gz
@@ -225,3 +224,4 @@ C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\pos_system.pdb
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\pos_system.genruntimeconfig.cache
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\ref\pos_system.dll
+c:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\0pvgy2uvd1-sy0sfv31zr.gz
