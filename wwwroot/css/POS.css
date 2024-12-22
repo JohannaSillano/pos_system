@@ -127,6 +127,21 @@ body {
   text-align: center;
 }
 
+/* Target the Quantity column by position (nth-child) */
+.cart-table td:nth-child(3), /* Applies to the 3rd column in rows */
+.cart-table th:nth-child(3) { /* Applies to the 3rd column in the header */
+    width: 100px; /* Set a fixed width for the Quantity column */
+    text-align: center; /* Align text and inputs to the center */
+}
+
+/* Ensure the input field inside the Qty column fits well */
+.cart-table td:nth-child(3) input[type="number"] {
+    width: 60px; /* Adjust input width as needed */
+    padding: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 .cart-table th {
   background-color: #2B60B4;
   color: white;
