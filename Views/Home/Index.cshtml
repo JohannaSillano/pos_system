@@ -1,5 +1,5 @@
 ﻿@{
-    Layout = null;
+    ViewData["Title"] = "POS";
 }
 
 <!DOCTYPE html>
@@ -75,15 +75,32 @@
 
             <!-- Total Amount -->
             <div id="total-amount" class="total-amount">
-                Total Amount:
+                <span class="subtotal">Subtotal Amount: ₱0.00</span><br>
+                <span class="tax">Tax(12%): ₱0.00</span><br>
+                <span class="final-total">Total Amount: ₱0.00</span>
+            </div>
+
+            <!-- Payment Section -->
+            <div class="payment-section">
+                <h4>Payment Details</h4>
+                <div class="mb-3">
+                    <label for="payment-amount" class="form-label">Payment Amount (₱):</label>
+                    <input type="number" id="payment-amount" class="form-control" placeholder="Enter payment amount" />
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-success w-100" onclick="calculateChange()">Calculate Change</button>
+                </div>
+                <p><strong>Change:</strong> <span id="change-display">₱0.00</span></p>
             </div>
 
             <!-- Checkout Button -->
-            <button class="btn-checkout">CHECKOUT</button>
+            <button class="btn-checkout" onclick="window.location.href='/Home/Transactions';">CHECKOUT</button>
         </div>
     </div>
 
     <!-- Link to the external JavaScript file -->
     <script src="~/js/cart.js"></script>
+
+    
 </body>
 </html>

@@ -64,44 +64,51 @@ function updateCartItemNumber() {
 
 // Function to calculate and update the total amount
 function updateTotalAmount() {
-    let totalAmount = 0;
+    let subtotalAmount = 0;
 
-    // Loop through each item in the cart array
-    cart.forEach(item => {
-        totalAmount += item.quantity * item.price; // Use quantity in calculation
+    // Loop through each row in the cart
+    const rows = cartTableBody.querySelectorAll('tr');
+    rows.forEach(row => {
+        const amountCell = row.querySelector('.item-amount');
+        subtotalAmount += parseFloat(amountCell.textContent);
     });
 
-    // Update the total amount in the DOM
+    // Calculate tax (12%)
+    const taxAmount = subtotalAmount * 0.12;
+
+    // Calculate final total (Subtotal + Tax)
+    const totalAmount = subtotalAmount + taxAmount;
+
+    // Update the subtotal, tax, and total amount in the DOM
     const totalAmountElement = document.getElementById('total-amount');
-    totalAmountElement.textContent = `Total Amount: ₱${totalAmount.toFixed(2)}`;
-    console.log("Total amount updated:", totalAmount);
+    totalAmountElement.innerHTML = `
+        Subtotal Amount: ₱${subtotalAmount.toFixed(2)}<br>
+        Tax(12%): ₱${taxAmount.toFixed(2)}<br>
+        Total Amount: ₱${totalAmount.toFixed(2)}
+    `;
 }
 
-// Function to update the quantity of the product
-function updateQuantity(input, id) {
-    // Find the row and the updated quantity
-    const row = input.closest('tr');
-    const updatedQuantity = parseInt(input.value);
+// Function to calculate change
+function calculateChange() {
+    // Retrieve the total amount from the DOM
+    const totalAmountElement = document.getElementById("total-amount").textContent;
+    const totalAmountMatch = totalAmountElement.match(/Total Amount:\s*₱(\d+(\.\d+)?)/);
 
-    // Find the item in the cart array and update its quantity
-    const cartItem = cart.find(item => item.id === id);
-    if (cartItem) {
-        cartItem.quantity = updatedQuantity;
+    const totalAmount = totalAmountMatch ? parseFloat(totalAmountMatch[1]) : 0;
+
+    // Retrieve the payment amount from the input
+    const paymentAmount = parseFloat(document.getElementById("payment-amount").value) || 0;
+
+    // Calculate change
+    const change = paymentAmount - totalAmount;
+
+    // Display the change
+    const changeDisplay = document.getElementById("change-display");
+    if (change < 0) {
+        changeDisplay.textContent = "Insufficient payment";
+        changeDisplay.style.color = "red";
+    } else {
+        changeDisplay.textContent = `₱${change.toFixed(2)}`;
+        changeDisplay.style.color = "black";
     }
-
-    // Update the amount in the DOM
-    const amountCell = row.querySelector('.item-amount');
-    amountCell.textContent = (cartItem.quantity * cartItem.price).toFixed(2);
-
-    console.log("Cart item updated:");
-    console.table(cart); // Debugging: log cart array
-
-    // Update the total amount
-    updateTotalAmount();
-}
-
-// Function to debug the entire cart
-function debugCart() {
-    console.log("Current cart contents:");
-    console.table(cart); // Tabular display of the cart
 }

@@ -157,6 +157,18 @@ body {
   z-index: 10; /* Ensure it's always on top of other elements */
 }
 
+.total-amount .subtotal,
+.total-amount .tax {
+  font-size: 16px; /* Smaller font size */
+  font-weight: normal; /* Remove bold styling */
+  color: lightgray; /* Optional: lighter color to differentiate */
+}
+
+.total-amount .final-total {
+  font-size: 24px; /* Same size as the .total-amount */
+  font-weight: bold; /* Keep the bold styling for emphasis */
+}
+
 .btn-checkout {
   background-color: #ffffff;
   color: #333;
@@ -192,4 +204,57 @@ body {
 
 .remove-btn:active { /* ADDED: Active effect */
   background-color: #b71c1c; /* Even darker red when clicked */
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  width: 30%;
+  background-color: #2B60B4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto; /* Prevent overflow */
+}
+
+/* Payment Details Section */
+.payment-section {
+  text-align: left;  /* Align text to the left */
+  margin-top: 20px; /* Optional: Add spacing above the payment section */
+}
+
+.payment-section h4 {
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.payment-section .form-label {
+  margin-bottom: 5px; /* Add space below the label */
+}
+
+.payment-section .form-control {
+  width: 100%; /* Ensure the input field takes up the full width */
+  padding: 10px; /* Add padding for better spacing */
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.payment-section .btn-success {
+  width: 100%; /* Make the button span full width */
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2B60B4; /* Adjust if necessary */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.payment-section .btn-success:hover {
+  background-color: #477cd0; /* Darker green on hover */
+}
+
+.payment-section p {
+  font-size: 18px; /* Adjust font size for the change text */
+  margin-top: 10px;
+  color: white;
 }
