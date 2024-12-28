@@ -6,6 +6,10 @@ namespace pos_system.Models
     {
         public int Id { get; set; }
         public DateTime TransactionDate { get; set; }
+
+        public decimal SubTotal { get; set; }
+
+        public decimal Tax { get; set; }
         public decimal TotalAmount { get; set; }
 
         // Navigation property to represent the "one" side of the relationship

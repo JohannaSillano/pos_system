@@ -11,8 +11,10 @@ namespace pos_system.Models
         // Foregin Key from IM Database
         public int ProductId { get; set; }
 
+        public string? ProductName { get; set; }
+        public decimal UnitPrice { get; set; }
+
         public int Quantity { get; set; }
-        public decimal Amount { get; set; }
 
         // Navigation property to represent the "many" side of the relationship
         public Transaction Transaction { get; set; }  // Navigation property for the related Transaction
