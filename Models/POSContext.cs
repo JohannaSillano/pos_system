@@ -29,7 +29,7 @@ namespace pos_system.Models
                 .HasPrecision(18, 2); // Define the precision and scale for TotalAmount
 
             modelBuilder.Entity<TransactionDetails>()
-                .Property(td => td.UnitPrice)
+                .Property(td => td.ProductSubtotal)
                 .HasColumnType("decimal(18,2)") // Define the column type with precision and scale
                 .HasPrecision(18, 2); // Define the precision and scale for UnitPrice
 

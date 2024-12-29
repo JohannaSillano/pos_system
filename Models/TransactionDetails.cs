@@ -12,13 +12,12 @@ namespace pos_system.Models
         public int ProductId { get; set; }
 
         public string? ProductName { get; set; }
-        public decimal UnitPrice { get; set; }
+        public decimal ProductSubtotal { get; set; }
 
         public int Quantity { get; set; }
 
         // Navigation property to represent the "many" side of the relationship
         public Transaction Transaction { get; set; }  // Navigation property for the related Transaction
-
         // Constructor to initialize the Transaction property
         public TransactionDetails()
         {
