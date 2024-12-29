@@ -1,15 +1,16 @@
 const cartTableBody = document.querySelector('.cart-table tbody');
 let cartItemId = 1; // Unique ID for cart items
+let cart = []; // Array to store cart items
 
-// Function to add items to the cart
-function addToCart(id, name, amount) {
+function addToCart(cartItemId, name, amount, stockQuantity) {
     // Create a new row for the cart table
     const newRow = document.createElement('tr');
     newRow.innerHTML = `
         <td>${cartItemId}</td>
         <td>${name}</td>
         <td>
-            <input type="number" value="1" min="1" onchange="updateAmount(this, ${amount})">
+            <input type="number" value="1" min="1" max="${stockQuantity}" 
+                onchange="handleQuantityChange(this, ${amount}, ${stockQuantity})">
         </td>
         <td class="item-amount">${amount.toFixed(2)}</td>
         <td>
@@ -20,19 +21,43 @@ function addToCart(id, name, amount) {
     // Append the new row to the cart table body
     cartTableBody.appendChild(newRow);
     cartItemId++;
-
+    // Create a new cart item object and add it to the cart array
+    const cartItem = {
+        id: cartItemId - 1,
+        productName: name,
+        productSubtotal: amount,
+        quantity: 1
+    };
+    cart.push(cartItem);
     // Update the total amount after adding an item
     updateTotalAmount();
 }
 
-// Function to update the total amount for a specific product
-function updateAmount(input, price) {
-    // Find the row and update the total amount for the product
-    const row = input.closest('tr');
-    const amountCell = row.querySelector('.item-amount');
-    amountCell.textContent = (input.value * price).toFixed(2);
+// Function to handle quantity change and prevent exceeding stock
+function handleQuantityChange(inputElement, amount, stockQuantity) {
+    const newQuantity = parseInt(inputElement.value);
 
-    // Update the total amount after changing quantity
+    if (newQuantity > stockQuantity) {
+        // Reset the value to the maximum stock available
+        inputElement.value = stockQuantity;
+
+        // Display a warning to the user
+        alert(`Cannot add more than ${stockQuantity} items to the cart. Stock limit reached.`);
+    }
+
+    // Update the item amount in the table based on the new quantity
+    const itemAmountCell = inputElement.closest('tr').querySelector('.item-amount');
+    itemAmountCell.textContent = (newQuantity * amount).toFixed(2);
+
+    // Find the cart item object in the cart array and update its quantity
+    const cartItemId = inputElement.closest('tr').querySelector('td:first-child').textContent;
+    const cartItem = cart.find(item => item.id == cartItemId);
+
+    if (cartItem) {
+        cartItem.quantity = newQuantity; // Update the quantity in the cart array
+    }
+
+    // Recalculate the total cart amount after updating quantity
     updateTotalAmount();
 }
 
@@ -40,6 +65,12 @@ function updateAmount(input, price) {
 function removeCartItem(button) {
     // Find the row and remove it from the table
     const row = button.closest('tr');
+    const cartItemId = row.querySelector('td:first-child').textContent; // Get the cart item ID
+
+    // Remove the item from the cart array based on its ID
+    cart = cart.filter(item => item.id != cartItemId);
+
+    // Remove the row from the table
     cartTableBody.removeChild(row);
 
     // Update the cart item IDs and total amount
@@ -47,15 +78,17 @@ function removeCartItem(button) {
     updateTotalAmount();
 }
 
-// Function to update the cart item IDs after removal
+// Function to update cart item IDs after an item is removed (optional)
 function updateCartItemIds() {
+    // Reassign cart item IDs after removal
     const rows = cartTableBody.querySelectorAll('tr');
-    cartItemId = 1; // Reset cartItemId to 1 before updating IDs
-
-    rows.forEach(row => {
-        const idCell = row.querySelector('td:first-child');
-        idCell.textContent = cartItemId;
-        cartItemId++;
+    rows.forEach((row, index) => {
+        row.querySelector('td:first-child').textContent = index + 1; // Reassign new IDs
+        const cartItemId = row.querySelector('td:first-child').textContent;
+        const cartItem = cart.find(item => item.id == cartItemId);
+        if (cartItem) {
+            cartItem.id = index + 1; // Update the cart array ID
+        }
     });
 }
 
