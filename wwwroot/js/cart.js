@@ -106,6 +106,33 @@ function calculateChange() {
         changeDisplay.style.color = "red";
     } else {
         changeDisplay.textContent = `₱${change.toFixed(2)}`;
-        changeDisplay.style.color = "black";
+        changeDisplay.style.color = "green";
     }
 }
+
+// Function to show the modal
+function checkout() {
+    // Initialize and show the modal with static backdrop and no keyboard closing
+    const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
+        backdrop: 'static',  // Prevent closing by clicking the backdrop
+        keyboard: false      // Prevent closing with ESC key
+    });
+    modal.show();
+}
+
+// Function to handle 'Yes' click (Print Receipt)
+function yesReceipt() {
+    alert("Receipt will be printed.");
+    
+    // Optionally, close the modal after confirming
+    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+    modal.hide();
+}
+
+// Function to handle 'No' click (Do not print receipt)
+function noReceipt() {    
+    // Optionally, close the modal after canceling
+    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+    modal.hide();
+}
+
