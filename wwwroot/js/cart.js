@@ -54,7 +54,8 @@ function handleQuantityChange(inputElement, amount, stockQuantity) {
     const cartItem = cart.find(item => item.id == cartItemId);
 
     if (cartItem) {
-        cartItem.quantity = newQuantity; // Update the quantity in the cart array
+        cartItem.quantity = newQuantity; // Update the quantity in the cart array\
+        cartItem.productSubtotal = newQuantity * amount; // Update the subtotal in the cart array
     }
 
     // Recalculate the total cart amount after updating quantity
