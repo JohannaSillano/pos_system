@@ -1,5 +1,4 @@
-namespace pos_system.ViewModels
-{
+namespace pos_system.ViewModels{
     public class TransactionViewModel
     {
         public decimal SubTotal { get; set; }

@@ -14,7 +14,7 @@ namespace pos_system.Models
         {
             // Explicitly define the column type and precision for SubTotal, Tax, and TotalAmount
             modelBuilder.Entity<Transaction>()
-                .Property(t => t.SubTotal)
+                .Property(t => t.Subtotal)
                 .HasColumnType("decimal(18,2)") // Define the column type with precision and scale
                 .HasPrecision(18, 2); // Define the precision and scale for SubTotal
 

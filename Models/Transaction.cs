@@ -1,5 +1,6 @@
 using System;
-using System.Collections.Generic;  // Ensure this is here for ICollection
+using System.Collections.Generic;
+
 namespace pos_system.Models
 {
     public class Transaction
@@ -7,7 +8,7 @@ namespace pos_system.Models
         public int Id { get; set; }
         public DateTime TransactionDate { get; set; }
 
-        public decimal SubTotal { get; set; }
+        public decimal Subtotal { get; set; }
 
         public decimal Tax { get; set; }
         public decimal TotalAmount { get; set; }
@@ -17,7 +18,7 @@ namespace pos_system.Models
 
         public Transaction()
         {
-            TransactionDetails = new List<TransactionDetails>();
+            TransactionDetails = new List<TransactionDetails>();  // Ensures the collection is never null
         }
     }
 }

@@ -53,18 +53,17 @@ namespace pos_system.Controllers
 
             return View();
         }
-
+        
         [HttpPost]
         public async Task<IActionResult> CreateTransaction([FromBody] TransactionViewModel viewModel)
         {
             using var transaction = await _context.Database.BeginTransactionAsync();
             try
             {
-                // Step 1: Create the Transaction
                 var newTransaction = new Transaction
                 {
                     TransactionDate = DateTime.Now,
-                    SubTotal = viewModel.SubTotal,
+                    Subtotal = viewModel.SubTotal,
                     Tax = viewModel.Tax,
                     TotalAmount = viewModel.TotalAmount
                 };
@@ -72,10 +71,9 @@ namespace pos_system.Controllers
                 _context.Transactions.Add(newTransaction);
                 await _context.SaveChangesAsync();
 
-                // Step 2: Create TransactionDetails
                 var transactionDetails = viewModel.Details.Select(detail => new TransactionDetails
                 {
-                    TransactionId = newTransaction.Id, // Use the newly created Transaction's ID
+                    TransactionId = newTransaction.Id,
                     ProductId = detail.ProductId,
                     ProductName = detail.ProductName,
                     ProductSubtotal = detail.ProductSubtotal,
@@ -85,7 +83,6 @@ namespace pos_system.Controllers
                 _context.TransactionDetails.AddRange(transactionDetails);
                 await _context.SaveChangesAsync();
 
-                // Step 3: Update Stock in Inventory System
                 foreach (var detail in transactionDetails)
                 {
                     var stockUpdateRequest = new
@@ -103,7 +100,6 @@ namespace pos_system.Controllers
                     }
                 }
 
-                // Step 4: Commit Transaction
                 await transaction.CommitAsync();
 
                 return Ok(new { Message = "Transaction created and stock updated successfully!" });

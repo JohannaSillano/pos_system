@@ -2,138 +2,99 @@ const cartTableBody = document.querySelector('.cart-table tbody');
 let cartItemId = 1; // Unique ID for cart items
 let cart = []; // Array to store cart items
 
-function addToCart(cartItemId, name, amount, stockQuantity) {
-    // Create a new row for the cart table
+// Add product to cart
+function addToCart(Id, name, amount, stockQuantity) {
     const newRow = document.createElement('tr');
+    newRow.setAttribute('data-cart-item-id', cartItemId);
     newRow.innerHTML = `
         <td>${cartItemId}</td>
         <td>${name}</td>
         <td>
             <input type="number" value="1" min="1" max="${stockQuantity}" 
-                onchange="handleQuantityChange(this, ${amount}, ${stockQuantity})">
+                onchange="handleQuantityChange(this, ${cartItemId}, ${amount}, ${stockQuantity})">
         </td>
         <td class="item-amount">${amount.toFixed(2)}</td>
         <td>
-            <button class="btn-remove remove-btn" onclick="removeCartItem(this)">Remove</button>
+            <button class="btn-remove remove-btn" onclick="removeCartItem(${cartItemId})">Remove</button>
         </td>
     `;
 
-    // Append the new row to the cart table body
     cartTableBody.appendChild(newRow);
-    cartItemId++;
-    // Create a new cart item object and add it to the cart array
+
     const cartItem = {
-        id: cartItemId - 1,
+        cartItemId: cartItemId,
+        id: Id,
         productName: name,
         productSubtotal: amount,
         quantity: 1
     };
     cart.push(cartItem);
-    // Update the total amount after adding an item
+
+    cartItemId++;
     updateTotalAmount();
 }
 
-// Function to handle quantity change and prevent exceeding stock
-function handleQuantityChange(inputElement, amount, stockQuantity) {
+// Handle quantity change
+function handleQuantityChange(inputElement, cartItemId, amount, stockQuantity) {
     const newQuantity = parseInt(inputElement.value);
 
     if (newQuantity > stockQuantity) {
-        // Reset the value to the maximum stock available
         inputElement.value = stockQuantity;
-
-        // Display a warning to the user
-        alert(`Cannot add more than ${stockQuantity} items to the cart. Stock limit reached.`);
+        alert(`Cannot add more than ${stockQuantity} items to the cart.`);
     }
-
-    // Update the item amount in the table based on the new quantity
+    // Update the item amount in the table
     const itemAmountCell = inputElement.closest('tr').querySelector('.item-amount');
     itemAmountCell.textContent = (newQuantity * amount).toFixed(2);
-
-    // Find the cart item object in the cart array and update its quantity
-    const cartItemId = inputElement.closest('tr').querySelector('td:first-child').textContent;
-    const cartItem = cart.find(item => item.id == cartItemId);
-
+    // Update the cart item quantity and product subtotal
+    const cartItem = cart.find(item => item.cartItemId === cartItemId);
     if (cartItem) {
-        cartItem.quantity = newQuantity; // Update the quantity in the cart array\
-        cartItem.productSubtotal = newQuantity * amount; // Update the subtotal in the cart array
+        cartItem.quantity = newQuantity;
+        cartItem.productSubtotal = newQuantity * amount;
+    }
+    // Update the total amount
+    updateTotalAmount();
+}
+
+// Remove cart item
+function removeCartItem(cartItemId) {
+    const row = cartTableBody.querySelector(`tr[data-cart-item-id="${cartItemId}"]`);
+    if (row) {
+        cartTableBody.removeChild(row);
     }
 
-    // Recalculate the total cart amount after updating quantity
+    cart = cart.filter(item => item.cartItemId !== cartItemId);
     updateTotalAmount();
 }
 
-// Function to remove a specific cart item
-function removeCartItem(button) {
-    // Find the row and remove it from the table
-    const row = button.closest('tr');
-    const cartItemId = row.querySelector('td:first-child').textContent; // Get the cart item ID
-
-    // Remove the item from the cart array based on its ID
-    cart = cart.filter(item => item.id != cartItemId);
-
-    // Remove the row from the table
-    cartTableBody.removeChild(row);
-
-    // Update the cart item IDs and total amount
-    updateCartItemIds();
-    updateTotalAmount();
-}
-
-// Function to update cart item IDs after an item is removed (optional)
-function updateCartItemIds() {
-    // Reassign cart item IDs after removal
-    const rows = cartTableBody.querySelectorAll('tr');
-    rows.forEach((row, index) => {
-        row.querySelector('td:first-child').textContent = index + 1; // Reassign new IDs
-        const cartItemId = row.querySelector('td:first-child').textContent;
-        const cartItem = cart.find(item => item.id == cartItemId);
-        if (cartItem) {
-            cartItem.id = index + 1; // Update the cart array ID
-        }
-    });
-}
-
-// Function to calculate and update the total amount
+// Update total amount
 function updateTotalAmount() {
     let subtotalAmount = 0;
 
-    // Loop through each row in the cart
-    const rows = cartTableBody.querySelectorAll('tr');
-    rows.forEach(row => {
-        const amountCell = row.querySelector('.item-amount');
-        subtotalAmount += parseFloat(amountCell.textContent);
+    cart.forEach(item => {
+        subtotalAmount += item.productSubtotal;
     });
 
-    // Calculate tax (12%)
     const taxAmount = subtotalAmount * 0.12;
-
-    // Calculate final total (Subtotal + Tax)
     const totalAmount = subtotalAmount + taxAmount;
 
-    // Update the subtotal, tax, and total amount in the DOM
     const totalAmountElement = document.getElementById('total-amount');
     totalAmountElement.innerHTML = `
         Subtotal Amount: ₱${subtotalAmount.toFixed(2)}<br>
-        Tax(12%): ₱${taxAmount.toFixed(2)}<br>
+        Tax (12%): ₱${taxAmount.toFixed(2)}<br>
         Total Amount: ₱${totalAmount.toFixed(2)}
     `;
 }
 
-// Function to calculate change
+// Calculate change
 function calculateChange() {
-    // Retrieve the total amount from the DOM
     const totalAmountElement = document.getElementById("total-amount").textContent;
     const totalAmountMatch = totalAmountElement.match(/Total Amount:\s*₱(\d+(\.\d+)?)/);
 
     const totalAmount = totalAmountMatch ? parseFloat(totalAmountMatch[1]) : 0;
-
-    // Retrieve the payment amount from the input
     const paymentAmount = parseFloat(document.getElementById("payment-amount").value) || 0;
 
-    // Calculate change
     const change = paymentAmount - totalAmount;
 
-    // Display the change
     const changeDisplay = document.getElementById("change-display");
     if (change < 0) {
         changeDisplay.textContent = "Insufficient payment";
@@ -144,56 +105,45 @@ function calculateChange() {
     }
 }
 
-function collectCartData() {
-    const cartData = [];
-    cart.forEach(item => {
-        cartData.push({
-            ProductId: item.id, // Assuming you have a product ID in cart
-            Quantity: item.quantity,
-            Price: item.productSubtotal / item.quantity
+// Checkout function
+function checkout() {
+    if (cart.length === 0) {
+        alert('Your cart is empty. Please add items before checkout.');
+        return;
+    }
+    else{
+        const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
+            backdrop: 'static',
+            keyboard: false
         });
-    });
-    return cartData;
+        modal.show();
+    }
 }
 
-function submitTransaction() {
-    const cartData = collectCartData();
-    const totalAmount = parseFloat(document.getElementById('total-amount').innerText.match(/Total Amount: ₱(\d+(\.\d+)?)/)[1]);
-
-    // Send the data to the server
-    $.ajax({
-        url: '/Transaction/CreateTransaction',  // Replace with your controller's action URL
-        method: 'POST',
-        data: {
-            TotalAmount: totalAmount,
-            TransactionDetails: cartData  // Send the cart items data
-        },
-        success: function(response) {
-            // Handle success (e.g., display confirmation message, reset cart, etc.)
-            alert('Transaction successful!');
-            cart = [];  // Clear the cart after successful submission
-            cartTableBody.innerHTML = '';  // Clear the table
-            updateTotalAmount();  // Reset total amount
-        },
-        error: function(xhr, status, error) {
-            // Handle error
-            alert('An error occurred while processing the transaction.');
-        }
-    });
+// Yes receipt handler
+function yesReceipt() {
+    submitTransaction()
+        .then(() => {
+            alert("Transaction successful! Receipt will be printed.");
+            resetCart(); // Call resetCart when the transaction is successful
+            // Close the modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+            modal.hide();
+        })
 }
 
-function collectCartData() {
-    const cartData = [];
-    cart.forEach(item => {
-        cartData.push({
-            ProductId: item.id, // Assuming you have a product ID in cart
-            Quantity: item.quantity,
-            Price: item.productSubtotal / item.quantity
-        });
-    });
-    return cartData;
+// No receipt handler
+function noReceipt() {
+    submitTransaction()
+        .then(() => {
+            resetCart(); // Call resetCart when the transaction is successful
+            // Close the modal
+            const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+            modal.hide();
+        })
 }
 
+// Submit transaction
 function submitTransaction() {
     const cartData = cart.map(item => ({
         ProductId: item.id,
@@ -206,54 +156,33 @@ function submitTransaction() {
     const taxAmount = subtotalAmount * 0.12;
     const totalAmount = subtotalAmount + taxAmount;
 
-    $.ajax({
-        url: '/Home/CreateTransaction',  // Ensure this matches your controller's action URL
-        method: 'POST',
-        data: JSON.stringify({
-            SubTotal: subtotalAmount,
-            Tax: taxAmount,
-            TotalAmount: totalAmount,
-            Details: cartData
-        }),
-        contentType: 'application/json',
-        success: function (response) {
-            alert('Transaction successful!');
-            cart = [];  // Clear the cart
-            cartTableBody.innerHTML = '';  // Clear the table
-            updateTotalAmount();  // Reset total amount
-        },
-        error: function (xhr, status, error) {
-            alert('An error occurred while processing the transaction.');
-        }
+    return new Promise((resolve, reject) => {
+        $.ajax({
+            url: '/Home/CreateTransaction',
+            method: 'POST',
+            data: JSON.stringify({
+                SubTotal: subtotalAmount,
+                Tax: taxAmount,
+                TotalAmount: totalAmount,
+                Details: cartData
+            }),
+            contentType: 'application/json',
+            success: function () {
+                alert('Transaction successful!');
+                resolve();
+            },
+            error: function () {
+                alert('An error occurred while processing the transaction.');
+                reject(new Error('Transaction failed'));
+            }
+        });
     });
 }
 
-
-// Function to show the modal
-function checkout() {
-    // Initialize and show the modal with static backdrop and no keyboard closing
-    const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
-        backdrop: 'static',  // Prevent closing by clicking the backdrop
-        keyboard: false      // Prevent closing with ESC key
-    });
-    modal.show();
+// Reset cart
+function resetCart() {
+    cart = []; // Clear the cart array
+    cartTableBody.innerHTML = ''; // Clear the table
+    cartItemId = 1; // Reset cart item ID
+    updateTotalAmount(); // Reset total amount
 }
-
-// Function to handle 'Yes' click (Print Receipt)
-function yesReceipt() {
-    submitTransaction();
-    alert("Receipt will be printed.");
-    
-    // Optionally, close the modal after confirming
-    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
-    modal.hide();
-}
-
-// Function to handle 'No' click (Do not print receipt)
-function noReceipt() {  
-    submitTransaction(); 
-    // Optionally, close the modal after canceling
-    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
-    modal.hide();
-}
-
