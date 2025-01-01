@@ -140,9 +140,94 @@ function calculateChange() {
         changeDisplay.style.color = "red";
     } else {
         changeDisplay.textContent = `₱${change.toFixed(2)}`;
-        changeDisplay.style.color = "green";
+        changeDisplay.style.color = "white";
     }
 }
+
+function collectCartData() {
+    const cartData = [];
+    cart.forEach(item => {
+        cartData.push({
+            ProductId: item.id, // Assuming you have a product ID in cart
+            Quantity: item.quantity,
+            Price: item.productSubtotal / item.quantity
+        });
+    });
+    return cartData;
+}
+
+function submitTransaction() {
+    const cartData = collectCartData();
+    const totalAmount = parseFloat(document.getElementById('total-amount').innerText.match(/Total Amount: ₱(\d+(\.\d+)?)/)[1]);
+
+    // Send the data to the server
+    $.ajax({
+        url: '/Transaction/CreateTransaction',  // Replace with your controller's action URL
+        method: 'POST',
+        data: {
+            TotalAmount: totalAmount,
+            TransactionDetails: cartData  // Send the cart items data
+        },
+        success: function(response) {
+            // Handle success (e.g., display confirmation message, reset cart, etc.)
+            alert('Transaction successful!');
+            cart = [];  // Clear the cart after successful submission
+            cartTableBody.innerHTML = '';  // Clear the table
+            updateTotalAmount();  // Reset total amount
+        },
+        error: function(xhr, status, error) {
+            // Handle error
+            alert('An error occurred while processing the transaction.');
+        }
+    });
+}
+
+function collectCartData() {
+    const cartData = [];
+    cart.forEach(item => {
+        cartData.push({
+            ProductId: item.id, // Assuming you have a product ID in cart
+            Quantity: item.quantity,
+            Price: item.productSubtotal / item.quantity
+        });
+    });
+    return cartData;
+}
+
+function submitTransaction() {
+    const cartData = cart.map(item => ({
+        ProductId: item.id,
+        ProductName: item.productName,
+        Quantity: item.quantity,
+        ProductSubtotal: item.productSubtotal
+    }));
+
+    const subtotalAmount = cart.reduce((sum, item) => sum + item.productSubtotal, 0);
+    const taxAmount = subtotalAmount * 0.12;
+    const totalAmount = subtotalAmount + taxAmount;
+
+    $.ajax({
+        url: '/Home/CreateTransaction',  // Ensure this matches your controller's action URL
+        method: 'POST',
+        data: JSON.stringify({
+            SubTotal: subtotalAmount,
+            Tax: taxAmount,
+            TotalAmount: totalAmount,
+            Details: cartData
+        }),
+        contentType: 'application/json',
+        success: function (response) {
+            alert('Transaction successful!');
+            cart = [];  // Clear the cart
+            cartTableBody.innerHTML = '';  // Clear the table
+            updateTotalAmount();  // Reset total amount
+        },
+        error: function (xhr, status, error) {
+            alert('An error occurred while processing the transaction.');
+        }
+    });
+}
+
 
 // Function to show the modal
 function checkout() {
@@ -156,6 +241,7 @@ function checkout() {
 
 // Function to handle 'Yes' click (Print Receipt)
 function yesReceipt() {
+    submitTransaction();
     alert("Receipt will be printed.");
     
     // Optionally, close the modal after confirming
@@ -164,7 +250,8 @@ function yesReceipt() {
 }
 
 // Function to handle 'No' click (Do not print receipt)
-function noReceipt() {    
+function noReceipt() {  
+    submitTransaction(); 
     // Optionally, close the modal after canceling
     const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
     modal.hide();

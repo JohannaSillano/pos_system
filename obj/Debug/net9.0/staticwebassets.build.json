@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UkP4r7RvPTSaTTSjsewi+MPtyy+qpwdwFrV+PWqLL0Y=",
+  "Hash": "669IgM8236SccPwa806ljchpB5KELnlSUSBE5y3vaY0=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -983,12 +983,12 @@
       "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-jlnoz2wmlj.gz",
+      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-tnl1ws74r6.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/pos_system",
-      "RelativePath": "js/cart#[.{fingerprint=jlnoz2wmlj}]?.js.gz",
+      "RelativePath": "js/cart#[.{fingerprint=tnl1ws74r6}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -997,8 +997,8 @@
       "RelatedAsset": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "u9qsf5kjn9",
-      "Integrity": "/uhOkJr3iTaHsU2n0+PxC628JmYp/W9mcSB5Nz9SEf8=",
+      "Fingerprint": "qtper2ycmd",
+      "Integrity": "Pt0oh88eJw5J7Cu0ZpWM3IIg/gcmm0Qwuoq4wyo3nj8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js"
@@ -1585,8 +1585,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jlnoz2wmlj",
-      "Integrity": "iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE=",
+      "Fingerprint": "tnl1ws74r6",
+      "Integrity": "F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\cart.js"
@@ -4149,13 +4149,13 @@
       ]
     },
     {
-      "Route": "js/cart.jlnoz2wmlj.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-jlnoz2wmlj.gz",
+      "Route": "js/cart.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-tnl1ws74r6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000527704485"
+          "Quality": "0.000396353547"
         }
       ],
       "ResponseHeaders": [
@@ -4165,19 +4165,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1894"
+          "Value": "2522"
         },
         {
           "Name": "ETag",
-          "Value": "\"/uhOkJr3iTaHsU2n0+PxC628JmYp/W9mcSB5Nz9SEf8=\""
+          "Value": "\"Pt0oh88eJw5J7Cu0ZpWM3IIg/gcmm0Qwuoq4wyo3nj8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 16:26:42 GMT"
+          "Value": "Wed, 01 Jan 2025 11:10:42 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4193,26 +4193,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE=\""
+          "Value": "W/\"F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "jlnoz2wmlj"
-        },
-        {
-          "Name": "label",
-          "Value": "js/cart.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE="
+          "Value": "sha256-F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg="
         }
       ]
     },
     {
-      "Route": "js/cart.jlnoz2wmlj.js",
+      "Route": "js/cart.js",
       "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4222,7 +4214,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6352"
+          "Value": "9418"
         },
         {
           "Name": "Content-Type",
@@ -4230,11 +4222,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE=\""
+          "Value": "\"F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 16:26:42 GMT"
+          "Value": "Wed, 01 Jan 2025 11:10:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js.gz",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-tnl1ws74r6.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2522"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pt0oh88eJw5J7Cu0ZpWM3IIg/gcmm0Qwuoq4wyo3nj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 11:10:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Pt0oh88eJw5J7Cu0ZpWM3IIg/gcmm0Qwuoq4wyo3nj8="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.tnl1ws74r6.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-tnl1ws74r6.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000396353547"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2522"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Pt0oh88eJw5J7Cu0ZpWM3IIg/gcmm0Qwuoq4wyo3nj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 11:10:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tnl1ws74r6"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cart.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.tnl1ws74r6.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9418"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 01 Jan 2025 11:10:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4244,7 +4381,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jlnoz2wmlj"
+          "Value": "tnl1ws74r6"
         },
         {
           "Name": "label",
@@ -4252,13 +4389,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE="
+          "Value": "sha256-F1xrMcNzf1joTRq3pDuwFwIcZC56Uh86MU6qIkRWRrg="
         }
       ]
     },
     {
-      "Route": "js/cart.jlnoz2wmlj.js.gz",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-jlnoz2wmlj.gz",
+      "Route": "js/cart.tnl1ws74r6.js.gz",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-tnl1ws74r6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4267,7 +4404,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1894"
+          "Value": "2522"
         },
         {
           "Name": "Content-Type",
@@ -4275,11 +4412,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/uhOkJr3iTaHsU2n0+PxC628JmYp/W9mcSB5Nz9SEf8=\""
+          "Value": "\"Pt0oh88eJw5J7Cu0ZpWM3IIg/gcmm0Qwuoq4wyo3nj8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 16:26:42 GMT"
+          "Value": "Wed, 01 Jan 2025 11:10:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4297,7 +4434,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jlnoz2wmlj"
+          "Value": "tnl1ws74r6"
         },
         {
           "Name": "label",
@@ -4305,144 +4442,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-/uhOkJr3iTaHsU2n0+PxC628JmYp/W9mcSB5Nz9SEf8="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-jlnoz2wmlj.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000527704485"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1894"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/uhOkJr3iTaHsU2n0+PxC628JmYp/W9mcSB5Nz9SEf8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 16:26:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6352"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 16:26:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iafLLCNGTf+war5anowWyOSa4i0r/n2pa5LQ6SOHvYE="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.js.gz",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-jlnoz2wmlj.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1894"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/uhOkJr3iTaHsU2n0+PxC628JmYp/W9mcSB5Nz9SEf8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 16:26:42 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/uhOkJr3iTaHsU2n0+PxC628JmYp/W9mcSB5Nz9SEf8="
+          "Value": "sha256-Pt0oh88eJw5J7Cu0ZpWM3IIg/gcmm0Qwuoq4wyo3nj8="
         }
       ]
     },
