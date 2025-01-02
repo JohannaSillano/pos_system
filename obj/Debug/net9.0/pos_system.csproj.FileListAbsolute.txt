@@ -452,3 +452,4 @@ C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\ref\pos_syst
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\0pvgy2uvd1-a01osjcaro.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\dmassrd1lm-uy5aesfs9w.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\r5g4g7rang-7cgu0049fm.gz
+C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\69625eiz2k-mmhiyf7455.gz

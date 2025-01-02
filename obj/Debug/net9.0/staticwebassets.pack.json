@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\TransactionsTable.js",
+      "PackagePath": "staticwebassets\\js\\TransactionsTable.js"
+    },
+    {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
       "PackagePath": "staticwebassets\\js\\cart.js"
     },

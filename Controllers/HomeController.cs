@@ -53,9 +53,5 @@ namespace pos_system.Controllers
 
             return View();
         }
-        public IActionResult Transactions()
-        {
-            return View();
-        }
     }
 }

@@ -1,0 +1,98 @@
+﻿@model IEnumerable<pos_system.Models.Transaction>
+
+<h2 class="text-center">Transactions</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Transaction ID</th>
+            <th>Date</th>
+            <th>Total Amount</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in Model)
+        {
+            <tr>
+                <td>@transaction.Id</td>
+                <td>@transaction.TransactionDate.ToString("MMMM dd, yyyy")</td>
+                <td>@transaction.TotalAmount</td>
+                <td>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#transactionModal"
+                        data-id="@transaction.Id" 
+                        data-subtotal="@transaction.Subtotal" 
+                        data-tax="@transaction.Tax" 
+                        data-totalamount="@transaction.TotalAmount"
+                        data-products="@Html.Raw(Json.Serialize(transaction.TransactionDetails.Select(td => new { 
+                            ProductName = td.ProductName, 
+                            td.Quantity, 
+                            td.Amount 
+                        })))">
+                    View
+                </button>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal for displaying transaction details -->
+<div class="modal fade" id="transactionModal" tabindex="-1" aria-labelledby="transactionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="transactionModalLabel">Transaction Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Transaction Info -->
+                <div id="transactionInfo">
+                    <p><strong>Transaction ID:</strong> <span id="transactionId"></span></p>
+                    <p><strong>Date:</strong> <span id="transactionDate"></span></p>
+
+                    <!-- Products and amounts -->
+                    <div id="products"></div>
+
+                    <hr />
+
+                    <p><strong>Subtotal:</strong> $<span id="subtotal"></span></p>
+                    <p><strong>Tax:</strong> $<span id="tax"></span></p>
+                    <p><strong>Total Amount:</strong> $<span id="totalAmount"></span></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Populate modal with transaction details when the "View Details" button is clicked
+    const transactionButtons = document.querySelectorAll('button[data-bs-target="#transactionModal"]');
+    
+    transactionButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const transactionId = this.getAttribute('data-id');
+            const subtotal = this.getAttribute('data-subtotal');
+            const tax = this.getAttribute('data-tax');
+            const totalAmount = this.getAttribute('data-totalamount');
+            const products = JSON.parse(this.getAttribute('data-products'));  // Parse the JSON data for products
+
+            // Update modal content with data
+            document.getElementById('transactionId').innerText = transactionId;
+            document.getElementById('transactionDate').innerText = new Date().toLocaleDateString(); // Use your actual transaction date here if available
+            document.getElementById('subtotal').innerText = subtotal;
+            document.getElementById('tax').innerText = tax;
+            document.getElementById('totalAmount').innerText = totalAmount;
+
+            // Display product details
+            let productHtml = '';
+            products.forEach(product => {
+                productHtml += `<p>${product.ProductName} x ${product.Quantity} - $${product.Amount}</p>`;
+            });
+            document.getElementById('products').innerHTML = productHtml;
+        });
+    });
+</script>

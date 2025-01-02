@@ -1277,6 +1277,304 @@
       ]
     },
     {
+      "Route": "js/TransactionsTable.js",
+      "AssetFile": "js/TransactionsTable.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001838235294"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/TransactionsTable.js",
+      "AssetFile": "js/TransactionsTable.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ="
+        }
+      ]
+    },
+    {
+      "Route": "js/TransactionsTable.js.gz",
+      "AssetFile": "js/TransactionsTable.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk="
+        }
+      ]
+    },
+    {
+      "Route": "js/TransactionsTable.mmhiyf7455.js",
+      "AssetFile": "js/TransactionsTable.js.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001838235294"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=\""
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mmhiyf7455"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ="
+        },
+        {
+          "Name": "label",
+          "Value": "js/TransactionsTable.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/TransactionsTable.mmhiyf7455.js",
+      "AssetFile": "js/TransactionsTable.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1664"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mmhiyf7455"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ="
+        },
+        {
+          "Name": "label",
+          "Value": "js/TransactionsTable.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/TransactionsTable.mmhiyf7455.js.gz",
+      "AssetFile": "js/TransactionsTable.js.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "543"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mmhiyf7455"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk="
+        },
+        {
+          "Name": "label",
+          "Value": "js/TransactionsTable.js.gz"
+        }
+      ]
+    },
+    {
       "Route": "js/cart.7cgu0049fm.js",
       "AssetFile": "js/cart.js.gz",
       "Selectors": [
