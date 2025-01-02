@@ -7,23 +7,17 @@ namespace pos_system.Models
         public int Id { get; set; }
 
         // Foreign Key to the Transaction (Mandatory)
-        public int TransactionId { get; set; }  // Non-nullable, making this field mandatory
-
-        // Foreign Key from IM Database
+        public int TransactionId { get; set; }
+        
+        // Foreign Key to Product (Mandatory)
         public int ProductId { get; set; }
-
-        public string? ProductName { get; set; }
-        public decimal ProductSubtotal { get; set; }
+        public required string ProductName { get; set; }
 
         public int Quantity { get; set; }
-
-        // Navigation property to represent the "many" side of the relationship
-        public Transaction Transaction { get; set; }  // Navigation property for the related Transaction
-
-        // Constructor to initialize the Transaction property
-        public TransactionDetails()
-        {
-            Transaction = new Transaction();  // Ensures the Transaction is not null
-        }
+        public decimal Amount { get; set; }
+        
+        // Navigation Property to Transaction
+        public required Transaction Transaction { get; set; }
     }
+
 }

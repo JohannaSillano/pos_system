@@ -53,64 +53,6 @@ namespace pos_system.Controllers
 
             return View();
         }
-        
-        [HttpPost]
-        public async Task<IActionResult> CreateTransaction([FromBody] TransactionViewModel viewModel)
-        {
-            using var transaction = await _context.Database.BeginTransactionAsync();
-            try
-            {
-                var newTransaction = new Transaction
-                {
-                    TransactionDate = DateTime.Now,
-                    Subtotal = viewModel.SubTotal,
-                    Tax = viewModel.Tax,
-                    TotalAmount = viewModel.TotalAmount
-                };
-
-                _context.Transactions.Add(newTransaction);
-                await _context.SaveChangesAsync();
-
-                var transactionDetails = viewModel.Details.Select(detail => new TransactionDetails
-                {
-                    TransactionId = newTransaction.Id,
-                    ProductId = detail.ProductId,
-                    ProductName = detail.ProductName,
-                    ProductSubtotal = detail.ProductSubtotal,
-                    Quantity = detail.Quantity
-                }).ToList();
-
-                _context.TransactionDetails.AddRange(transactionDetails);
-                await _context.SaveChangesAsync();
-
-                foreach (var detail in transactionDetails)
-                {
-                    var stockUpdateRequest = new
-                    {
-                        Id = detail.ProductId,
-                        StockQuantity = -detail.Quantity
-                    };
-
-                    var content = new StringContent(JsonSerializer.Serialize(stockUpdateRequest), Encoding.UTF8, "application/json");
-                    var response = await _httpClient.PostAsync("http://localhost:5263/api/productsapi/updateproductstock", content);
-
-                    if (!response.IsSuccessStatusCode)
-                    {
-                        throw new Exception($"Failed to update stock for Product ID {detail.ProductId}");
-                    }
-                }
-
-                await transaction.CommitAsync();
-
-                return Ok(new { Message = "Transaction created and stock updated successfully!" });
-            }
-            catch (Exception ex)
-            {
-                await transaction.RollbackAsync();
-                return BadRequest(new { Error = $"An error occurred: {ex.Message}" });
-            }
-        }
-
         public IActionResult Transactions()
         {
             return View();
