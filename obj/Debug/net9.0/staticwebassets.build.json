@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+8fHnEnFLFUQJEpn2jXdMWTgUF4fumF5Dz0gQUD8WU8=",
+  "Hash": "rUo3jlK1lc3bHdDwbdKrWZ+2/3gZIjb7k2DVnZilUho=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -288,27 +288,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\69625eiz2k-mmhiyf7455.gz",
-      "SourceId": "pos_system",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/pos_system",
-      "RelativePath": "js/TransactionsTable#[.{fingerprint=mmhiyf7455}]?.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\TransactionsTable.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "np26jbzpin",
-      "Integrity": "xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\TransactionsTable.js"
     },
     {
       "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\7td1iyjgdg-q9ht133ko3.gz",
@@ -1298,6 +1277,27 @@
       "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
+      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\xcgykv1g49-7glcxabe0t.gz",
+      "SourceId": "pos_system",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/pos_system",
+      "RelativePath": "js/showModal#[.{fingerprint=7glcxabe0t}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\showModal.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "8z2eyftg18",
+      "Integrity": "bCvl8LYCZaXkPitqnF+qNZp4RzIGwI26etSlbhdsAYg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\showModal.js"
+    },
+    {
       "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\xov8frx3e0-jd9uben2k1.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
@@ -1613,6 +1613,27 @@
       "OriginalItemSpec": "wwwroot\\js\\cart.js"
     },
     {
+      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\showModal.js",
+      "SourceId": "pos_system",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\",
+      "BasePath": "_content/pos_system",
+      "RelativePath": "js/showModal#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7glcxabe0t",
+      "Integrity": "aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\showModal.js"
+    },
+    {
       "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\site.js",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
@@ -1632,27 +1653,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
-    },
-    {
-      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\TransactionsTable.js",
-      "SourceId": "pos_system",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\",
-      "BasePath": "_content/pos_system",
-      "RelativePath": "js/TransactionsTable#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "mmhiyf7455",
-      "Integrity": "vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\TransactionsTable.js"
     },
     {
       "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -4489,6 +4489,304 @@
       ]
     },
     {
+      "Route": "js/showModal.7glcxabe0t.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\xcgykv1g49-7glcxabe0t.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003610108303"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bCvl8LYCZaXkPitqnF+qNZp4RzIGwI26etSlbhdsAYg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 12:02:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7glcxabe0t"
+        },
+        {
+          "Name": "label",
+          "Value": "js/showModal.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY="
+        }
+      ]
+    },
+    {
+      "Route": "js/showModal.7glcxabe0t.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\showModal.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 12:02:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7glcxabe0t"
+        },
+        {
+          "Name": "label",
+          "Value": "js/showModal.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY="
+        }
+      ]
+    },
+    {
+      "Route": "js/showModal.7glcxabe0t.js.gz",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\xcgykv1g49-7glcxabe0t.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bCvl8LYCZaXkPitqnF+qNZp4RzIGwI26etSlbhdsAYg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 12:02:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7glcxabe0t"
+        },
+        {
+          "Name": "label",
+          "Value": "js/showModal.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bCvl8LYCZaXkPitqnF+qNZp4RzIGwI26etSlbhdsAYg="
+        }
+      ]
+    },
+    {
+      "Route": "js/showModal.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\xcgykv1g49-7glcxabe0t.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.003610108303"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bCvl8LYCZaXkPitqnF+qNZp4RzIGwI26etSlbhdsAYg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 12:02:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY="
+        }
+      ]
+    },
+    {
+      "Route": "js/showModal.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\showModal.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "731"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 12:02:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY="
+        }
+      ]
+    },
+    {
+      "Route": "js/showModal.js.gz",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\xcgykv1g49-7glcxabe0t.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bCvl8LYCZaXkPitqnF+qNZp4RzIGwI26etSlbhdsAYg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 12:02:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bCvl8LYCZaXkPitqnF+qNZp4RzIGwI26etSlbhdsAYg="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\2bt3gachxy-xtxxf3hu2r.gz",
       "Selectors": [
@@ -4783,304 +5081,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA="
-        }
-      ]
-    },
-    {
-      "Route": "js/TransactionsTable.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\69625eiz2k-mmhiyf7455.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001838235294"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "543"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/TransactionsTable.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\TransactionsTable.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1664"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/TransactionsTable.js.gz",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\69625eiz2k-mmhiyf7455.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "543"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk="
-        }
-      ]
-    },
-    {
-      "Route": "js/TransactionsTable.mmhiyf7455.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\69625eiz2k-mmhiyf7455.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001838235294"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "543"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mmhiyf7455"
-        },
-        {
-          "Name": "label",
-          "Value": "js/TransactionsTable.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/TransactionsTable.mmhiyf7455.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\TransactionsTable.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1664"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mmhiyf7455"
-        },
-        {
-          "Name": "label",
-          "Value": "js/TransactionsTable.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vpefpbQjctNcqExZX180Q8aMbdFnIYYsxX+fjheFbGQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/TransactionsTable.mmhiyf7455.js.gz",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\69625eiz2k-mmhiyf7455.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "543"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 02 Jan 2025 10:21:18 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mmhiyf7455"
-        },
-        {
-          "Name": "label",
-          "Value": "js/TransactionsTable.js.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xT0+xW71AOGHZ2Sfe5jv2baPiyOoSQp7hm3iTaR1Wkk="
         }
       ]
     },
