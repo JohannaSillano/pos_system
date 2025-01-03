@@ -12,7 +12,7 @@ using pos_system.Models;
 namespace pos_system.Migrations
 {
     [DbContext(typeof(POSContext))]
-    [Migration("20250102072751_InitialCreate")]
+    [Migration("20250103145326_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -47,6 +47,10 @@ namespace pos_system.Migrations
 
                     b.Property<DateTime>("TransactionDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("TransactionNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

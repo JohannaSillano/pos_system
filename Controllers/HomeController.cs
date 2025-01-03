@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using pos_system.Models;
 using System.Text.Json;
 using System.Text;
-using pos_system.ViewModels;
 
 
 namespace pos_system.Controllers

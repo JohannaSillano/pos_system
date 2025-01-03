@@ -122,61 +122,20 @@ function checkout() {
 
 // Yes receipt handler
 function yesReceipt() {
-    submitTransaction()
-        .then(() => {
-            alert("Transaction successful! Receipt will be printed.");
-            resetCart(); // Call resetCart when the transaction is successful
-            // Close the modal
-            const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
-            modal.hide();
-        })
+    alert("Transaction successful! Receipt will be printed.");
+    resetCart(); // Call resetCart when the transaction is successful
+    // Close the modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+    modal.hide();
+
 }
 
 // No receipt handler
 function noReceipt() {
-    submitTransaction()
-        .then(() => {
-            resetCart(); // Call resetCart when the transaction is successful
-            // Close the modal
-            const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
-            modal.hide();
-        })
-}
-
-// Submit transaction
-function submitTransaction() {
-    const cartData = cart.map(item => ({
-        ProductId: item.id,
-        ProductName: item.productName,
-        Quantity: item.quantity,
-        ProductSubtotal: item.productSubtotal
-    }));
-
-    const subtotalAmount = cart.reduce((sum, item) => sum + item.productSubtotal, 0);
-    const taxAmount = subtotalAmount * 0.12;
-    const totalAmount = subtotalAmount + taxAmount;
-
-    return new Promise((resolve, reject) => {
-        $.ajax({
-            url: '/Home/CreateTransaction',
-            method: 'POST',
-            data: JSON.stringify({
-                SubTotal: subtotalAmount,
-                Tax: taxAmount,
-                TotalAmount: totalAmount,
-                Details: cartData
-            }),
-            contentType: 'application/json',
-            success: function () {
-                alert('Transaction successful!');
-                resolve();
-            },
-            error: function () {
-                alert('An error occurred while processing the transaction.');
-                reject(new Error('Transaction failed'));
-            }
-        });
-    });
+    resetCart(); // Call resetCart when the transaction is successful
+    // Close the modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+    modal.hide();
 }
 
 // Reset cart
