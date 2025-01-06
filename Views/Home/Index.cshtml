@@ -1,4 +1,4 @@
-﻿@{
+﻿@{ 
     ViewData["Title"] = "POS";
 }
 
@@ -16,8 +16,7 @@
         <!-- LEFT SECTION -->
         <div class="left-panel">
             <!-- Search Bar -->
-            <input type="text" class="search-bar" placeholder="Search product..." />
-
+            <input type="text" class="search-bar" id="search-bar" placeholder="Search product..." onkeyup="searchProduct()" />
 
             <!-- Table for Cart Items -->
             <table class="product-list">
@@ -28,7 +27,7 @@
                         <th>SELECT PRODUCT</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="product-list-body">
                     @if (ViewBag.Products != null)
                     {
                         foreach (var product in ViewBag.Products)
@@ -100,7 +99,6 @@
 
     <!-- Link to the external JavaScript file -->
     <script src="~/js/cart.js"></script>
-
-    
+    <script src="~/js/index.js"></script>
 </body>
 </html>
