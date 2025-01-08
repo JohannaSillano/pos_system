@@ -1,6 +1,8 @@
-﻿@{ 
+﻿@model List<Product>
+@{ 
     ViewData["Title"] = "POS";
 }
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,9 +30,9 @@
                     </tr>
                 </thead>
                 <tbody id="product-list-body">
-                    @if (ViewBag.Products != null)
+                    @if (Model != null && Model.Any())
                     {
-                        foreach (var product in ViewBag.Products)
+                        foreach (var product in Model)
                         {
                             <tr>
                                 <td>@product.Name</td>
@@ -44,7 +46,7 @@
                     else
                     {
                         <tr>
-                            <td colspan="3">@ViewBag.Error ?? "No products available."</td>
+                            <td colspan="3">No products available.</td>
                         </tr>
                     }
                 </tbody>
