@@ -40,13 +40,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tuqRMAI9S5gTLpXgA9XMo\u002BozlRbgwju7fktSlQtmt5w="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"797"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tuqRMAI9S5gTLpXgA9XMo\u002BozlRbgwju7fktSlQtmt5w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 14:14:00 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"797"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tuqRMAI9S5gTLpXgA9XMo\u002BozlRbgwju7fktSlQtmt5w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 13:39:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/pos_system/css/site.uy5aesfs9w.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"uy5aesfs9w"},{"Name":"integrity","Value":"sha256-tuqRMAI9S5gTLpXgA9XMo\u002BozlRbgwju7fktSlQtmt5w="},{"Name":"label","Value":"_content/pos_system/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"797"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tuqRMAI9S5gTLpXgA9XMo\u002BozlRbgwju7fktSlQtmt5w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 14:14:00 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"797"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tuqRMAI9S5gTLpXgA9XMo\u002BozlRbgwju7fktSlQtmt5w=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 13:39:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/pos_system/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
@@ -66,8 +66,8 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"01izpat4ct"},{"Name":"integrity","Value":"sha256-BDdyqwtSF\u002BdTPSnoLo\u002BQyB\u002BUbtUUL/YdQRZdLqf3dvA="},{"Name":"label","Value":"_content/pos_system/js/cart.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3638"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BDdyqwtSF\u002BdTPSnoLo\u002BQyB\u002BUbtUUL/YdQRZdLqf3dvA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 06:20:58 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/pos_system/js/cart.o4yl68qxwv.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cart.js'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/pos_system/js/showModal.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\showModal.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BDdyqwtSF\u002BdTPSnoLo\u002BQyB\u002BUbtUUL/YdQRZdLqf3dvA="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3638"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022BDdyqwtSF\u002BdTPSnoLo\u002BQyB\u002BUbtUUL/YdQRZdLqf3dvA=\u0022"},{"Name":"Last-Modified","Value":"Sun, 22 Dec 2024 06:20:58 GMT"}]]]></ResponseHeaders>

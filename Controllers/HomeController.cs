@@ -1,18 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
 using pos_system.Models;
-using System.Net.Http;
 using System.Text.Json;
-using System.Threading.Tasks;
+using System.Text;
+
 
 namespace pos_system.Controllers
 {
     public class HomeController : Controller
     {
         private readonly HttpClient _httpClient;
+        private readonly POSContext _context;
 
-        public HomeController(HttpClient httpClient)
+        public HomeController(HttpClient httpClient, POSContext context)
         {
             _httpClient = httpClient;
+            _context = context;
         }
 
         public async Task<IActionResult> Index()
@@ -107,3 +109,4 @@ namespace pos_system.Controllers
         }
     }
 }
+

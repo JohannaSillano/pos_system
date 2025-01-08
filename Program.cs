@@ -24,20 +24,32 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true; // Ensure it's essential for GDPR compliance
 });
 
+// Enable CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", builder =>
+    {
+        builder.AllowAnyOrigin()    // Allows any origin
+               .AllowAnyHeader()   // Allows any header
+               .AllowAnyMethod();  // Allows any HTTP method
+    });
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Login/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 // Use session middleware
 app.UseSession();
 
-//app.UseHttpsRedirection();
+// Use CORS middleware
+app.UseCors("AllowAllOrigins");
+
 app.UseRouting();
 
 app.UseAuthorization();
@@ -48,6 +60,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Login}/{action=Login}/{id?}")
     .WithStaticAssets();
-
 
 app.Run();
