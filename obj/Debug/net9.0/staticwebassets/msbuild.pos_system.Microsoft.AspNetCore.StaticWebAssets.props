@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7cgu0049fm</Fingerprint>
-      <Integrity>ydHG8piddz6ISpDeLOd40hzcym3fExsDYDtJnTL/t1c=</Integrity>
+      <Fingerprint>xjlbpichct</Fingerprint>
+      <Integrity>3YLvad5hVrVpdr+p6eRmlUapHzCssfFfPEnwudkl8vM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cart.js'))</OriginalItemSpec>
@@ -120,8 +120,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7glcxabe0t</Fingerprint>
-      <Integrity>aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY=</Integrity>
+      <Fingerprint>3g6xu7cz3u</Fingerprint>
+      <Integrity>HYe6XFWzj56kVH/Xaw4cUcIHWeAgRm+LM3GFXElz6CU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\showModal.js'))</OriginalItemSpec>

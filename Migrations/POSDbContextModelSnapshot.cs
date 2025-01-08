@@ -3,7 +3,6 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using pos_system.Models;
 
@@ -11,12 +10,10 @@ using pos_system.Models;
 
 namespace pos_system.Migrations
 {
-    [DbContext(typeof(POSContext))]
-    [Migration("20250103145326_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(POSDbContext))]
+    partial class POSDbContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,7 +46,6 @@ namespace pos_system.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("TransactionNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -87,31 +83,6 @@ namespace pos_system.Migrations
                     b.HasIndex("TransactionId");
 
                     b.ToTable("TransactionDetails");
-                });
-
-            modelBuilder.Entity("pos_system.Models.User", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Username")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("pos_system.Models.TransactionDetails", b =>

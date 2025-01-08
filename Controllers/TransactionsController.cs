@@ -7,9 +7,9 @@ namespace pos_system.Controllers
 {
     public class TransactionsController : Controller
     {
-        private readonly POSContext _context;
+        private readonly POSDbContext _context;
 
-        public TransactionsController(POSContext context)
+        public TransactionsController(POSDbContext context)
         {
             _context = context;
         }

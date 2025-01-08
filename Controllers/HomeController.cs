@@ -9,14 +9,13 @@ namespace pos_system.Controllers
     public class HomeController : Controller
     {
         private readonly HttpClient _httpClient;
-        private readonly POSContext _context;
+        private readonly POSDbContext _context;
 
-        public HomeController(HttpClient httpClient, POSContext context)
+        public HomeController(HttpClient httpClient, POSDbContext context)
         {
             _httpClient = httpClient;
             _context = context;
         }
-
         public async Task<IActionResult> Index()
         {
             try

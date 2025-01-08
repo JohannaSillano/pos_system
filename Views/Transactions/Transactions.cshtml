@@ -17,7 +17,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Transaction ID</th>
+                <th>Transaction Number</th>
                 <th>Date</th>
                 <th>Total Amount</th>
                 <th>Details</th>
@@ -29,11 +29,11 @@
                 @foreach (var transaction in Model)
                 {
                     <tr>
-                        <td>@transaction.Id</td>
+                        <td>@($"TRN-{transaction.TransactionNumber}")</td>
                         <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
                         <td>₱@transaction.TotalAmount.ToString("N2")</td>
                         <td>
-                            <button class="btn btn-primary" onclick="showModal('@transaction.Id', '@transaction.TransactionDate', '@transaction.Subtotal', '@transaction.Tax', '@transaction.TotalAmount')">View</button>
+                            <button class="btn btn-primary" onclick="showModal('@($"TRN-{transaction.TransactionDate:yyyy-MM}")', '@transaction.TransactionDate', '@transaction.Subtotal', '@transaction.Tax', '@transaction.TotalAmount')">View</button>
                         </td>
                     </tr>
                 }
@@ -55,7 +55,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p><strong>Transaction ID:</strong> <span id="modal-transaction-id"></span></p>
+                        <p><strong>Transaction Number:</strong> <span id="modal-transaction-number"></span></p>
                         <p><strong>Transaction Date:</strong> <span id="modal-transaction-date"></span></p>
                         <hr />
                         <p><strong>Product1</strong></p>

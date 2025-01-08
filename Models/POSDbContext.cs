@@ -2,13 +2,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace pos_system.Models
 {
-    public class POSContext : DbContext
+    public class POSDbContext : DbContext
     {
         public required DbSet<Transaction> Transactions { get; set; }
         public required DbSet<TransactionDetails> TransactionDetails { get; set; }
-        public required DbSet<User> Users { get; set; }
 
-        public POSContext(DbContextOptions<POSContext> options) : base(options) {}
+        public POSDbContext(DbContextOptions<POSDbContext> options) : base(options) {}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
