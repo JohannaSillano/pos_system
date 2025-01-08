@@ -1,6 +1,8 @@
-﻿@{
+﻿@model List<Product>
+@{ 
     ViewData["Title"] = "POS";
 }
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,8 +18,7 @@
         <!-- LEFT SECTION -->
         <div class="left-panel">
             <!-- Search Bar -->
-            <input type="text" class="search-bar" placeholder="Search product..." />
-
+            <input type="text" class="search-bar" id="search-bar" placeholder="Search product..." onkeyup="searchProduct()" />
 
             <!-- Table for Cart Items -->
             <table class="product-list">
@@ -28,10 +29,10 @@
                         <th>SELECT PRODUCT</th>
                     </tr>
                 </thead>
-                <tbody>
-                    @if (ViewBag.Products != null)
+                <tbody id="product-list-body">
+                    @if (Model != null && Model.Any())
                     {
-                        foreach (var product in ViewBag.Products)
+                        foreach (var product in Model)
                         {
                             <tr>
                                 <td>@product.Name</td>
@@ -45,7 +46,7 @@
                     else
                     {
                         <tr>
-                            <td colspan="3">@ViewBag.Error ?? "No products available."</td>
+                            <td colspan="3">No products available.</td>
                         </tr>
                     }
                 </tbody>

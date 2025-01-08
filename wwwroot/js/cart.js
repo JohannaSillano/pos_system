@@ -32,6 +32,10 @@ function addToCart(Id, name, amount, stockQuantity) {
 
     cartItemId++;
     updateTotalAmount();
+
+    // Debug log to see cart array after adding an item
+    console.log("Cart after adding item:", cart);
+    console.table(cart);
 }
 
 // Handle quantity change
@@ -53,6 +57,9 @@ function handleQuantityChange(inputElement, cartItemId, amount, stockQuantity) {
     }
     // Update the total amount
     updateTotalAmount();
+    // Debug log to see cart array after adding an item
+    console.log("Cart after quantity change:", cart);
+    console.table(cart);
 }
 
 // Remove cart item
@@ -63,7 +70,23 @@ function removeCartItem(cartItemId) {
     }
 
     cart = cart.filter(item => item.cartItemId !== cartItemId);
+    updateCartItemIds()
     updateTotalAmount();
+    // Debug log to see cart array after adding an item
+    console.log("Cart after removing item:", cart);
+    console.table(cart);
+}
+
+// Function to update the cart item IDs after removal
+function updateCartItemIds() {
+    const rows = cartTableBody.querySelectorAll('tr');
+    cartItemId = 1; // Reset cartItemId to 1 before updating IDs
+
+    rows.forEach(row => {
+        const idCell = row.querySelector('td:first-child');
+        idCell.textContent = cartItemId;
+        cartItemId++;
+    });
 }
 
 // Update total amount
@@ -83,6 +106,10 @@ function updateTotalAmount() {
         Tax (12%): ₱${taxAmount.toFixed(2)}<br>
         Total Amount: ₱${totalAmount.toFixed(2)}
     `;
+
+    // Debug log to see cart array after adding an item
+    console.log("Cart after updating total amount:", cart);
+    console.table(cart);
 }
 
 // Calculate change
@@ -112,6 +139,10 @@ function checkout() {
         return;
     }
     else{
+        // Debug log to see cart array after adding an item
+        console.log("Cart before checkout:", cart);
+        console.table(cart);
+        
         const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
             backdrop: 'static',
             keyboard: false

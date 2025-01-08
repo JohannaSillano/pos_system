@@ -102,29 +102,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xjlbpichct</Fingerprint>
-      <Integrity>3YLvad5hVrVpdr+p6eRmlUapHzCssfFfPEnwudkl8vM=</Integrity>
+      <Fingerprint>8k5pps6ec0</Fingerprint>
+      <Integrity>mI71+TxpuTjpTROc96uHj5X2HQ7u46yAS97+dXsj6YY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cart.js'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\showModal.js'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\loadDetails.js'))">
       <SourceType>Package</SourceType>
       <SourceId>pos_system</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/pos_system</BasePath>
-      <RelativePath>js/showModal.js</RelativePath>
+      <RelativePath>js/loadDetails.js</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n90ppq8sjo</Fingerprint>
-      <Integrity>m66x9WaLQFAkoAuEwFgMfJ2PCpvRzeBpokTyhaGgwVk=</Integrity>
+      <Fingerprint>2rbq3pf4iy</Fingerprint>
+      <Integrity>/pQeVNY8ghZTgnPSQ24+m6EHpYfZNBSP7JIairgDdIg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\showModal.js'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\loadDetails.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))">
       <SourceType>Package</SourceType>
