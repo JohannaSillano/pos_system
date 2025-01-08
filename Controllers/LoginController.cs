@@ -28,7 +28,8 @@ namespace pos_system.Controllers
             {
                 // Store user details in session
                 HttpContext.Session.SetString("UserId", employee.Id.ToString());
-                HttpContext.Session.SetString("UserFullName", employee.FullName);
+                HttpContext.Session.SetString("UserFullName", employee.FirstName);
+                HttpContext.Session.SetString("UserFullName", employee.LastName);
 
                 // Redirect to the POS dashboard
                 return RedirectToAction("Index", "Home");
