@@ -6,20 +6,32 @@ namespace pos_system.Models
     {
         public required DbSet<Transaction> Transactions { get; set; }
         public required DbSet<TransactionDetails> TransactionDetails { get; set; }
-        public required DbSet<User> Users{ get; set; }
+        public required DbSet<User> Users { get; set; }
 
         public POSContext(DbContextOptions<POSContext> options) : base(options) {}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Configure decimal precision to avoid truncation warnings
+            // Explicitly define the column type and precision for SubTotal, Tax, and TotalAmount
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.Subtotal)
+                .HasColumnType("decimal(18,2)") // Define the column type with precision and scale
+                .HasPrecision(18, 2); // Define the precision and scale for SubTotal
+
+            modelBuilder.Entity<Transaction>()
+                .Property(t => t.Tax)
+                .HasColumnType("decimal(18,2)") // Define the column type with precision and scale
+                .HasPrecision(18, 2); // Define the precision and scale for Tax
+
             modelBuilder.Entity<Transaction>()
                 .Property(t => t.TotalAmount)
-                .HasPrecision(18, 2); // Adjust precision as needed
+                .HasColumnType("decimal(18,2)") // Define the column type with precision and scale
+                .HasPrecision(18, 2); // Define the precision and scale for TotalAmount
 
             modelBuilder.Entity<TransactionDetails>()
                 .Property(td => td.Amount)
-                .HasPrecision(18, 2); // Adjust precision as needed
+                .HasColumnType("decimal(18,2)") // Define the column type with precision and scale
+                .HasPrecision(18, 2); // Define the precision and scale for UnitPrice
 
             // Configure relationships between Transaction and TransactionDetails
             modelBuilder.Entity<TransactionDetails>()
@@ -27,7 +39,7 @@ namespace pos_system.Models
                 .WithMany(t => t.TransactionDetails) // One-to-Many relationship
                 .HasForeignKey(td => td.TransactionId); // Foreign key on TransactionDetails
 
-            base.OnModelCreating(modelBuilder); // Properly placed
+            base.OnModelCreating(modelBuilder); // Ensure any other configuration is applied
         }
     }
 }

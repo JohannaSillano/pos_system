@@ -1,111 +1,147 @@
 const cartTableBody = document.querySelector('.cart-table tbody');
 let cartItemId = 1; // Unique ID for cart items
+let cart = []; // Array to store cart items
 
-// Function to add items to the cart
-function addToCart(id, name, amount) {
-    // Create a new row for the cart table
+// Add product to cart
+function addToCart(Id, name, amount, stockQuantity) {
     const newRow = document.createElement('tr');
+    newRow.setAttribute('data-cart-item-id', cartItemId);
     newRow.innerHTML = `
         <td>${cartItemId}</td>
         <td>${name}</td>
         <td>
-            <input type="number" value="1" min="1" onchange="updateAmount(this, ${amount})">
+            <input type="number" value="1" min="1" max="${stockQuantity}" 
+                onchange="handleQuantityChange(this, ${cartItemId}, ${amount}, ${stockQuantity})">
         </td>
         <td class="item-amount">${amount.toFixed(2)}</td>
         <td>
-            <button class="btn-remove remove-btn" onclick="removeCartItem(this)">Remove</button>
+            <button class="btn-remove remove-btn" onclick="removeCartItem(${cartItemId})">Remove</button>
         </td>
     `;
 
-    // Append the new row to the cart table body
     cartTableBody.appendChild(newRow);
+
+    const cartItem = {
+        cartItemId: cartItemId,
+        id: Id,
+        productName: name,
+        productSubtotal: amount,
+        quantity: 1
+    };
+    cart.push(cartItem);
+
     cartItemId++;
-
-    // Update the total amount after adding an item
     updateTotalAmount();
 }
 
-// Function to update the total amount for a specific product
-function updateAmount(input, price) {
-    // Find the row and update the total amount for the product
-    const row = input.closest('tr');
-    const amountCell = row.querySelector('.item-amount');
-    amountCell.textContent = (input.value * price).toFixed(2);
+// Handle quantity change
+function handleQuantityChange(inputElement, cartItemId, amount, stockQuantity) {
+    const newQuantity = parseInt(inputElement.value);
 
-    // Update the total amount after changing quantity
+    if (newQuantity > stockQuantity) {
+        inputElement.value = stockQuantity;
+        alert(`Cannot add more than ${stockQuantity} items to the cart.`);
+    }
+    // Update the item amount in the table
+    const itemAmountCell = inputElement.closest('tr').querySelector('.item-amount');
+    itemAmountCell.textContent = (newQuantity * amount).toFixed(2);
+    // Update the cart item quantity and product subtotal
+    const cartItem = cart.find(item => item.cartItemId === cartItemId);
+    if (cartItem) {
+        cartItem.quantity = newQuantity;
+        cartItem.productSubtotal = newQuantity * amount;
+    }
+    // Update the total amount
     updateTotalAmount();
 }
 
-// Function to remove a specific cart item
-function removeCartItem(button) {
-    // Find the row and remove it from the table
-    const row = button.closest('tr');
-    cartTableBody.removeChild(row);
+// Remove cart item
+function removeCartItem(cartItemId) {
+    const row = cartTableBody.querySelector(`tr[data-cart-item-id="${cartItemId}"]`);
+    if (row) {
+        cartTableBody.removeChild(row);
+    }
 
-    // Update the cart item IDs and total amount
-    updateCartItemIds();
+    cart = cart.filter(item => item.cartItemId !== cartItemId);
     updateTotalAmount();
 }
 
-// Function to update the cart item IDs after removal
-function updateCartItemIds() {
-    const rows = cartTableBody.querySelectorAll('tr');
-    cartItemId = 1; // Reset cartItemId to 1 before updating IDs
-
-    rows.forEach(row => {
-        const idCell = row.querySelector('td:first-child');
-        idCell.textContent = cartItemId;
-        cartItemId++;
-    });
-}
-
-// Function to calculate and update the total amount
+// Update total amount
 function updateTotalAmount() {
     let subtotalAmount = 0;
 
-    // Loop through each row in the cart
-    const rows = cartTableBody.querySelectorAll('tr');
-    rows.forEach(row => {
-        const amountCell = row.querySelector('.item-amount');
-        subtotalAmount += parseFloat(amountCell.textContent);
+    cart.forEach(item => {
+        subtotalAmount += item.productSubtotal;
     });
 
-    // Calculate tax (12%)
     const taxAmount = subtotalAmount * 0.12;
-
-    // Calculate final total (Subtotal + Tax)
     const totalAmount = subtotalAmount + taxAmount;
 
-    // Update the subtotal, tax, and total amount in the DOM
     const totalAmountElement = document.getElementById('total-amount');
     totalAmountElement.innerHTML = `
         Subtotal Amount: ₱${subtotalAmount.toFixed(2)}<br>
-        Tax(12%): ₱${taxAmount.toFixed(2)}<br>
+        Tax (12%): ₱${taxAmount.toFixed(2)}<br>
         Total Amount: ₱${totalAmount.toFixed(2)}
     `;
 }
 
-// Function to calculate change
+// Calculate change
 function calculateChange() {
-    // Retrieve the total amount from the DOM
     const totalAmountElement = document.getElementById("total-amount").textContent;
     const totalAmountMatch = totalAmountElement.match(/Total Amount:\s*₱(\d+(\.\d+)?)/);
 
     const totalAmount = totalAmountMatch ? parseFloat(totalAmountMatch[1]) : 0;
-
-    // Retrieve the payment amount from the input
     const paymentAmount = parseFloat(document.getElementById("payment-amount").value) || 0;
 
-    // Calculate change
     const change = paymentAmount - totalAmount;
 
-    // Display the change
     const changeDisplay = document.getElementById("change-display");
     if (change < 0) {
         changeDisplay.textContent = "Insufficient payment";
         changeDisplay.style.color = "red";
     } else {
         changeDisplay.textContent = `₱${change.toFixed(2)}`;
-        changeDisplay.style.color = "black";
+        changeDisplay.style.color = "white";
     }
+}
+
+// Checkout function
+function checkout() {
+    if (cart.length === 0) {
+        alert('Your cart is empty. Please add items before checkout.');
+        return;
+    }
+    else{
+        const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
+            backdrop: 'static',
+            keyboard: false
+        });
+        modal.show();
+    }
+}
+
+// Yes receipt handler
+function yesReceipt() {
+    alert("Transaction successful! Receipt will be printed.");
+    resetCart(); // Call resetCart when the transaction is successful
+    // Close the modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+    modal.hide();
+
+}
+
+// No receipt handler
+function noReceipt() {
+    resetCart(); // Call resetCart when the transaction is successful
+    // Close the modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+    modal.hide();
+}
+
+// Reset cart
+function resetCart() {
+    cart = []; // Clear the cart array
+    cartTableBody.innerHTML = ''; // Clear the table
+    cartItemId = 1; // Reset cart item ID
+    updateTotalAmount(); // Reset total amount
 }

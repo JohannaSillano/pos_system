@@ -36,7 +36,7 @@
                                 <td>@product.Name</td>
                                 <td>₱@product.Price.ToString("N2")</td>
                                 <td>
-                                    <button class="btn-select" onclick="addToCart(@product.Id, '@product.Name', @product.Price)">Select</button>
+                                    <button class="btn-select" onclick="addToCart(@product.Id, '@product.Name', @product.Price, @product.StockQuantity)">Select</button>
                                 </td>
                             </tr>
                         }
@@ -93,12 +93,34 @@
             </div>
 
             <!-- Checkout Button -->
-            <button class="btn-checkout" onclick="window.location.href='/Home/Transactions';">CHECKOUT</button>
+            <button class="btn-checkout" onclick="checkout()">CHECKOUT</button>
         </div>
     </div>
 
+    <!-- Modal Structure -->
+    <div class="modal fade" id="confirmation-popup" tabindex="-1" aria-labelledby="confirmationPopupLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationPopupLabel">POS System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Do you want to print the receipt?</h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" id="confirmYes" onclick="yesReceipt()">Yes</button>
+                    <button type="button" class="btn btn-danger" id="confirmNo" onclick="noReceipt()">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Link to the external JavaScript file -->
     <script src="~/js/cart.js"></script>
-    <script src="~/js/index.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
