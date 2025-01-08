@@ -6,7 +6,7 @@ namespace pos_system.Models
     {
         public IMDbContext(DbContextOptions<IMDbContext> options) : base(options) {}
 
-        public required DbSet<User> Users { get; set; }
+        public required DbSet<Employee> Employees { get; set; }
         public required DbSet<Product> Products { get; set; }
     }
 }

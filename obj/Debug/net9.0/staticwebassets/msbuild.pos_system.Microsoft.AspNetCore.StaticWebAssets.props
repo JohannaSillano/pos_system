@@ -120,8 +120,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3g6xu7cz3u</Fingerprint>
-      <Integrity>HYe6XFWzj56kVH/Xaw4cUcIHWeAgRm+LM3GFXElz6CU=</Integrity>
+      <Fingerprint>n90ppq8sjo</Fingerprint>
+      <Integrity>m66x9WaLQFAkoAuEwFgMfJ2PCpvRzeBpokTyhaGgwVk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\showModal.js'))</OriginalItemSpec>

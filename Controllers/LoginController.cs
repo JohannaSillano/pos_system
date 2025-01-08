@@ -22,20 +22,20 @@ namespace pos_system.Controllers
         public IActionResult Login(string email, string password)
         {
             // Query the IMSDB for user authentication
-            var user = _imsDbContext.Users.FirstOrDefault(u => u.Email == email && u.Password == password);
+            var employee = _imsDbContext.Employees.FirstOrDefault(u => u.Email == email && u.Password == password);
 
-            if (user != null && user.Role == "Cashier")
+            if (employee != null && employee.Role == "Cashier")
             {
                 // Store user details in session
-                HttpContext.Session.SetString("UserId", user.Id.ToString());
-                HttpContext.Session.SetString("UserFullName", user.FullName);
+                HttpContext.Session.SetString("UserId", employee.Id.ToString());
+                HttpContext.Session.SetString("UserFullName", employee.FullName);
 
                 // Redirect to the POS dashboard
                 return RedirectToAction("Index", "Home");
             }
 
             // If login fails or user is not a cashier
-            ViewBag.ErrorMessage = user == null ? "Invalid email or password." : "Access denied. Only cashiers can log in.";
+            ViewBag.ErrorMessage = employee == null ? "Invalid email or password." : "Access denied. Only cashiers can log in.";
             return View("Login");
         }
     }

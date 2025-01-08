@@ -33,7 +33,14 @@
                         <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
                         <td>₱@transaction.TotalAmount.ToString("N2")</td>
                         <td>
-                            <button class="btn btn-primary" onclick="showModal('@($"TRN-{transaction.TransactionDate:yyyy-MM}")', '@transaction.TransactionDate', '@transaction.Subtotal', '@transaction.Tax', '@transaction.TotalAmount')">View</button>
+                            <button class="btn btn-primary" onclick="showModal(
+                                '@($"TRN-{transaction.TransactionDate:yyyy-MM}")',
+                                '@transaction.TransactionDate',
+                                '@transaction.Subtotal',
+                                '@transaction.Tax',
+                                '@transaction.TotalAmount',
+                                @Html.Raw(Json.Serialize(transaction.TransactionDetails)) // Pass items as JSON
+                            )">View</button>
                         </td>
                     </tr>
                 }
@@ -46,28 +53,28 @@
     </table>
 
     <!-- Modal -->
-    <div>
-        <div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-title">Transaction Details</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><strong>Transaction Number:</strong> <span id="modal-transaction-number"></span></p>
-                        <p><strong>Transaction Date:</strong> <span id="modal-transaction-date"></span></p>
-                        <hr />
-                        <p><strong>Product1</strong></p>
-                        <!-- products list -->
-                        <hr />
-                        <p><strong>Subtotal:</strong> ₱<span id="modal-subtotal"></span></p>
-                        <p><strong>Tax:</strong> ₱<span id="modal-tax"></span></p>
-                        <p><strong>Total Amount:</strong> ₱<span id="modal-total"></span></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
+    <div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Transaction Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Transaction Number:</strong> <span id="modal-transaction-number"></span></p>
+                    <p><strong>Transaction Date:</strong> <span id="modal-transaction-date"></span></p>
+                    <hr />
+                    
+                    <!-- Products List -->
+                    <div id="modal-items"></div> <!-- This will hold the product items -->
+
+                    <hr />
+                    <p><strong>Subtotal:</strong> ₱<span id="modal-subtotal"></span></p>
+                    <p><strong>Tax:</strong> ₱<span id="modal-tax"></span></p>
+                    <p><strong>Total Amount:</strong> ₱<span id="modal-total"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

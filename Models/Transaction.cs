@@ -10,6 +10,7 @@ namespace pos_system.Models
         public decimal Subtotal { get; set; }
         public decimal Tax { get; set; }
         public decimal TotalAmount { get; set; }
+        public int EmployeeId { get; set; }
 
         // Navigation property to represent the "one" side of the relationship
         public ICollection<TransactionDetails> TransactionDetails { get; set; }
