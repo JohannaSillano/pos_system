@@ -10,9 +10,14 @@ builder.Services.AddControllersWithViews();
 // Add HttpClient service
 builder.Services.AddHttpClient();  // Ensures HttpClient is available for DI
 
-builder.Services.AddDbContext<POSContext>(options =>
+builder.Services.AddDbContext<POSDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("POSConnection"));
+});
+
+builder.Services.AddDbContext<IMDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("IMConnection"));
 });
 
 // Add session services

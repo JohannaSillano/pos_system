@@ -102,8 +102,13 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
+<<<<<<< HEAD
       <Fingerprint>01izpat4ct</Fingerprint>
       <Integrity>BDdyqwtSF+dTPSnoLo+QyB+UbtUUL/YdQRZdLqf3dvA=</Integrity>
+=======
+      <Fingerprint>xjlbpichct</Fingerprint>
+      <Integrity>3YLvad5hVrVpdr+p6eRmlUapHzCssfFfPEnwudkl8vM=</Integrity>
+>>>>>>> origin/Edzra
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\cart.js'))</OriginalItemSpec>
@@ -120,8 +125,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7glcxabe0t</Fingerprint>
-      <Integrity>aa/d6xQWI7P6LCA0pRd1VIB4Un29MmQe7NiKfCG3vUY=</Integrity>
+      <Fingerprint>n90ppq8sjo</Fingerprint>
+      <Integrity>m66x9WaLQFAkoAuEwFgMfJ2PCpvRzeBpokTyhaGgwVk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\showModal.js'))</OriginalItemSpec>
