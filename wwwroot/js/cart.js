@@ -6,10 +6,27 @@ let subtotalAmount = 0;
 let taxAmount = 0;
 let totalAmount = 0;
 
+// Check if the product is already in the cart
+function checkCartItem(Id) {
+    const selectBtn = document.getElementById(Id); // Get the button element with the given Id
+    const productInCart = cart.some(item => item.id === Id); // Check if the product exists in the cart
+
+    if (productInCart) {
+        selectBtn.innerHTML = `Selected`; // Update the button label
+        selectBtn.disabled = true; // Disable the button
+        selectBtn.classList.add('disabled-select-btn'); // Add custom disabled class
+    } else {
+        selectBtn.innerHTML = `Select`; // Reset the button label
+        selectBtn.disabled = false; // Enable the button
+        selectBtn.classList.remove('disabled-select-btn'); // Remove custom disabled class
+    }
+}
+
 // Add product to cart
 function addToCart(Id, name, amount, stockQuantity) {
     const newRow = document.createElement('tr');
     newRow.setAttribute('data-cart-item-id', cartItemId);
+    newRow.setAttribute('data-product-id', Id)
     newRow.innerHTML = `
         <td>${cartItemId}</td>
         <td>${name}</td>
@@ -24,7 +41,6 @@ function addToCart(Id, name, amount, stockQuantity) {
     `;
 
     cartTableBody.appendChild(newRow);
-
     const cartItem = {
         cartItemId: cartItemId,
         id: Id,
@@ -33,7 +49,7 @@ function addToCart(Id, name, amount, stockQuantity) {
         quantity: 1
     };
     cart.push(cartItem);
-
+    checkCartItem(Id); // Update the button state
     cartItemId++;
     updateTotalAmount();
 
@@ -69,11 +85,14 @@ function handleQuantityChange(inputElement, cartItemId, amount, stockQuantity) {
 // Remove cart item
 function removeCartItem(cartItemId) {
     const row = cartTableBody.querySelector(`tr[data-cart-item-id="${cartItemId}"]`);
+    const idValue = row.getAttribute('data-product-id') // Get the value of the 'data-product-id' attribute
+    console.log('IdValue:', idValue)
     if (row) {
         cartTableBody.removeChild(row);
     }
 
     cart = cart.filter(item => item.cartItemId !== cartItemId);
+    checkCartItem(idValue); // Update the button state
     updateCartItemIds();
     updateTotalAmount();
     // Debug log to see cart array after adding an item
