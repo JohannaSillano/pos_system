@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\pos_system.props" />
-</Project>
