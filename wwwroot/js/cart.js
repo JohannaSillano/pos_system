@@ -1,6 +1,9 @@
 const cartTableBody = document.querySelector('.cart-table tbody');
 let cartItemId = 1; // Unique ID for cart items
 let cart = []; // Array to store cart items
+let subtotalAmount = 0;
+let taxAmount = 0;
+let totalAmount = 0;
 
 // Add product to cart
 function addToCart(Id, name, amount, stockQuantity) {
@@ -10,7 +13,7 @@ function addToCart(Id, name, amount, stockQuantity) {
         <td>${cartItemId}</td>
         <td>${name}</td>
         <td>
-            <input type="number" value="1" min="1" max="${stockQuantity}" 
+            <input type="number" value="1" min="1" max="${stockQuantity}"
                 onchange="handleQuantityChange(this, ${cartItemId}, ${amount}, ${stockQuantity})">
         </td>
         <td class="item-amount">${amount.toFixed(2)}</td>
@@ -70,7 +73,7 @@ function removeCartItem(cartItemId) {
     }
 
     cart = cart.filter(item => item.cartItemId !== cartItemId);
-    updateCartItemIds()
+    updateCartItemIds();
     updateTotalAmount();
     // Debug log to see cart array after adding an item
     console.log("Cart after removing item:", cart);
@@ -91,14 +94,14 @@ function updateCartItemIds() {
 
 // Update total amount
 function updateTotalAmount() {
-    let subtotalAmount = 0;
+    subtotalAmount = 0;
 
     cart.forEach(item => {
         subtotalAmount += item.productSubtotal;
     });
 
-    const taxAmount = subtotalAmount * 0.12;
-    const totalAmount = subtotalAmount + taxAmount;
+    taxAmount = subtotalAmount * 0.12;
+    totalAmount = subtotalAmount + taxAmount;
 
     const totalAmountElement = document.getElementById('total-amount');
     totalAmountElement.innerHTML = `
@@ -132,22 +135,68 @@ function calculateChange() {
     }
 }
 
+// Transaction number generator
+function generateTransactionNumber() {
+    const prefix = 'TRN'; // You can change the prefix as needed
+    const randomNumber = Math.floor(Math.random() * 1000000); // Generates a random number
+    const transactionNumber = `${prefix}-${randomNumber}-${Date.now()}`; // Combines the prefix, random number, and timestamp
+    return transactionNumber;
+}
+
 // Checkout function
-function checkout() {
+async function checkout() {
     if (cart.length === 0) {
         alert('Your cart is empty. Please add items before checkout.');
         return;
     }
     else{
+        const employeeId = document.getElementById('employeeId').value;
         // Debug log to see cart array after adding an item
         console.log("Cart before checkout:", cart);
         console.table(cart);
+        console.log("Subtotal before checkout", subtotalAmount.toFixed(2));
+        console.log("Tax before checkout", taxAmount.toFixed(2));
+        console.log("Total Amount before checkout", totalAmount.toFixed(2));
+        console.log("EmployeeId", employeeId);
         
-        const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
-            backdrop: 'static',
-            keyboard: false
-        });
-        modal.show();
+        // Constract the transaction object
+        const transaction = {
+            TransactionNumber: generateTransactionNumber(),
+            TransactionDate: new Date().toISOString(),
+            SubTotal: subtotalAmount.toFixed(2),
+            Tax: taxAmount.toFixed(2),
+            TotalAmount: totalAmount.toFixed(2),
+            EmployeeId: employeeId
+        };
+
+        console.log("Transaction data:",transaction)
+
+        try {
+            // Send the transaction object to the server using fetch API to create transaction in POS database
+            const response = await fetch ('/Transactions/PostTransaction', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(transaction)
+            });
+
+            if (response.ok) {
+                alert('Transaction successfully processed!');
+                resetCart();
+                const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
+                    backdrop: 'static',
+                    keyboard: false
+                });
+                modal.hide();
+            } else {
+                const error = await response.json();
+                alert('Transaction failed: ' + error.message);
+            }
+        } catch (err) {
+            console.error('Error posting transaction:', err);
+            alert('An error occurred while processing the transaction.');
+        }
     }
 }
 
