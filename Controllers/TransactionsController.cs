@@ -3,6 +3,7 @@ using pos_system.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System.Text.Json;
+using System.Transactions;
 
 namespace pos_system.Controllers
 {
@@ -46,6 +47,36 @@ namespace pos_system.Controllers
                 // Handle exceptions (e.g., database issues)
                 ViewBag.Error = "An error occurred while fetching transactions: " + ex.Message;
                 return View();
+            }
+        }
+
+        // Create transaction in the database using POST method
+        [HttpPost]
+        public async Task<IActionResult> PostTransaction([FromBody] Models.Transaction transaction)
+        {
+            if (!ModelState.IsValid)
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
+                return BadRequest(new { message = "Invalid model state.", errors });
+            }
+
+            using (var transactionScope = await _context.Database.BeginTransactionAsync())
+            {
+                try
+                {
+                    // Save the transaction to the database
+                    _context.Transactions.Add(transaction);
+                    await _context.SaveChangesAsync();
+
+                    // Commit the database transaction
+                    await transactionScope.CommitAsync();
+                    return Ok(new { message = "Transaction successfully processed." });
+                }
+                catch (Exception ex)
+                {
+                    await transactionScope.RollbackAsync();
+                    return StatusCode(500, new { message = "An error occurred while processing the transaction.", details = ex.Message });
+                }
             }
         }
     }
