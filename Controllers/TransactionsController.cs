@@ -82,13 +82,13 @@ namespace pos_system.Controllers
                 return BadRequest(new { message = "Invalid model state.", errors });
             }
 
-            using (var transactionScope = await _context.Database.BeginTransactionAsync())
+            using (var transactionScope = await _posDbContext.Database.BeginTransactionAsync())
             {
                 try
                 {
                     // Save the transaction to the database
-                    _context.Transactions.Add(transaction);
-                    await _context.SaveChangesAsync();
+                    _posDbContext.Transactions.Add(transaction);
+                    await _posDbContext.SaveChangesAsync();
 
                     // Commit the database transaction
                     await transactionScope.CommitAsync();
