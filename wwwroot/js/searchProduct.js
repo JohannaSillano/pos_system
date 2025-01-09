@@ -3,8 +3,8 @@ async function searchProduct() {
 
     // Build the URL for fetching products
     let url = query && query.trim() !== ""
-        ? `/Home/searchProduct?productQuery=${encodeURIComponent(query)}`
-        : `/Home/searchProduct?productQuery=`;
+        ? `/Home/SearchProduct?productQuery=${encodeURIComponent(query)}`
+        : `/Home/SearchProduct?productQuery=`;
 
     try {
         let response = await fetch(url); // Fetch data from the controller
