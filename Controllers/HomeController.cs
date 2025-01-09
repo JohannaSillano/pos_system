@@ -9,27 +9,36 @@ namespace pos_system.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IMDbContext _context;
+        private readonly IMDbContext _imDBContext;
+        private readonly POSDbContext _posDBContext;
 
-        public HomeController(ILogger<HomeController> logger, IMDbContext context)
+        public HomeController(ILogger<HomeController> logger, IMDbContext imDBContext, POSDbContext posDBContext)
         {
             _logger = logger;
-            _context = context;
+            _imDBContext = imDBContext;
+            _posDBContext = posDBContext;
         }
 
         public IActionResult Index()
         {
-            var ProductList = _context.Products.Where(p => p.StockQuantity > 0).ToList();
+            // Retrieve employee ID from the session
+            var userId = HttpContext.Session.GetInt32("UserId");
+
+            // Pass the userId to the view using ViewBag
+            ViewBag.UserId = userId;
+
+            // Fetch list of products
+            var ProductList = _imDBContext.Products.Where(p => p.StockQuantity > 0).ToList();
             return View(ProductList);
         }
 
         // Fetch product in search bar using GET
         [HttpGet]
-        public JsonResult searchProduct(string productQuery)
+        public JsonResult SearchProduct(string productQuery)
         {
             if (string.IsNullOrEmpty(productQuery))
             {
-                var ProductList = _context.Products
+                var ProductList = _imDBContext.Products
                     .Where(p => !p.IsDeleted && p.StockQuantity > 0)
                     .Select(p => new { p.Id, p.Name, p.Price, p.StockQuantity })
                     .ToList();
@@ -37,7 +46,7 @@ namespace pos_system.Controllers
             }
             else
             {
-                var matchingProducts = _context.Products
+                var matchingProducts = _imDBContext.Products
                     .Where(p => !p.IsDeleted && p.StockQuantity > 0 && p.Name.ToLower().Contains(productQuery.ToLower()))
                     .Select(p => new { p.Id, p.Name, p.Price, p.StockQuantity })
                     .ToList();
