@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\pos_system.fluyj6og1t.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\ArcticLogo.png",
+      "PackagePath": "staticwebassets\\css\\ArcticLogo.png"
+    },
+    {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
@@ -39,6 +43,10 @@
     {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\transactionDetails.js",
+      "PackagePath": "staticwebassets\\js\\transactionDetails.js"
     },
     {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\lib\\bootstrap\\LICENSE",
