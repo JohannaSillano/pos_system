@@ -1,8 +1,8 @@
 ﻿@model List<Product>
-@{ 
+@{
     ViewData["Title"] = "POS";
+    var userId = ViewBag.UserId;
 }
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="pos-container">
-        
+        <input type="hidden" id="employeeId" value="@userId"> @*Store the employee number to access this in the cart.js*@
         <!-- LEFT SECTION -->
         <div class="left-panel">
             <!-- Search Bar -->
