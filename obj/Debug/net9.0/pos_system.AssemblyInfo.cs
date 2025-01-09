@@ -13,11 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pos_system")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c5062017bc7dfc17f1fd5171ebdc770c675b45d")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab89f652da5baf94d49312cc0a2fb8f9d688041d")]
->>>>>>> origin/Edzra
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87578e5f32979e38b2c571e2931b2174ee5dda2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("pos_system")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pos_system")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
