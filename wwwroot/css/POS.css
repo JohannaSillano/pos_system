@@ -258,3 +258,10 @@ body {
   margin-top: 10px;
   color: white;
 }
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+}
