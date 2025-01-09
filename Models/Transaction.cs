@@ -1,5 +1,6 @@
 using System;
-using System.Collections.Generic;  // Ensure this is here for ICollection
+using System.Collections.Generic;
+using System.Text.Json.Serialization;  // Ensure this is here for ICollection
 namespace pos_system.Models
 {
     public class Transaction
@@ -13,6 +14,7 @@ namespace pos_system.Models
         public int EmployeeId { get; set; }
 
         // Navigation property to represent the "one" side of the relationship
+        [JsonIgnore]  // Prevents a loop when serializing to JSON
         public ICollection<TransactionDetails> TransactionDetails { get; set; }
 
         public Transaction()

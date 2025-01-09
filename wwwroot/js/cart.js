@@ -202,21 +202,94 @@ async function checkout() {
 
 // Yes receipt handler
 function yesReceipt() {
-    alert("Transaction successful! Receipt will be printed.");
-    resetCart(); // Call resetCart when the transaction is successful
-    // Close the modal
-    const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
-    modal.hide();
-
+    printReceipt(); // Call printReceipt when the transaction is successful
+    if(printReceipt){
+        resetCart(); // Call resetCart when the transaction is successful
+        const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
+        modal.hide();   
+    }
+    else{
+        alert("Error printing receipt");
+    }
 }
 
 // No receipt handler
 function noReceipt() {
+    // add Transaction to database and update stock function()
     resetCart(); // Call resetCart when the transaction is successful
     // Close the modal
     const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
     modal.hide();
 }
+
+// Print receipt function
+function printReceipt(transactionId) {
+    console.log("loadDetails function called with transactionId:", transactionId);
+    try {
+        // Fetch transaction details using fetchTransactionDetails and handle the returned Promise
+        fetchTransactionDetails(transactionId)
+            .then(data => {
+                if (!data.success) {
+                    alert(data.message || "Failed to load transaction details.");
+                    return;
+                }
+
+                // Load data into the modal
+                generatePDFInvoice(data);
+            })
+            .catch(error => {
+                console.error("Error fetching transaction details:", error);
+                alert("Error loading transaction details.");
+            });
+    } catch (error) {
+        console.error("Unexpected error in printReceipt:", error);
+        alert("Error loading transaction details.");
+    }
+}
+
+// Function to generate PDF invoice
+function generatePDFInvoice(data) {
+    const { jsPDF } = window.jspdf; // Destructure jsPDF from the global object
+    const doc = new jsPDF();
+
+    // Add Title
+    doc.setFontSize(16);
+    doc.text("Invoice", 14, 20);
+
+    // Add Transaction Number
+    doc.setFontSize(12);
+    doc.text(`Transaction Number: TRN-${data.transactionNumber}`, 14, 30);
+
+    // Add Cashier Name
+    doc.text(`Cashier: ${data.cashier}`, 14, 40);
+
+    // Add Transaction Date
+    doc.text(`Transaction Date: ${new Date(data.transactionDate).toLocaleDateString()}`, 14, 50);
+
+    // Add a line separator
+    doc.line(14, 55, 195, 55);
+
+    // Add Products Section
+    doc.text("Products:", 14, 65);
+    let yOffset = 75; // Start drawing products from this point
+    data.products.forEach(product => {
+        doc.text(`${product.productName} x ${product.quantity}`, 14, yOffset);
+        doc.text(`₱${product.amount.toFixed(2)}`, 150, yOffset);
+        yOffset += 10; // Add space between each product
+    });
+
+    // Add a line separator
+    doc.line(14, yOffset + 5, 195, yOffset + 5);
+
+    // Add Subtotal, Tax, Total Amount
+    doc.text(`Subtotal: ₱${data.subtotal.toFixed(2)}`, 14, yOffset + 15);
+    doc.text(`Tax: ₱${data.tax.toFixed(2)}`, 14, yOffset + 25);
+    doc.text(`Total Amount: ₱${data.totalAmount.toFixed(2)}`, 14, yOffset + 35);
+
+    // Save the generated PDF
+    doc.save(`Invoice_TRN-${data.transactionNumber}.pdf`);
+}
+
 
 // Reset cart
 function resetCart() {
