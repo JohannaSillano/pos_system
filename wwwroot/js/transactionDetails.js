@@ -21,7 +21,7 @@ function loadTransactionDetailsIntoModal(data) {
     var myModal = new bootstrap.Modal(document.getElementById('detailsModal'));
 
     // Populate modal fields
-    $('#modal-transaction-number').text(`TRN-${data.transactionNumber}`);
+    $('#modal-transaction-number').text(data.transactionNumber);
     $('#modal-transaction-cashier').text(data.cashier);
     $('#modal-transaction-date').text(new Date(data.transactionDate).toLocaleDateString());
     $('#modal-subtotal').text(data.subtotal.toFixed(2));
