@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Em32WfRPO90NDhxWypq7K3ihzEb9+wM4o89TrUYqFvE=",
+  "Hash": "9XwssUF4kyIlb1FCSAjnIGDaXmKE7+fPVJu9ck5Cze8=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-a01osjcaro.gz",
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-an2nnjt8w5.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
       "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/pos_system",
-      "RelativePath": "css/POS#[.{fingerprint=a01osjcaro}]?.css.gz",
+      "RelativePath": "css/POS#[.{fingerprint=an2nnjt8w5}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,8 +31,8 @@
       "RelatedAsset": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "e6s7ltlg6o",
-      "Integrity": "mlylfsFSUOn7i224jA7eTHfDTD6/6fDiZuEwDoamTWo=",
+      "Fingerprint": "xaptovhgjr",
+      "Integrity": "WSn5byBoV/tiA5Xe4vpHqVP0DzMZT0u90F7sLl+nvYY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css"
@@ -815,6 +815,27 @@
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\nt5flg4hzm-kb9xzxmmy5.gz",
+      "SourceId": "pos_system",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/pos_system",
+      "RelativePath": "js/searchProduct#[.{fingerprint=kb9xzxmmy5}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\searchProduct.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "vp59m5d048",
+      "Integrity": "zaCYTB6XmuOcXIJSFhie4gSPouWfmG7C8uvvVXQyqvs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\searchProduct.js"
+    },
+    {
       "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\nwrh64qu5w-0j3bgjxly4.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
@@ -939,27 +960,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\qii7mjnnql-dm1a8o29an.gz",
-      "SourceId": "pos_system",
-      "SourceType": "Discovered",
-      "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
-      "BasePath": "_content/pos_system",
-      "RelativePath": "js/index#[.{fingerprint=dm1a8o29an}]?.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\index.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "qvlqznsxec",
-      "Integrity": "RrDCD27vCzcO/rq5c1KRQYee+mr8ccDwxko01kHAYVQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\index.js"
     },
     {
       "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\qiwfvwnygh-t1cqhe9u97.gz",
@@ -1564,8 +1564,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a01osjcaro",
-      "Integrity": "GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg=",
+      "Fingerprint": "an2nnjt8w5",
+      "Integrity": "2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\POS.css"
@@ -1634,12 +1634,12 @@
       "OriginalItemSpec": "wwwroot\\js\\cart.js"
     },
     {
-      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\index.js",
+      "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\searchProduct.js",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
       "ContentRoot": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\",
       "BasePath": "_content/pos_system",
-      "RelativePath": "js/index#[.{fingerprint}]?.js",
+      "RelativePath": "js/searchProduct#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1648,11 +1648,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dm1a8o29an",
-      "Integrity": "SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs=",
+      "Fingerprint": "kb9xzxmmy5",
+      "Integrity": "kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\index.js"
+      "OriginalItemSpec": "wwwroot\\js\\searchProduct.js"
     },
     {
       "Identity": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\showModal.js",
@@ -3339,13 +3339,13 @@
       ]
     },
     {
-      "Route": "css/POS.a01osjcaro.css",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-a01osjcaro.gz",
+      "Route": "css/POS.an2nnjt8w5.css",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-an2nnjt8w5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000586854460"
+          "Quality": "0.000578368999"
         }
       ],
       "ResponseHeaders": [
@@ -3355,15 +3355,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1703"
+          "Value": "1728"
         },
         {
           "Name": "ETag",
-          "Value": "\"mlylfsFSUOn7i224jA7eTHfDTD6/6fDiZuEwDoamTWo=\""
+          "Value": "\"WSn5byBoV/tiA5Xe4vpHqVP0DzMZT0u90F7sLl+nvYY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 08:42:22 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3383,13 +3383,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg=\""
+          "Value": "W/\"2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a01osjcaro"
+          "Value": "an2nnjt8w5"
         },
         {
           "Name": "label",
@@ -3397,12 +3397,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg="
+          "Value": "sha256-2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w="
         }
       ]
     },
     {
-      "Route": "css/POS.a01osjcaro.css",
+      "Route": "css/POS.an2nnjt8w5.css",
       "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\POS.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3412,7 +3412,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5945"
+          "Value": "6046"
         },
         {
           "Name": "Content-Type",
@@ -3420,11 +3420,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg=\""
+          "Value": "\"2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 08:42:22 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3434,7 +3434,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a01osjcaro"
+          "Value": "an2nnjt8w5"
         },
         {
           "Name": "label",
@@ -3442,13 +3442,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg="
+          "Value": "sha256-2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w="
         }
       ]
     },
     {
-      "Route": "css/POS.a01osjcaro.css.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-a01osjcaro.gz",
+      "Route": "css/POS.an2nnjt8w5.css.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-an2nnjt8w5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3457,7 +3457,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1703"
+          "Value": "1728"
         },
         {
           "Name": "Content-Type",
@@ -3465,11 +3465,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mlylfsFSUOn7i224jA7eTHfDTD6/6fDiZuEwDoamTWo=\""
+          "Value": "\"WSn5byBoV/tiA5Xe4vpHqVP0DzMZT0u90F7sLl+nvYY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 08:42:22 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3487,7 +3487,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a01osjcaro"
+          "Value": "an2nnjt8w5"
         },
         {
           "Name": "label",
@@ -3495,18 +3495,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mlylfsFSUOn7i224jA7eTHfDTD6/6fDiZuEwDoamTWo="
+          "Value": "sha256-WSn5byBoV/tiA5Xe4vpHqVP0DzMZT0u90F7sLl+nvYY="
         }
       ]
     },
     {
       "Route": "css/POS.css",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-a01osjcaro.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-an2nnjt8w5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000586854460"
+          "Quality": "0.000578368999"
         }
       ],
       "ResponseHeaders": [
@@ -3516,15 +3516,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1703"
+          "Value": "1728"
         },
         {
           "Name": "ETag",
-          "Value": "\"mlylfsFSUOn7i224jA7eTHfDTD6/6fDiZuEwDoamTWo=\""
+          "Value": "\"WSn5byBoV/tiA5Xe4vpHqVP0DzMZT0u90F7sLl+nvYY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 08:42:22 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3544,13 +3544,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg=\""
+          "Value": "W/\"2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg="
+          "Value": "sha256-2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w="
         }
       ]
     },
@@ -3565,7 +3565,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5945"
+          "Value": "6046"
         },
         {
           "Name": "Content-Type",
@@ -3573,11 +3573,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg=\""
+          "Value": "\"2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 08:42:22 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3587,13 +3587,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GiPX8j+vkqhlfsgXRxcXUCnL/AjvgZiG+ui8jTs74zg="
+          "Value": "sha256-2h8to9mthmrd36FqUlgY2Ugi4KUJiju59sILdUCoG+w="
         }
       ]
     },
     {
       "Route": "css/POS.css.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-a01osjcaro.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\0pvgy2uvd1-an2nnjt8w5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3602,7 +3602,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1703"
+          "Value": "1728"
         },
         {
           "Name": "Content-Type",
@@ -3610,11 +3610,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mlylfsFSUOn7i224jA7eTHfDTD6/6fDiZuEwDoamTWo=\""
+          "Value": "\"WSn5byBoV/tiA5Xe4vpHqVP0DzMZT0u90F7sLl+nvYY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 06 Jan 2025 08:42:22 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3632,7 +3632,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mlylfsFSUOn7i224jA7eTHfDTD6/6fDiZuEwDoamTWo="
+          "Value": "sha256-WSn5byBoV/tiA5Xe4vpHqVP0DzMZT0u90F7sLl+nvYY="
         }
       ]
     },
@@ -4257,7 +4257,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 19:25:07 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4318,7 +4318,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 19:25:07 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4363,7 +4363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 19:25:07 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4418,7 +4418,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 19:25:07 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4471,7 +4471,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 19:25:07 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4508,7 +4508,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 19:25:07 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4531,13 +4531,13 @@
       ]
     },
     {
-      "Route": "js/index.dm1a8o29an.js",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\qii7mjnnql-dm1a8o29an.gz",
+      "Route": "js/searchProduct.js",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\nt5flg4hzm-kb9xzxmmy5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001658374793"
+          "Quality": "0.001302083333"
         }
       ],
       "ResponseHeaders": [
@@ -4547,19 +4547,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "602"
+          "Value": "767"
         },
         {
           "Name": "ETag",
-          "Value": "\"RrDCD27vCzcO/rq5c1KRQYee+mr8ccDwxko01kHAYVQ=\""
+          "Value": "\"zaCYTB6XmuOcXIJSFhie4gSPouWfmG7C8uvvVXQyqvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:16:11 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4575,27 +4575,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs=\""
+          "Value": "W/\"kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "dm1a8o29an"
-        },
-        {
-          "Name": "label",
-          "Value": "js/index.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs="
+          "Value": "sha256-kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs="
         }
       ]
     },
     {
-      "Route": "js/index.dm1a8o29an.js",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\index.js",
+      "Route": "js/searchProduct.js",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\searchProduct.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4604,7 +4596,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2329"
+          "Value": "2185"
         },
         {
           "Name": "Content-Type",
@@ -4612,35 +4604,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs=\""
+          "Value": "\"kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:16:11 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "dm1a8o29an"
-        },
-        {
-          "Name": "label",
-          "Value": "js/index.js"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs="
+          "Value": "sha256-kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs="
         }
       ]
     },
     {
-      "Route": "js/index.dm1a8o29an.js.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\qii7mjnnql-dm1a8o29an.gz",
+      "Route": "js/searchProduct.js.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\nt5flg4hzm-kb9xzxmmy5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4649,7 +4633,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "602"
+          "Value": "767"
         },
         {
           "Name": "Content-Type",
@@ -4657,15 +4641,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RrDCD27vCzcO/rq5c1KRQYee+mr8ccDwxko01kHAYVQ=\""
+          "Value": "\"zaCYTB6XmuOcXIJSFhie4gSPouWfmG7C8uvvVXQyqvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:16:11 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4678,27 +4662,19 @@
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "dm1a8o29an"
-        },
-        {
-          "Name": "label",
-          "Value": "js/index.js.gz"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-RrDCD27vCzcO/rq5c1KRQYee+mr8ccDwxko01kHAYVQ="
+          "Value": "sha256-zaCYTB6XmuOcXIJSFhie4gSPouWfmG7C8uvvVXQyqvs="
         }
       ]
     },
     {
-      "Route": "js/index.js",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\qii7mjnnql-dm1a8o29an.gz",
+      "Route": "js/searchProduct.kb9xzxmmy5.js",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\nt5flg4hzm-kb9xzxmmy5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001658374793"
+          "Quality": "0.001302083333"
         }
       ],
       "ResponseHeaders": [
@@ -4708,19 +4684,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "602"
+          "Value": "767"
         },
         {
           "Name": "ETag",
-          "Value": "\"RrDCD27vCzcO/rq5c1KRQYee+mr8ccDwxko01kHAYVQ=\""
+          "Value": "\"zaCYTB6XmuOcXIJSFhie4gSPouWfmG7C8uvvVXQyqvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:16:11 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4736,19 +4712,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs=\""
+          "Value": "W/\"kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "kb9xzxmmy5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/searchProduct.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs="
+          "Value": "sha256-kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs="
         }
       ]
     },
     {
-      "Route": "js/index.js",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\index.js",
+      "Route": "js/searchProduct.kb9xzxmmy5.js",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\searchProduct.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4757,7 +4741,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2329"
+          "Value": "2185"
         },
         {
           "Name": "Content-Type",
@@ -4765,27 +4749,35 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs=\""
+          "Value": "\"kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:16:11 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "kb9xzxmmy5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/searchProduct.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-SxFYARJ5GA3nxdEAH5C2+y9kIFEBi0dOw4hHPWgaAPs="
+          "Value": "sha256-kEstZwmHbbSZGJbarwuaPgFKtuIQC75wB6BtQaD1WRs="
         }
       ]
     },
     {
-      "Route": "js/index.js.gz",
-      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\qii7mjnnql-dm1a8o29an.gz",
+      "Route": "js/searchProduct.kb9xzxmmy5.js.gz",
+      "AssetFile": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\obj\\Debug\\net9.0\\compressed\\nt5flg4hzm-kb9xzxmmy5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4794,7 +4786,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "602"
+          "Value": "767"
         },
         {
           "Name": "Content-Type",
@@ -4802,15 +4794,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RrDCD27vCzcO/rq5c1KRQYee+mr8ccDwxko01kHAYVQ=\""
+          "Value": "\"zaCYTB6XmuOcXIJSFhie4gSPouWfmG7C8uvvVXQyqvs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 08 Jan 2025 16:16:11 GMT"
+          "Value": "Thu, 09 Jan 2025 07:25:03 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4823,8 +4815,16 @@
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "kb9xzxmmy5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/searchProduct.js.gz"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-RrDCD27vCzcO/rq5c1KRQYee+mr8ccDwxko01kHAYVQ="
+          "Value": "sha256-zaCYTB6XmuOcXIJSFhie4gSPouWfmG7C8uvvVXQyqvs="
         }
       ]
     },
