@@ -29,7 +29,7 @@
                 @foreach (var transaction in Model)
                 {
                     <tr>
-                        <td>@($"TRN-{transaction.TransactionNumber}")</td>
+                        <td>@transaction.TransactionNumber</td>
                         <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
                         <td>₱@transaction.TotalAmount.ToString("N2")</td>
                         <td>
