@@ -27,7 +27,7 @@ async function searchProduct() {
                     <td>${product.name}</td>
                     <td>₱${product.price.toFixed(2)}</td>
                     <td>
-                        <button class="btn-select" 
+                        <button class="btn-select"
                                 onclick="addToCart(${product.id}, '${product.name}', ${product.price}, ${product.stockQuantity})">
                             Select
                         </button>
