@@ -22,5 +22,9 @@ namespace pos_system.Controllers
             var ProductList = _context.Products.Where(p => p.StockQuantity > 0).ToList();
             return View(ProductList);
         }
+        public IActionResult Invoice()
+        {
+            return View();
+        }
     }
 }
