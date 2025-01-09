@@ -1,3 +1,4 @@
+const employeeId = document.getElementById('employeeId').value; // get the value of the element that has an id of employeeId.
 const cartTableBody = document.querySelector('.cart-table tbody');
 let cartItemId = 1; // Unique ID for cart items
 let cart = []; // Array to store cart items
@@ -150,7 +151,6 @@ async function checkout() {
         return;
     }
     else{
-        const employeeId = document.getElementById('employeeId').value; // get the v
         // Debug log to see cart array after adding an item
         console.log("Cart before checkout:", cart);
         console.table(cart);
@@ -158,55 +158,58 @@ async function checkout() {
         console.log("Tax before checkout", taxAmount.toFixed(2));
         console.log("Total Amount before checkout", totalAmount.toFixed(2));
         console.log("EmployeeId", employeeId);
-        
-        // Constract the transaction object
-        const transaction = {
-            TransactionNumber: generateTransactionNumber(),
-            TransactionDate: new Date().toISOString(),
-            SubTotal: subtotalAmount.toFixed(2),
-            Tax: taxAmount.toFixed(2),
-            TotalAmount: totalAmount.toFixed(2),
-            EmployeeId: employeeId
-        };
 
-        console.log("Transaction data:",transaction)
+        const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
+            backdrop: 'static',
+            keyboard: false
+        });
+        modal.show();
+    }
+}
 
-        try {
-            // Send the transaction object to the server using fetch API to create transaction in POS database
-            const response = await fetch ('/Transactions/PostTransaction', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(transaction)
-            });
+async function createTransaction() {
+    // Constract the transaction object
+    const transaction = {
+        TransactionNumber: generateTransactionNumber(),
+        TransactionDate: new Date().toISOString(),
+        SubTotal: subtotalAmount.toFixed(2),
+        Tax: taxAmount.toFixed(2),
+        TotalAmount: totalAmount.toFixed(2),
+        EmployeeId: employeeId
+    };
 
-            if (response.ok) {
-                alert('Transaction successfully processed!');
-                resetCart();
-                const modal = new bootstrap.Modal(document.getElementById('confirmation-popup'), {
-                    backdrop: 'static',
-                    keyboard: false
-                });
-                modal.hide();
-            } else {
-                const error = await response.json();
-                alert('Transaction failed: ' + error.message);
-            }
-        } catch (err) {
-            console.error('Error posting transaction:', err);
-            alert('An error occurred while processing the transaction.');
+    console.log("Transaction data:",transaction)
+
+    try {
+        // Send the transaction object to the server using fetch API to create transaction in POS database
+        const response = await fetch ('/Transactions/PostTransaction', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(transaction)
+        });
+
+        if (response.ok) {
+            alert('Transaction successfully processed!');
+        } else {
+            const error = await response.json();
+            alert('Transaction failed: ' + error.message);
         }
+    } catch (err) {
+        console.error('Error posting transaction:', err);
+        alert('An error occurred while processing the transaction.');
     }
 }
 
 // Yes receipt handler
 function yesReceipt() {
+    createTransaction();
     printReceipt(); // Call printReceipt when the transaction is successful
     if(printReceipt){
         resetCart(); // Call resetCart when the transaction is successful
         const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
-        modal.hide();   
+        modal.hide();
     }
     else{
         alert("Error printing receipt");
@@ -216,6 +219,7 @@ function yesReceipt() {
 // No receipt handler
 function noReceipt() {
     // add Transaction to database and update stock function()
+    createTransaction();
     resetCart(); // Call resetCart when the transaction is successful
     // Close the modal
     const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
