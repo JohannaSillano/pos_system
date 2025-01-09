@@ -458,3 +458,5 @@ C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\ref\pos_system.dll
 c:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\0pvgy2uvd1-an2nnjt8w5.gz
 c:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\nt5flg4hzm-kb9xzxmmy5.gz
+C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\whdoqeq69h-cb1ngjdbw5.gz
+C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\r5g4g7rang-kwyd854bo7.gz

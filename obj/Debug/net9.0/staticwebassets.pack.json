@@ -5,7 +5,15 @@
       "PackagePath": "staticwebassets\\pos_system.fluyj6og1t.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Id": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\css\\Login.css",
+=======
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\ArcticLogo.png",
+      "PackagePath": "staticwebassets\\css\\ArcticLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
+>>>>>>> origin/Edzra
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
@@ -29,6 +37,7 @@
       "PackagePath": "staticwebassets\\js\\cart.js"
     },
     {
+<<<<<<< HEAD
       "Id": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\js\\searchProduct.js",
       "PackagePath": "staticwebassets\\js\\searchProduct.js"
     },
@@ -42,6 +51,17 @@
     },
     {
       "Id": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\wwwroot\\lib\\bootstrap\\LICENSE",
+=======
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\transactionDetails.js",
+      "PackagePath": "staticwebassets\\js\\transactionDetails.js"
+    },
+    {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\lib\\bootstrap\\LICENSE",
+>>>>>>> origin/Edzra
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {

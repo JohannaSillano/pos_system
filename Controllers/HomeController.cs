@@ -18,6 +18,7 @@ namespace pos_system.Controllers
         }
 
         public IActionResult Index()
+<<<<<<< HEAD
         {
             var ProductList = _context.Products.Where(p => p.StockQuantity > 0).ToList();
             return View(ProductList);
@@ -43,6 +44,15 @@ namespace pos_system.Controllers
                     .ToList();
                 return Json(matchingProducts); // Return matching products
             }
+=======
+        {
+            var ProductList = _context.Products.Where(p => p.StockQuantity > 0).ToList();
+            return View(ProductList);
+        }
+        public IActionResult Invoice()
+        {
+            return View();
+>>>>>>> origin/Edzra
         }
     }
 }
