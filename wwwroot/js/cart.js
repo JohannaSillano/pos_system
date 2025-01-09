@@ -150,7 +150,7 @@ async function checkout() {
         return;
     }
     else{
-        const employeeId = document.getElementById('employeeId').value;
+        const employeeId = document.getElementById('employeeId').value; // get the v
         // Debug log to see cart array after adding an item
         console.log("Cart before checkout:", cart);
         console.table(cart);
