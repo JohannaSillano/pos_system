@@ -72,34 +72,48 @@ namespace pos_system.Controllers
             return Json(result);
         }
 
-        // Create transaction in the database using POST method
+        // Create Transaction in the database of POS
         [HttpPost]
-        public async Task<IActionResult> PostTransaction([FromBody] Models.Transaction transaction)
+        public IActionResult PostTransaction([FromBody] Models.Transaction transaction)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage);
-                return BadRequest(new { message = "Invalid model state.", errors });
+                _posDbContext.Transactions.Add(transaction);
+                _posDbContext.SaveChanges();
+
+                // Get the ID of the newly added transaction
+                int lastTransactionId = transaction.Id;
+                            
+                return Ok(new{
+                    message = "Transaction successfully processed.",
+                    transactionId = lastTransactionId
+                });
             }
 
-            using (var transactionScope = await _posDbContext.Database.BeginTransactionAsync())
-            {
-                try
-                {
-                    // Save the transaction to the database
-                    _posDbContext.Transactions.Add(transaction);
-                    await _posDbContext.SaveChangesAsync();
+            return BadRequest(new {
+                message = "Invalid transaction data."
+            });
+        }
 
-                    // Commit the database transaction
-                    await transactionScope.CommitAsync();
-                    return Ok(new { message = "Transaction successfully processed." });
-                }
-                catch (Exception ex)
+        // Create transaction details in the database of POS
+        [HttpPost]
+        public IActionResult PostTransactionDetails([FromBody] List<TransactionDetails> transactionDetailsList)
+        {
+            if (ModelState.IsValid)
+            {
+                _posDbContext.TransactionDetails.AddRange(transactionDetailsList);
+                _posDbContext.SaveChanges();
+
+                return Ok(new
                 {
-                    await transactionScope.RollbackAsync();
-                    return StatusCode(500, new { message = "An error occurred while processing the transaction.", details = ex.Message });
-                }
+                    message = "Transaction details successfully processed."
+                });
             }
+
+            return BadRequest(new
+            {
+                message = "Invalid transaction details data."
+            });
         }
     }
 }
