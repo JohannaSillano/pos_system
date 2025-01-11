@@ -264,7 +264,6 @@ async function createTransaction() {
 
             // Call the createTransactionDetails and pass the copyCart and lastTransactionId
             createTransactionDetails(copyCart, lastTransactionId);
-            
         } else {
             const error = await response.json();
             alert('Transaction failed: ' + error.message);
@@ -276,9 +275,9 @@ async function createTransaction() {
 }
 
 // Yes receipt handler
-function yesReceipt() {
+async function yesReceipt() {
     console.log('Cart in the yes receipt:', cart);
-    createTransaction();
+    await createTransaction();
     printReceipt(); // Call printReceipt when the transaction is successful
     if(printReceipt){
         resetCart(); // Call resetCart when the transaction is successful
@@ -291,9 +290,9 @@ function yesReceipt() {
 }
 
 // No receipt handler
-function noReceipt() {
+async function noReceipt() {
     console.log('Cart in the no receipt:', cart);
-    createTransaction();
+    await createTransaction();
     resetCart(); // Call resetCart when the transaction is successful
     // Close the modal
     const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
@@ -368,11 +367,22 @@ function generatePDFInvoice(data) {
     doc.save(`Invoice_TRN-${data.transactionNumber}.pdf`);
 }
 
+function resetSelectBtnState() {
+    const allSelectBtn = document.querySelectorAll('.btn-select'); // Get all the elements that has a 'btn-select' class
+
+    // Remove all the class of disabled-select-btn and the disabled button state
+    allSelectBtn.forEach(button => {
+        button.innerHTML = `Select`; // Reset the button label
+        button.classList.remove('disabled-select-btn'); // Remove the class of disabled-select-btn
+        button.disabled = false; // Remove the disabled state of the button
+    });
+}
 
 // Reset cart
 function resetCart() {
     cart = []; // Clear the cart array
     cartTableBody.innerHTML = ''; // Clear the table
     cartItemId = 1; // Reset cart item ID
+    resetSelectBtnState(); // Reset the select btn state
     updateTotalAmount(); // Reset total amount
 }
