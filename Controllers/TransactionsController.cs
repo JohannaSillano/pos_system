@@ -78,12 +78,13 @@ namespace pos_system.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Add the transaction record to the database of POS and save the changes to the database.
                 _posDbContext.Transactions.Add(transaction);
                 _posDbContext.SaveChanges();
 
                 // Get the ID of the newly added transaction
                 int lastTransactionId = transaction.Id;
-                            
+
                 return Ok(new{
                     message = "Transaction successfully processed.",
                     transactionId = lastTransactionId
@@ -101,8 +102,25 @@ namespace pos_system.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Add the transaction record to the database of POS and save the changes to the database.
                 _posDbContext.TransactionDetails.AddRange(transactionDetailsList);
                 _posDbContext.SaveChanges();
+
+                // Group the transaction details by ProductId and calculate the total quantity for each product
+                var productQuantities = transactionDetailsList
+                    .GroupBy(td => td.ProductId) // Group by the ProductId to create groups for each product
+                    .Select(g => new { ProductId = g.Key, TotalQuantity = g.Sum(td => td.Quantity) }); // For each group, create a new object containing the ProductId and the total quantity sold
+
+                // Iterate over the grouped products and update their quantities in the database of IMS
+                foreach (var pq in productQuantities)
+                {
+                    var product = _imDbContext.Products.FirstOrDefault(p => p.Id == pq.ProductId);
+                    if (product != null)
+                    {
+                        product.StockQuantity -= pq.TotalQuantity;
+                    }
+                }
+                _imDbContext.SaveChanges(); // Save the changes to the database of IMS to reflect the updated inventory
 
                 return Ok(new
                 {
