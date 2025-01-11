@@ -1,7 +1,7 @@
 const employeeId = document.getElementById('employeeId').value; // get the value of the element that has an id of employeeId.
 const cartTableBody = document.querySelector('.cart-table tbody');
 let cartItemId = 1; // Unique ID for cart items
-let cart = []; // Array to store cart items
+let cart = []; // Object to store cart items
 let subtotalAmount = 0;
 let taxAmount = 0;
 let totalAmount = 0;
@@ -186,8 +186,47 @@ async function checkout() {
     }
 }
 
+async function createTransactionDetails(cart, transactionId) {
+    console.log('Cart content:', cart);
+    // Construct the transaction details array
+    const transactionDetails = cart.map(item => ({
+        TransactionId: transactionId,
+        ProductId: item.id, // Extract the specific ProductId field
+        Quantity: item.quantity, // Extract the specific quantity field
+        Amount: item.productSubtotal // Extract the specific productSubtotal field
+    }));
+
+    console.log('transaction details:', transactionDetails);
+    console.table('transaction details:', transactionDetails);
+
+    try {
+        // Send the transaction details object to the server using fetch API to create transaction details in the POS Database
+        const response = await fetch ('/Transactions/PostTransactionDetails', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(transactionDetails)
+        });
+
+        if (response.ok) {
+            // Parse the JSON response
+            const data = await response.json();
+            const message = data.message;
+
+            alert(message);
+        } else {
+            const error = await response.json();
+            alert('Transaction Details failed: ' + error.message);
+        }
+    } catch (err) {
+        console.error('Error posting transaction:', err);
+        alert('An error occurred while processing the transaction details.');
+    }
+}
+
 async function createTransaction() {
-    // Constract the transaction object
+    // Construct the transaction object
     const transaction = {
         TransactionNumber: generateTransactionNumber(),
         TransactionDate: new Date().toISOString(),
@@ -197,9 +236,13 @@ async function createTransaction() {
         EmployeeId: employeeId
     };
 
+    console.log('Cart in the create transaction after transaction object:', cart);
     console.log("Transaction data:",transaction)
 
     try {
+        // Need to copy the content of the cart because the cart will become empty after the fetch statement
+        const copyCart = cart; // Make a copy of the content in the cart to pass it in the createTransactionDetails when it call.
+
         // Send the transaction object to the server using fetch API to create transaction in POS database
         const response = await fetch ('/Transactions/PostTransaction', {
             method: 'POST',
@@ -210,7 +253,18 @@ async function createTransaction() {
         });
 
         if (response.ok) {
-            alert('Transaction successfully processed!');
+            // Parse the JSON response
+            const data = await response.json();
+            const message = data.message;
+            const lastTransactionId = data.transactionId;
+
+            console.log('Last Transaction Id:', lastTransactionId);
+            console.log('Cart content in the create transaction:', cart);
+            alert(message);
+
+            // Call the createTransactionDetails and pass the copyCart and lastTransactionId
+            createTransactionDetails(copyCart, lastTransactionId);
+            
         } else {
             const error = await response.json();
             alert('Transaction failed: ' + error.message);
@@ -223,6 +277,7 @@ async function createTransaction() {
 
 // Yes receipt handler
 function yesReceipt() {
+    console.log('Cart in the yes receipt:', cart);
     createTransaction();
     printReceipt(); // Call printReceipt when the transaction is successful
     if(printReceipt){
@@ -237,7 +292,7 @@ function yesReceipt() {
 
 // No receipt handler
 function noReceipt() {
-    // add Transaction to database and update stock function()
+    console.log('Cart in the no receipt:', cart);
     createTransaction();
     resetCart(); // Call resetCart when the transaction is successful
     // Close the modal
