@@ -26,6 +26,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Transactions" asp-action="Transactions">Transactions</a>
                         </li>
                     </ul>
+                    <!-- Rightmost logout button -->
+                    <div class="ms-auto">
+                        <form method="post" asp-controller="Login" asp-action="Logout">
+                            <button type="submit" class="btn btn-primary">Logout</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>

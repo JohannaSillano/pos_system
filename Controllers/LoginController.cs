@@ -39,6 +39,16 @@ namespace pos_system.Controllers
             ViewBag.ErrorMessage = employee == null ? "Invalid email or password." : "Access denied. Only cashiers can log in.";
             return View("Login");
         }
+
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            // Clear the session to log the user out
+            HttpContext.Session.Clear();
+
+            // Redirect to the home page or login page after logout
+            return RedirectToAction("Login", "Login");
+        }
     }
 }
 
