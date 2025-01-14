@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\ArcticLogo.png"
     },
     {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\CircleLogo.png",
+      "PackagePath": "staticwebassets\\css\\CircleLogo.png"
+    },
+    {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
@@ -23,10 +27,6 @@
     {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Transactions.css",
       "PackagePath": "staticwebassets\\css\\Transactions.css"
-    },
-    {
-      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\default-profile.jpg",
-      "PackagePath": "staticwebassets\\css\\default-profile.jpg"
     },
     {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\site.css",
