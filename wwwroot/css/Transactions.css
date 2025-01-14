@@ -1,0 +1,32 @@
+/* Add padding for the header and table container */
+.container {
+    padding-top: 1rem; /* Adjust padding as needed */
+    max-width: 100%;
+}
+
+/* Align the header and search bar */
+.transaction-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.transaction-header h2 {
+    margin: 0;
+}
+
+.search-bar {
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Ensure table fits within the container */
+.table {
+    margin: 0 auto;
+    width: 100%;
+}

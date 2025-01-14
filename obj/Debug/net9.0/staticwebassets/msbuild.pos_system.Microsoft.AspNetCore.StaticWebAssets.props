@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>px9axq1e30</Fingerprint>
-      <Integrity>zUnDudeCYUYKtM3oLl1lGUuUvIaY5WHEDEQqEIDL19g=</Integrity>
+      <Fingerprint>53eazkkt4o</Fingerprint>
+      <Integrity>L0ekB05Jcbe4dhDNhiJLzP37hrK19JaLUSxdV3iqX14=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\POS.css'))</OriginalItemSpec>
@@ -84,11 +84,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uy5aesfs9w</Fingerprint>
-      <Integrity>tuqRMAI9S5gTLpXgA9XMo+ozlRbgwju7fktSlQtmt5w=</Integrity>
+      <Fingerprint>0rxmk21rpk</Fingerprint>
+      <Integrity>XAA/qP4brjsqUPuVM8IAZ1WD5+WNs1bXEjOYgd6pj+A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Transactions.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>pos_system</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/pos_system</BasePath>
+      <RelativePath>css/Transactions.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>pp5aizuvbi</Fingerprint>
+      <Integrity>k2Z2b5ZQqmr5Jg9t2ziULj7SlqF43dnk2/vZvmMfMGc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Transactions.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))">
       <SourceType>Package</SourceType>

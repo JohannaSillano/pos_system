@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\POS.css"
     },
     {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Transactions.css",
+      "PackagePath": "staticwebassets\\css\\Transactions.css"
+    },
+    {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

@@ -224,7 +224,6 @@ C:\Users\emaca\Desktop\SIA1 Integration\pos_system\bin\Debug\net9.0\pos_system.d
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\bin\Debug\net9.0\pos_system.pdb
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\pos_system.genruntimeconfig.cache
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\ref\pos_system.dll
-C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\dmassrd1lm-uy5aesfs9w.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\xcgykv1g49-n90ppq8sjo.gz
 >>>>>>> origin/Edzra
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\bin\Debug\net9.0\appsettings.Development.json
@@ -456,7 +455,9 @@ C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\pos_system.pdb
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\pos_system.genruntimeconfig.cache
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\ref\pos_system.dll
-C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\0pvgy2uvd1-px9axq1e30.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\nt5flg4hzm-sd2i9ipohi.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\whdoqeq69h-6ni2uq6cfo.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\r5g4g7rang-vx4fa44a95.gz
+C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\dmassrd1lm-0rxmk21rpk.gz
+C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\0pvgy2uvd1-53eazkkt4o.gz
+C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\fcu5nvkaje-pp5aizuvbi.gz

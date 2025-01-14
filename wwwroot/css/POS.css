@@ -114,6 +114,7 @@ body {
   padding: 20px;
   text-align: center;
   overflow-y: auto; /* Prevent overflow */
+  flex-grow: 1; /* Allow the panel to grow */
 }
 
 .pos-title {
