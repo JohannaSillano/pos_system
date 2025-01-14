@@ -141,7 +141,6 @@ C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\pos_system.s
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\scopedcss\bundle\pos_system.styles.css
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\scopedcss\projectbundle\pos_system.bundle.scp.css
-C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\14w4kqlx0l-0eiwjn99ne.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\810iclln22-61n19gt1b8.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\2bt3gachxy-xtxxf3hu2r.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\qiwfvwnygh-t1cqhe9u97.gz
@@ -461,3 +460,4 @@ C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\r
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\dmassrd1lm-0rxmk21rpk.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\0pvgy2uvd1-53eazkkt4o.gz
 C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\fcu5nvkaje-pp5aizuvbi.gz
+C:\Users\emaca\Desktop\SIA1 Integration\pos_system\obj\Debug\net9.0\compressed\14w4kqlx0l-f7495rekt9.gz

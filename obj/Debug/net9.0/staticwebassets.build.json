@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9u7Lr5lgly7opyL+pG0eoz4t+sST4DTVF7EUA3wYdco=",
+  "Hash": "+uE7i8NkZ4+6twtbNggZP+Ty2qSazV75u64UgRto/fw=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\POS.css"
     },
     {
-      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
+      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-f7495rekt9.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/pos_system",
-      "RelativePath": "css/Login#[.{fingerprint=0eiwjn99ne}]?.css.gz",
+      "RelativePath": "css/Login#[.{fingerprint=f7495rekt9}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +52,8 @@
       "RelatedAsset": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "z1gjxxxy3v",
-      "Integrity": "+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=",
+      "Fingerprint": "kqzuovigi1",
+      "Integrity": "lNtf4aQBKjD110k2ZO/ZrO09tUM+tXn+mznVQCj9EqY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css"
@@ -1571,6 +1571,27 @@
       "OriginalItemSpec": "wwwroot\\css\\ArcticLogo.png"
     },
     {
+      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\default-profile.jpg",
+      "SourceId": "pos_system",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\",
+      "BasePath": "_content/pos_system",
+      "RelativePath": "css/default-profile#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "whjex55njp",
+      "Integrity": "zKCY4fbORTDP0jTJFBxGmWSdilFHS2s2o4a1ucIJ1ck=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\default-profile.jpg"
+    },
+    {
       "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
@@ -1585,8 +1606,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0eiwjn99ne",
-      "Integrity": "6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=",
+      "Fingerprint": "f7495rekt9",
+      "Integrity": "i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Login.css"
@@ -3146,13 +3167,95 @@
       ]
     },
     {
-      "Route": "css/Login.0eiwjn99ne.css",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
+      "Route": "css/default-profile.jpg",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\default-profile.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73965"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zKCY4fbORTDP0jTJFBxGmWSdilFHS2s2o4a1ucIJ1ck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 18:25:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zKCY4fbORTDP0jTJFBxGmWSdilFHS2s2o4a1ucIJ1ck="
+        }
+      ]
+    },
+    {
+      "Route": "css/default-profile.whjex55njp.jpg",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\default-profile.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73965"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zKCY4fbORTDP0jTJFBxGmWSdilFHS2s2o4a1ucIJ1ck=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 18:25:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "whjex55njp"
+        },
+        {
+          "Name": "label",
+          "Value": "css/default-profile.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zKCY4fbORTDP0jTJFBxGmWSdilFHS2s2o4a1ucIJ1ck="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.css",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-f7495rekt9.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000840336134"
+          "Quality": "0.000805801773"
         }
       ],
       "ResponseHeaders": [
@@ -3162,19 +3265,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1189"
+          "Value": "1240"
         },
         {
           "Name": "ETag",
-          "Value": "\"+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=\""
+          "Value": "\"lNtf4aQBKjD110k2ZO/ZrO09tUM+tXn+mznVQCj9EqY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 03:07:26 GMT"
+          "Value": "Tue, 14 Jan 2025 18:40:40 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -3190,26 +3293,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
+          "Value": "W/\"i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "0eiwjn99ne"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Login.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
+          "Value": "sha256-i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4="
         }
       ]
     },
     {
-      "Route": "css/Login.0eiwjn99ne.css",
+      "Route": "css/Login.css",
       "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3219,7 +3314,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3797"
+          "Value": "3757"
         },
         {
           "Name": "Content-Type",
@@ -3227,11 +3322,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
+          "Value": "\"i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 03:07:26 GMT"
+          "Value": "Tue, 14 Jan 2025 18:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.css.gz",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-f7495rekt9.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lNtf4aQBKjD110k2ZO/ZrO09tUM+tXn+mznVQCj9EqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 18:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lNtf4aQBKjD110k2ZO/ZrO09tUM+tXn+mznVQCj9EqY="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.f7495rekt9.css",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-f7495rekt9.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000805801773"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1240"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lNtf4aQBKjD110k2ZO/ZrO09tUM+tXn+mznVQCj9EqY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 18:40:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f7495rekt9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4="
+        }
+      ]
+    },
+    {
+      "Route": "css/Login.f7495rekt9.css",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 18:40:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3241,7 +3481,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0eiwjn99ne"
+          "Value": "f7495rekt9"
         },
         {
           "Name": "label",
@@ -3249,13 +3489,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
+          "Value": "sha256-i86GGMERwoUxRFkzjqILJG93giQ/qmgqj2mao2nJP+4="
         }
       ]
     },
     {
-      "Route": "css/Login.0eiwjn99ne.css.gz",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
+      "Route": "css/Login.f7495rekt9.css.gz",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-f7495rekt9.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3264,7 +3504,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1189"
+          "Value": "1240"
         },
         {
           "Name": "Content-Type",
@@ -3272,11 +3512,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=\""
+          "Value": "\"lNtf4aQBKjD110k2ZO/ZrO09tUM+tXn+mznVQCj9EqY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 03:07:26 GMT"
+          "Value": "Tue, 14 Jan 2025 18:40:40 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3294,7 +3534,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0eiwjn99ne"
+          "Value": "f7495rekt9"
         },
         {
           "Name": "label",
@@ -3302,144 +3542,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio="
-        }
-      ]
-    },
-    {
-      "Route": "css/Login.css",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000840336134"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1189"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 03:07:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
-        }
-      ]
-    },
-    {
-      "Route": "css/Login.css",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3797"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 03:07:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-6FvWQAo6hgn4MJRrWAzPtQG1fq8v/FhSGyoG9U7g0UU="
-        }
-      ]
-    },
-    {
-      "Route": "css/Login.css.gz",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\14w4kqlx0l-0eiwjn99ne.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1189"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 22 Dec 2024 03:07:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-+bIw3QA3/JavZ6tPYFt6kznPVXngFpRscoiCJ4XVWio="
+          "Value": "sha256-lNtf4aQBKjD110k2ZO/ZrO09tUM+tXn+mznVQCj9EqY="
         }
       ]
     },
