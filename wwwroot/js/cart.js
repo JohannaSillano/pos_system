@@ -226,7 +226,6 @@ async function createTransactionDetails(cart, transactionId) {
 }
 
 async function createTransaction() {
-    // Construct the transaction object
     const transaction = {
         TransactionNumber: generateTransactionNumber(),
         TransactionDate: new Date().toISOString(),
@@ -236,15 +235,8 @@ async function createTransaction() {
         EmployeeId: employeeId
     };
 
-    console.log('Cart in the create transaction after transaction object:', cart);
-    console.log("Transaction data:",transaction)
-
     try {
-        // Need to copy the content of the cart because the cart will become empty after the fetch statement
-        const copyCart = cart; // Make a copy of the content in the cart to pass it in the createTransactionDetails when it call.
-
-        // Send the transaction object to the server using fetch API to create transaction in POS database
-        const response = await fetch ('/Transactions/PostTransaction', {
+        const response = await fetch('/Transactions/PostTransaction', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -253,41 +245,47 @@ async function createTransaction() {
         });
 
         if (response.ok) {
-            // Parse the JSON response
             const data = await response.json();
-            const message = data.message;
-            const lastTransactionId = data.transactionId;
+            const lastTransactionId = data.transactionId; // Get the transaction ID
+            console.log('Transaction created successfully. ID:', lastTransactionId);
+            alert(data.message);
 
-            console.log('Last Transaction Id:', lastTransactionId);
-            console.log('Cart content in the create transaction:', cart);
-            alert(message);
+            const copyCart = [...cart]; // Copy the cart to prevent mutation
+            await createTransactionDetails(copyCart, lastTransactionId);
 
-            // Call the createTransactionDetails and pass the copyCart and lastTransactionId
-            createTransactionDetails(copyCart, lastTransactionId);
+            return lastTransactionId; // Return the transaction ID
         } else {
             const error = await response.json();
             alert('Transaction failed: ' + error.message);
+            return null;
         }
     } catch (err) {
-        console.error('Error posting transaction:', err);
+        console.error('Error creating transaction:', err);
         alert('An error occurred while processing the transaction.');
+        return null;
     }
 }
 
 // Yes receipt handler
 async function yesReceipt() {
-    console.log('Cart in the yes receipt:', cart);
-    await createTransaction();
-    printReceipt(); // Call printReceipt when the transaction is successful
-    if(printReceipt){
-        resetCart(); // Call resetCart when the transaction is successful
+    console.log('Cart in yesReceipt:', cart);
+
+    const transactionId = await createTransaction(); // Wait for the transaction ID
+    if (transactionId) {
+        // Open the invoice in a new tab
+        openInvoice(transactionId);
+        resetCart(); // Reset the cart after transaction success
+
         const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
         modal.hide();
-    }
-    else{
-        alert("Error printing receipt");
+
+        // Open the invoice in a new tab
+        openInvoice(transactionId);
+    } else {
+        alert("Error creating transaction. Receipt cannot be printed.");
     }
 }
+
 
 // No receipt handler
 async function noReceipt() {
@@ -299,85 +297,6 @@ async function noReceipt() {
     modal.hide();
 }
 
-// Print receipt function
-function printReceipt(transactionId) {
-    console.log("loadDetails function called with transactionId:", transactionId);
-    try {
-        // Fetch transaction details using fetchTransactionDetails and handle the returned Promise
-        fetchTransactionDetails(transactionId)
-            .then(data => {
-                if (!data.success) {
-                    alert(data.message || "Failed to load transaction details.");
-                    return;
-                }
-
-                // Load data into the modal
-                generatePDFInvoice(data);
-            })
-            .catch(error => {
-                console.error("Error fetching transaction details:", error);
-                alert("Error loading transaction details.");
-            });
-    } catch (error) {
-        console.error("Unexpected error in printReceipt:", error);
-        alert("Error loading transaction details.");
-    }
-}
-
-// Function to generate PDF invoice
-function generatePDFInvoice(data) {
-    const { jsPDF } = window.jspdf; // Destructure jsPDF from the global object
-    const doc = new jsPDF();
-
-    // Add Title
-    doc.setFontSize(16);
-    doc.text("Invoice", 14, 20);
-
-    // Add Transaction Number
-    doc.setFontSize(12);
-    doc.text(`Transaction Number: TRN-${data.transactionNumber}`, 14, 30);
-
-    // Add Cashier Name
-    doc.text(`Cashier: ${data.cashier}`, 14, 40);
-
-    // Add Transaction Date
-    doc.text(`Transaction Date: ${new Date(data.transactionDate).toLocaleDateString()}`, 14, 50);
-
-    // Add a line separator
-    doc.line(14, 55, 195, 55);
-
-    // Add Products Section
-    doc.text("Products:", 14, 65);
-    let yOffset = 75; // Start drawing products from this point
-    data.products.forEach(product => {
-        doc.text(`${product.productName} x ${product.quantity}`, 14, yOffset);
-        doc.text(`₱${product.amount.toFixed(2)}`, 150, yOffset);
-        yOffset += 10; // Add space between each product
-    });
-
-    // Add a line separator
-    doc.line(14, yOffset + 5, 195, yOffset + 5);
-
-    // Add Subtotal, Tax, Total Amount
-    doc.text(`Subtotal: ₱${data.subtotal.toFixed(2)}`, 14, yOffset + 15);
-    doc.text(`Tax: ₱${data.tax.toFixed(2)}`, 14, yOffset + 25);
-    doc.text(`Total Amount: ₱${data.totalAmount.toFixed(2)}`, 14, yOffset + 35);
-
-    // Save the generated PDF
-    doc.save(`Invoice_TRN-${data.transactionNumber}.pdf`);
-}
-
-function resetSelectBtnState() {
-    const allSelectBtn = document.querySelectorAll('.btn-select'); // Get all the elements that has a 'btn-select' class
-
-    // Remove all the class of disabled-select-btn and the disabled button state
-    allSelectBtn.forEach(button => {
-        button.innerHTML = `Select`; // Reset the button label
-        button.classList.remove('disabled-select-btn'); // Remove the class of disabled-select-btn
-        button.disabled = false; // Remove the disabled state of the button
-    });
-}
-
 // Reset cart
 function resetCart() {
     cart = []; // Clear the cart array
@@ -385,4 +304,9 @@ function resetCart() {
     cartItemId = 1; // Reset cart item ID
     resetSelectBtnState(); // Reset the select btn state
     updateTotalAmount(); // Reset total amount
+}
+
+function openInvoice(transactionId) {
+    const url = `/Invoice/Invoice?transactionId=${transactionId}`;
+    window.open(url, '_blank');
 }

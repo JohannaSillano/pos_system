@@ -6,7 +6,7 @@ namespace pos_system.Models
     public class Transaction
     {
         public int Id { get; set; }
-        public string? TransactionNumber { get; set; }
+        public required string TransactionNumber { get; set; }
         public DateTime TransactionDate { get; set; }
         public decimal Subtotal { get; set; }
         public decimal Tax { get; set; }
