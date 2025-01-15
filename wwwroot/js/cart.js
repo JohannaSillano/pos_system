@@ -312,11 +312,29 @@ function resetSelectBtnState() {
     });
 }
 
+function resetSelectBtnState() {
+    const selectButtons = document.querySelectorAll('.btn-select'); // Assuming buttons have this class
+    selectButtons.forEach(button => {
+        button.innerHTML = 'Select';
+        button.disabled = false;
+        button.classList.remove('disabled-select-btn');
+    });
+}
+
 function resetCart() {
     cart = []; // Clear the cart array
     cartTableBody.innerHTML = ''; // Clear the table
     cartItemId = 1; // Reset cart item ID
     resetSelectBtnState(); // Reset the select button state
     updateTotalAmount(); // Reset total amount
+
+    // Clear payment input
+    const paymentInput = document.getElementById("payment-amount");
+    paymentInput.value = ''; // Clear the input value
+
+    // Reset the change display
+    const changeDisplay = document.getElementById("change-display");
+    changeDisplay.textContent = ''; // Clear the text content
+    changeDisplay.style.color = ''; // Reset the text color to default
 }
 
