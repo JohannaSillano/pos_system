@@ -28,6 +28,8 @@ namespace pos_system.Controllers.Api
                                 select new
                                 {
                                     t.TransactionDate,
+                                    td.TransactionId,
+                                    td.Id,
                                     td.Quantity,
                                     td.Amount,
                                     ProductId = td.ProductId
@@ -43,19 +45,24 @@ namespace pos_system.Controllers.Api
             // Combine the data in memory and calculate the total sales, distinct products, and distinct categories
             var result = transactions.Select(t => new
             {
+
                 t.TransactionDate,
+                t.TransactionId,
+                t.Id,
                 t.Quantity,
                 t.Amount,
                 ProductName = products.ContainsKey(t.ProductId) ? products[t.ProductId].Name : "Unknown",
                 ProductCategory = products.ContainsKey(t.ProductId) ? products[t.ProductId].Category : "Unknown"
             }).ToList();
 
-            // Calculate total sales (sum of all quantities)
-            var totalSales = result.Sum(r => r.Quantity);
+            // Calculate total sold (sum of all quantities)
+            var soldProducts = result.Sum(r => r.Quantity);
+
+            // Calculate total sales (sum of all amount)
+            var totalSales = result.Sum(r => r.Amount);
 
             // Calculate total distinct products and categories
             var distinctProducts = result.Select(r => r.ProductName).Distinct().Count();
-            var distinctCategories = result.Select(r => r.ProductCategory).Distinct().Count();
 
             // Check if no data was found
             if (!result.Any())
@@ -68,9 +75,9 @@ namespace pos_system.Controllers.Api
             {
                 success = true, 
                 Transactions = result, 
+                TotalSoldProducts = soldProducts,
                 TotalSales = totalSales,
                 TotalDistinctProducts = distinctProducts,
-                TotalDistinctCategories = distinctCategories
             });
         }
     }
