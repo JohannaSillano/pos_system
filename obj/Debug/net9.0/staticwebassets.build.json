@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gDZhUUChxmIagm02Rdapca2Tz8UMbqM3RBjElIGncy8=",
+  "Hash": "9RUkKhA7PmRi9ShrI1vrCfK5zfHh6NRk4Ia6d0OLqZA=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -1025,12 +1025,12 @@
       "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-knu394gvcq.gz",
+      "Identity": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-bfm8trywr0.gz",
       "SourceId": "pos_system",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/pos_system",
-      "RelativePath": "js/cart#[.{fingerprint=knu394gvcq}]?.js.gz",
+      "RelativePath": "js/cart#[.{fingerprint=bfm8trywr0}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1039,8 +1039,8 @@
       "RelatedAsset": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "6hyrzatbfl",
-      "Integrity": "SuLTDVcQDPQCjD1osuT9f1qUfbE0aErVMdT00DLIWO0=",
+      "Fingerprint": "v5gb93e79g",
+      "Integrity": "k1se25HESe0PIUkzAl2eRZeRGo+zs6njbHHt+A0f9+Q=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js"
@@ -1732,8 +1732,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "knu394gvcq",
-      "Integrity": "EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk=",
+      "Fingerprint": "bfm8trywr0",
+      "Integrity": "eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\cart.js"
@@ -3107,7 +3107,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3152,7 +3152,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3189,7 +3189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3234,7 +3234,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3273,7 +3273,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3326,7 +3326,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3363,7 +3363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3410,7 +3410,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3471,7 +3471,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3516,7 +3516,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3653,7 +3653,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3714,7 +3714,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3759,7 +3759,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3814,7 +3814,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3867,7 +3867,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3904,7 +3904,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3951,7 +3951,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4012,7 +4012,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4057,7 +4057,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4112,7 +4112,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4165,7 +4165,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4202,7 +4202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4249,7 +4249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4302,7 +4302,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4339,7 +4339,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4386,7 +4386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4447,7 +4447,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4492,7 +4492,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:17:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4821,13 +4821,13 @@
       ]
     },
     {
-      "Route": "js/cart.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-knu394gvcq.gz",
+      "Route": "js/cart.bfm8trywr0.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-bfm8trywr0.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000308451573"
+          "Quality": "0.000308737265"
         }
       ],
       "ResponseHeaders": [
@@ -4837,19 +4837,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3241"
+          "Value": "3238"
         },
         {
           "Name": "ETag",
-          "Value": "\"SuLTDVcQDPQCjD1osuT9f1qUfbE0aErVMdT00DLIWO0=\""
+          "Value": "\"k1se25HESe0PIUkzAl2eRZeRGo+zs6njbHHt+A0f9+Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
+          "Value": "Wed, 15 Jan 2025 15:02:56 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4865,18 +4865,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk=\""
+          "Value": "W/\"eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "bfm8trywr0"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cart.js"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk="
+          "Value": "sha256-eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY="
         }
       ]
     },
     {
-      "Route": "js/cart.js",
+      "Route": "js/cart.bfm8trywr0.js",
       "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4886,7 +4894,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12525"
+          "Value": "12446"
         },
         {
           "Name": "Content-Type",
@@ -4894,121 +4902,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk=\""
+          "Value": "\"eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.js.gz",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-knu394gvcq.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3241"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SuLTDVcQDPQCjD1osuT9f1qUfbE0aErVMdT00DLIWO0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SuLTDVcQDPQCjD1osuT9f1qUfbE0aErVMdT00DLIWO0="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.knu394gvcq.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-knu394gvcq.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000308451573"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3241"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SuLTDVcQDPQCjD1osuT9f1qUfbE0aErVMdT00DLIWO0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
+          "Value": "Wed, 15 Jan 2025 15:02:56 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "knu394gvcq"
+          "Value": "bfm8trywr0"
         },
         {
           "Name": "label",
@@ -5016,13 +4924,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk="
+          "Value": "sha256-eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY="
         }
       ]
     },
     {
-      "Route": "js/cart.knu394gvcq.js",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
+      "Route": "js/cart.bfm8trywr0.js.gz",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-bfm8trywr0.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5031,7 +4939,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12525"
+          "Value": "3238"
         },
         {
           "Name": "Content-Type",
@@ -5039,56 +4947,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk=\""
+          "Value": "\"k1se25HESe0PIUkzAl2eRZeRGo+zs6njbHHt+A0f9+Q=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "knu394gvcq"
-        },
-        {
-          "Name": "label",
-          "Value": "js/cart.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EEmNTEwqt1G1hSWQPKBr1fLAvSBqvvy3p3u9AJMLzxk="
-        }
-      ]
-    },
-    {
-      "Route": "js/cart.knu394gvcq.js.gz",
-      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-knu394gvcq.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3241"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SuLTDVcQDPQCjD1osuT9f1qUfbE0aErVMdT00DLIWO0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
+          "Value": "Wed, 15 Jan 2025 15:02:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5106,7 +4969,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "knu394gvcq"
+          "Value": "bfm8trywr0"
         },
         {
           "Name": "label",
@@ -5114,7 +4977,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-SuLTDVcQDPQCjD1osuT9f1qUfbE0aErVMdT00DLIWO0="
+          "Value": "sha256-k1se25HESe0PIUkzAl2eRZeRGo+zs6njbHHt+A0f9+Q="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-bfm8trywr0.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000308737265"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3238"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k1se25HESe0PIUkzAl2eRZeRGo+zs6njbHHt+A0f9+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 15:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\cart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 15:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eTMgQipp+GbbRrYB5DQCeUJTt+8CpANgcXKln+h3gEY="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.js.gz",
+      "AssetFile": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\obj\\Debug\\net9.0\\compressed\\r5g4g7rang-bfm8trywr0.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3238"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"k1se25HESe0PIUkzAl2eRZeRGo+zs6njbHHt+A0f9+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 15:02:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-k1se25HESe0PIUkzAl2eRZeRGo+zs6njbHHt+A0f9+Q="
         }
       ]
     },
@@ -5143,7 +5143,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5196,7 +5196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5233,7 +5233,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5280,7 +5280,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5341,7 +5341,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5386,7 +5386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5441,7 +5441,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5494,7 +5494,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5531,7 +5531,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5578,7 +5578,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5639,7 +5639,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5684,7 +5684,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6037,7 +6037,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6098,7 +6098,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6143,7 +6143,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6198,7 +6198,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6251,7 +6251,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6288,7 +6288,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 20:40:17 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23999,7 +23999,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24052,7 +24052,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24089,7 +24089,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24136,7 +24136,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24197,7 +24197,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24242,7 +24242,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24297,7 +24297,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24358,7 +24358,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24403,7 +24403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24458,7 +24458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24511,7 +24511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -24548,7 +24548,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 14 Jan 2025 19:37:48 GMT"
+          "Value": "Wed, 15 Jan 2025 14:20:27 GMT"
         },
         {
           "Name": "Cache-Control",

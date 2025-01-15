@@ -7,5 +7,6 @@ namespace pos_system.Models
         public decimal Price { get; set; }
         public int StockQuantity { get; set; }
         public bool IsDeleted { get; set; }
+        public required string Category { get; set; }
     }
 }

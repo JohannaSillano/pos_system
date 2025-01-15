@@ -1,12 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using pos_system.Models;
-using pos_system.ViewModels;
-using System.Linq;
-using System.Threading.Tasks;
-using Newtonsoft.Json; // Make sure to include the Newtonsoft.Json namespace
-using System.Text.Json;
-using System.Transactions;
 
 namespace pos_system.Controllers
 {

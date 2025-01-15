@@ -272,8 +272,6 @@ async function yesReceipt() {
 
     const transactionId = await createTransaction(); // Wait for the transaction ID
     if (transactionId) {
-        // Open the invoice in a new tab
-        openInvoice(transactionId);
         resetCart(); // Reset the cart after transaction success
 
         const modal = bootstrap.Modal.getInstance(document.getElementById('confirmation-popup'));
