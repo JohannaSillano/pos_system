@@ -297,16 +297,26 @@ async function noReceipt() {
     modal.hide();
 }
 
-// Reset cart
-function resetCart() {
-    cart = []; // Clear the cart array
-    cartTableBody.innerHTML = ''; // Clear the table
-    cartItemId = 1; // Reset cart item ID
-    resetSelectBtnState(); // Reset the select btn state
-    updateTotalAmount(); // Reset total amount
-}
 
 function openInvoice(transactionId) {
     const url = `/Invoice/Invoice?transactionId=${transactionId}`;
     window.open(url, '_blank');
 }
+
+function resetSelectBtnState() {
+    const selectButtons = document.querySelectorAll('.btn-select'); // Assuming buttons have this class
+    selectButtons.forEach(button => {
+        button.innerHTML = 'Select';
+        button.disabled = false;
+        button.classList.remove('disabled-select-btn');
+    });
+}
+
+function resetCart() {
+    cart = []; // Clear the cart array
+    cartTableBody.innerHTML = ''; // Clear the table
+    cartItemId = 1; // Reset cart item ID
+    resetSelectBtnState(); // Reset the select button state
+    updateTotalAmount(); // Reset total amount
+}
+
