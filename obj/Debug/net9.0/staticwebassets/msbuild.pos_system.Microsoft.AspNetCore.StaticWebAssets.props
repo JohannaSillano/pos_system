@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>h7zubvgyj7</Fingerprint>
-      <Integrity>vVSeLiX0fz1n5xdwuswLFVaqhSg7pXYZ4LQdTtKQI2E=</Integrity>
+      <Fingerprint>0ka4f2rnz9</Fingerprint>
+      <Integrity>cDVuiGXSeJJovChVv6e6CrCtG3SHgI5yzBX5zCmifv8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\CircleLogo.png'))</OriginalItemSpec>
