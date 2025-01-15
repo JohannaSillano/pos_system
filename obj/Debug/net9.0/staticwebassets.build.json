@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RxQR7IZvEB6fRdF/D5/NTbnGR6uSLDbVPGWLVqAlKkg=",
+  "Hash": "gDZhUUChxmIagm02Rdapca2Tz8UMbqM3RBjElIGncy8=",
   "Source": "pos_system",
   "BasePath": "_content/pos_system",
   "Mode": "Default",
@@ -4845,7 +4845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:31:42 GMT"
+          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4898,7 +4898,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:31:42 GMT"
+          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4935,7 +4935,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:31:42 GMT"
+          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4982,7 +4982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:31:42 GMT"
+          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5043,7 +5043,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:31:42 GMT"
+          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5088,7 +5088,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 15 Jan 2025 11:31:42 GMT"
+          "Value": "Wed, 15 Jan 2025 11:35:14 GMT"
         },
         {
           "Name": "Cache-Control",

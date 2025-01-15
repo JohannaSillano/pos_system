@@ -49,6 +49,7 @@ namespace pos_system.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("TransactionNumber")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
