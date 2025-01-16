@@ -8,104 +8,50 @@ namespace pos_system.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly HttpClient _httpClient;
-        private readonly POSContext _context;
+        private readonly ILogger<HomeController> _logger;
+        private readonly IMDbContext _imDBContext;
+        private readonly POSDbContext _posDBContext;
 
-        public HomeController(HttpClient httpClient, POSContext context)
+        public HomeController(ILogger<HomeController> logger, IMDbContext imDBContext, POSDbContext posDBContext)
         {
-            _httpClient = httpClient;
-            _context = context;
+            _logger = logger;
+            _imDBContext = imDBContext;
+            _posDBContext = posDBContext;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            try
-            {
-                // Fetch all products initially
-                var response = await _httpClient.GetAsync("http://localhost:5263/api/ProductsApi/GetAllProducts");
+            // Retrieve employee ID from the session
+            var userId = HttpContext.Session.GetInt32("UserId");
 
-                if (response.IsSuccessStatusCode)
-                {
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    var products = JsonSerializer.Deserialize<List<Product>>(responseContent, new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-                    ViewBag.Products = products;
-                }
-                else
-                {
-                    ViewBag.Products = null;
-                    ViewBag.Error = "Failed to fetch products from the Inventory API.";
-                }
-            }
-            catch (Exception ex)
-            {
-                ViewBag.Products = null;
-                ViewBag.Error = $"An error occurred: {ex.Message}";
-            }
+            // Pass the userId to the view using ViewBag
+            ViewBag.UserId = userId;
 
-            return View();
+            // Fetch list of products
+            var ProductList = _imDBContext.Products.Where(p => p.StockQuantity > 0).ToList();
+            return View(ProductList);
         }
 
-        public async Task<IActionResult> SearchProducts(string query)
+        // Fetch product in search bar using GET
+        [HttpGet]
+        public JsonResult SearchProduct(string productQuery)
         {
-            try
+            if (string.IsNullOrEmpty(productQuery))
             {
-                // Fetch products based on search query
-                var response = await _httpClient.GetAsync($"http://localhost:5263/api/ProductsApi/SearchProducts?query={query}");
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    var products = JsonSerializer.Deserialize<List<Product>>(responseContent, new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-                    return Json(products); // Return products as JSON
-                }
-                else
-                {
-                    return Json(new { error = "No products found." });
-                }
+                var ProductList = _imDBContext.Products
+                    .Where(p => !p.IsDeleted && p.StockQuantity > 0)
+                    .Select(p => new { p.Id, p.Name, p.Price, p.StockQuantity })
+                    .ToList();
+                return Json(ProductList); // Return all products
             }
-            catch (Exception ex)
+            else
             {
-                return Json(new { error = ex.Message });
+                var matchingProducts = _imDBContext.Products
+                    .Where(p => !p.IsDeleted && p.StockQuantity > 0 && p.Name.ToLower().Contains(productQuery.ToLower()))
+                    .Select(p => new { p.Id, p.Name, p.Price, p.StockQuantity })
+                    .ToList();
+                return Json(matchingProducts); // Return matching products
             }
-        }
-
-        // Fetch all products when the searchbar is empty and return as json format
-        public async Task<IActionResult> EmptySearchBar()
-        {
-            try
-            {
-                // Fetch all products
-                var response = await _httpClient.GetAsync("http://localhost:5263/api/ProductsApi/GetAllProducts");
-
-                if (response.IsSuccessStatusCode)
-                {
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    var products = JsonSerializer.Deserialize<List<Product>>(responseContent, new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-                    return Json(products); // Return all products as JSON
-                }
-                else
-                {
-                    return Json(new { error = "Failed to fetch products from the Inventory API." });
-                }
-            }
-            catch (Exception ex)
-            {
-                return Json(new { error = ex.Message });
-            }
-        }
-
-        public IActionResult Transactions()
-        {
-            return View();
         }
     }
 }

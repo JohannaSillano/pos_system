@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<pos_system.Models.Transaction>
 @{
-    ViewData["Title"] = "POS";
+    ViewData["Title"] = "Transactions";
 }
 
 <!DOCTYPE html>
@@ -10,71 +10,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/Transactions.css" />
 </head>
 <body>
-    <h2 class="text-center">Transactions</h2>
-    <hr />
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Transaction ID</th>
-                <th>Date</th>
-                <th>Total Amount</th>
-                <th>Details</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null)
-            {
-                @foreach (var transaction in Model)
-                {
-                    <tr>
-                        <td>@transaction.Id</td>
-                        <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
-                        <td>₱@transaction.TotalAmount.ToString("N2")</td>
-                        <td>
-                            <button class="btn btn-primary" onclick="showModal('@transaction.Id', '@transaction.TransactionDate', '@transaction.Subtotal', '@transaction.Tax', '@transaction.TotalAmount')">View</button>
-                        </td>
-                    </tr>
-                }
-            }
-            else
-            {
-                <tr><td colspan="4">No transactions available.</td></tr>
-            }
-        </tbody>
-    </table>
-
-    <!-- Modal -->
-    <div>
-        <div class="modal fade" id="detailsModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-title">Transaction Details</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p><strong>Transaction ID:</strong> <span id="modal-transaction-id"></span></p>
-                        <p><strong>Transaction Date:</strong> <span id="modal-transaction-date"></span></p>
-                        <hr />
-                        <p><strong>Product1</strong></p>
-                        <!-- products list -->
-                        <hr />
-                        <p><strong>Subtotal:</strong> ₱<span id="modal-subtotal"></span></p>
-                        <p><strong>Tax:</strong> ₱<span id="modal-tax"></span></p>
-                        <p><strong>Total Amount:</strong> ₱<span id="modal-total"></span></p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="transaction-header">
+            <h2 class="text-left">Transactions</h2>
+            <input type="text" class="search-bar" id="search-bar" placeholder="Search transaction by number..."/>
         </div>
+        <hr />
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Transaction Number</th>
+                    <th>Date</th>
+                    <th>Total Amount</th>
+                    <th>Details</th>
+                    <th>Receipt</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    @foreach (var transaction in Model)
+                    {
+                        <tr>
+                            <td>@transaction.TransactionNumber</td>
+                            <td>@transaction.TransactionDate.ToString("yyyy-MM-dd")</td>
+                            <td>₱@transaction.TotalAmount.ToString("N2")</td>
+                            <td>
+                                <button class="btn btn-primary" onclick="loadDetails('@transaction.Id')">View</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary" onclick="openInvoice('@transaction.Id')">
+                                    <i class="bi bi-printer"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr><td colspan="5">No transactions available.</td></tr>
+                }
+            </tbody>
+        </table>
     </div>
 
+    <!-- Include the modal using the <partial> tag helper -->
+    <partial name="DetailsModal" />
+
     <!-- JavaScript -->
+    <!-- jQuery (required for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/showModal.js"></script>
+    <script src="~/js/transactionDetails.js"></script>
+    <script src="~/js/cart.js"></script>
+
+    <!-- Search functionality (restricted to Transaction Number) -->
+    <script>
+        $(document).ready(function() {
+            // Add a row for the "No transactions found" message
+            var noTransactionsRow = $(
+                '<tr class="no-transactions-row" style="display:none; text-align: center;">' +
+                '<td colspan="100%" style="text-align: center; padding: 20px; font-size: 16px;">No transactions found.</td>' +
+                '</tr>'
+            );
+            $('table tbody').append(noTransactionsRow); // Append it to the table body
+
+            // Trigger search on input change
+            $('#search-bar').on('input', function() {
+                var searchTerm = $(this).val().toLowerCase(); // Get the input value and convert to lowercase
+                var visibleRows = 0;
+
+                $('table tbody tr').each(function() {
+                    if ($(this).hasClass('no-transactions-row')) return; // Skip the "No transactions found" row
+
+                    var transactionNumber = $(this).find('td:first').text().toLowerCase(); // Only check the first column (Transaction Number)
+
+                    if (transactionNumber.indexOf(searchTerm) > -1) {
+                        $(this).show(); // Show the row if the transaction number contains the search term
+                        visibleRows++;
+                    } else {
+                        $(this).hide(); // Hide the row if the transaction number doesn't contain the search term
+                    }
+                });
+
+                // Show or hide the "No transactions found" message based on visible rows
+                if (visibleRows === 0) {
+                    noTransactionsRow.show(); // Show the message
+                } else {
+                    noTransactionsRow.hide(); // Hide the message
+                }
+            });
+        });
+    </script>
 </body>
 </html>

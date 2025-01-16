@@ -94,6 +94,16 @@ body {
   color: #ffff; /* Text color change on hover for contrast */
 }
 
+.disabled-select-btn {
+  background-color: #ccc;
+  color: #777;
+}
+
+.disabled-select-btn:hover {
+  background-color: #ccc;
+  color: #777;
+}
+
 /* RIGHT PANEL */
 .right-panel {
   width: 30%;
@@ -104,6 +114,7 @@ body {
   padding: 20px;
   text-align: center;
   overflow-y: auto; /* Prevent overflow */
+  flex-grow: 1; /* Allow the panel to grow */
 }
 
 .pos-title {
@@ -257,4 +268,11 @@ body {
   font-size: 18px; /* Adjust font size for the change text */
   margin-top: 10px;
   color: white;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  padding: 10px;
 }

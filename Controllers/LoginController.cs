@@ -5,36 +5,50 @@ namespace pos_system.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly POSContext _context;
-
-        public LoginController(POSContext context)
+        private readonly IMDbContext _imsDbContext;
+        public LoginController(IMDbContext imsDbContext)
         {
-            _context = context;
+            _imsDbContext = imsDbContext;
         }
-        
+
         // Login Action
         public IActionResult Login()
         {
             return View(); // Return Login.cshtml
         }
 
-        // POST: Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Login(string Email, string Password)
+        public IActionResult Login(string email, string password)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Username == Email && u.Password == Password);
-            if (user != null)
+            // Query the IMSDB for user authentication
+            var employee = _imsDbContext.Employees.FirstOrDefault(u => u.Email == email && u.Password == password);
+
+            if (employee != null && employee.Role == "Cashier")
             {
-                HttpContext.Session.SetString("UserId", user.Id.ToString());
-                HttpContext.Session.SetString("UserFullName", user.Name);
+                // Store user details in session
+                HttpContext.Session.SetInt32("UserId", employee.Id);
+                HttpContext.Session.SetString("UserFullName", employee.FirstName);
+                HttpContext.Session.SetString("UserFullName", employee.LastName);
+                
+                // Redirect to the POS dashboard
                 return RedirectToAction("Index", "Home");
             }
-            
-            ViewBag.ErrorMessage = "Invalid email or password";
+
+            // If login fails or user is not a cashier
+            ViewBag.ErrorMessage = employee == null ? "Invalid email or password." : "Access denied. Only cashiers can log in.";
             return View("Login");
         }
 
-        // Other actions related to login, e.g., ForgotPassword
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            // Clear the session to log the user out
+            HttpContext.Session.Clear();
+
+            // Redirect to the home page or login page after logout
+            return RedirectToAction("Login", "Login");
+        }
     }
 }
+

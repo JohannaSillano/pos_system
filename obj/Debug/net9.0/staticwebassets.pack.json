@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\pos_system.fluyj6og1t.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\ArcticLogo.png",
+      "PackagePath": "staticwebassets\\css\\ArcticLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\CircleLogo.png",
+      "PackagePath": "staticwebassets\\css\\CircleLogo.png"
+    },
+    {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
@@ -15,6 +23,10 @@
     {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\POS.css",
       "PackagePath": "staticwebassets\\css\\POS.css"
+    },
+    {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\Transactions.css",
+      "PackagePath": "staticwebassets\\css\\Transactions.css"
     },
     {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\css\\site.css",
@@ -29,12 +41,20 @@
       "PackagePath": "staticwebassets\\js\\cart.js"
     },
     {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\searchProduct.js",
+      "PackagePath": "staticwebassets\\js\\searchProduct.js"
+    },
+    {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\showModal.js",
       "PackagePath": "staticwebassets\\js\\showModal.js"
     },
     {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\js\\transactionDetails.js",
+      "PackagePath": "staticwebassets\\js\\transactionDetails.js"
     },
     {
       "Id": "C:\\Users\\emaca\\Desktop\\SIA1 Integration\\pos_system\\wwwroot\\lib\\bootstrap\\LICENSE",
