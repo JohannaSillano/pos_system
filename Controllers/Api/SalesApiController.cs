@@ -27,6 +27,7 @@ namespace pos_system.Controllers.Api
                                 join td in _posDbContext.TransactionDetails on t.Id equals td.TransactionId
                                 select new
                                 {
+                                    t.TransactionNumber,
                                     t.TransactionDate,
                                     td.TransactionId,
                                     td.Id,
@@ -45,7 +46,7 @@ namespace pos_system.Controllers.Api
             // Combine the data in memory and calculate the total sales, distinct products, and distinct categories
             var result = transactions.Select(t => new
             {
-
+                t.TransactionNumber,
                 t.TransactionDate,
                 t.TransactionId,
                 t.Id,
