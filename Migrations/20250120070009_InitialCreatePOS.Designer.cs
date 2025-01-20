@@ -12,7 +12,7 @@ using pos_system.Models;
 namespace pos_system.Migrations
 {
     [DbContext(typeof(POSDbContext))]
-    [Migration("20250115115353_InitialCreatePOS")]
+    [Migration("20250120070009_InitialCreatePOS")]
     partial class InitialCreatePOS
     {
         /// <inheritdoc />
