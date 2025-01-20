@@ -17,18 +17,18 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = pos_system
 build_property.RootNamespace = pos_system
-build_property.ProjectDir = C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\
+build_property.ProjectDir = C:\Users\emaca\Desktop\SIA1 Integration\pos_system\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system
+build_property.MSBuildProjectDirectory = C:\Users\emaca\Desktop\SIA1 Integration\pos_system
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/Home/Index.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
@@ -36,34 +36,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52b2ljZVxJbnZvaWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/Login/Login.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/Shared/DetailsModal.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/Shared/DetailsModal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXERldGFpbHNNb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/Shared/Error.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/Transactions/Transactions.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/Transactions/Transactions.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25zXFRyYW5zYWN0aW9ucy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/_ViewImports.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/_ViewStart.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/PC/Coding na liwat/Case Study_System_Integration_Architecture_A.Y 2024-2025/pos_system/Views/Shared/_Layout.cshtml]
+[C:/Users/emaca/Desktop/SIA1 Integration/pos_system/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ht988r17pi

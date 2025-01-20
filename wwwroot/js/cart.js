@@ -60,11 +60,13 @@ function addToCart(Id, name, amount, stockQuantity) {
 
 // Handle quantity change
 function handleQuantityChange(inputElement, cartItemId, amount, stockQuantity) {
-    const newQuantity = parseInt(inputElement.value);
+    let newQuantity = parseInt(inputElement.value);
 
     if (newQuantity > stockQuantity) {
-        inputElement.value = stockQuantity;
         alert(`Cannot add more than ${stockQuantity} items to the cart.`);
+        inputElement.value = stockQuantity;        
+        newQuantity = stockQuantity;
+
     }
     // Update the item amount in the table
     const itemAmountCell = inputElement.closest('tr').querySelector('.item-amount');
