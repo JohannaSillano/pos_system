@@ -463,3 +463,4 @@ C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\r5g4g7rang-bfm8trywr0.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\nt5flg4hzm-sd2i9ipohi.gz
 C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\compressed\whdoqeq69h-6ni2uq6cfo.gz
+C:\Users\PC\Coding na liwat\Case Study_System_Integration_Architecture_A.Y 2024-2025\pos_system\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
