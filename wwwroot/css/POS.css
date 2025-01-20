@@ -253,7 +253,7 @@ body {
   width: 100%; /* Make the button span full width */
   padding: 10px;
   border-radius: 5px;
-  background-color: #2B60B4; /* Adjust if necessary */
+  background-color: #00A36C; /* Adjust if necessary */
   color: white;
   border: none;
   cursor: pointer;
@@ -261,7 +261,7 @@ body {
 }
 
 .payment-section .btn-success:hover {
-  background-color: #477cd0; /* Darker green on hover */
+  background-color: #757575; /* Darker green on hover */
 }
 
 .payment-section p {
