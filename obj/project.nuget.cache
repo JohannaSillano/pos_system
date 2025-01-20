@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RKgbuoONdQM=",
+  "dgSpecHash": "z8w7h50jDy8=",
   "success": true,
-  "projectFilePath": "c:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Coding na liwat\\Case Study_System_Integration_Architecture_A.Y 2024-2025\\pos_system\\pos_system.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

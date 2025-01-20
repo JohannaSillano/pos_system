@@ -6,18 +6,11 @@ using System.Text;
 
 namespace pos_system.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController(ILogger<HomeController> logger, IMDbContext imDBContext, POSDbContext posDBContext) : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private readonly IMDbContext _imDBContext;
-        private readonly POSDbContext _posDBContext;
-
-        public HomeController(ILogger<HomeController> logger, IMDbContext imDBContext, POSDbContext posDBContext)
-        {
-            _logger = logger;
-            _imDBContext = imDBContext;
-            _posDBContext = posDBContext;
-        }
+        private readonly ILogger<HomeController> _logger = logger;
+        private readonly IMDbContext _imDBContext = imDBContext;
+        private readonly POSDbContext _posDBContext = posDBContext;
 
         public IActionResult Index()
         {
